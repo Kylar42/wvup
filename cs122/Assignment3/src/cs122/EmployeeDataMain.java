@@ -1,15 +1,14 @@
 package cs122;
 
-import cs122.io.EmployeeDataStdinReader;
-import cs122.model.Employee;
+import cs122.action.Action;
+import cs122.action.CLIActions;
+import cs122.io.EmployeeStdinReader;
+import cs122.io.EmployeeStdoutWriter;
 import cs122.model.EmployeeDataList;
+import cs122.model.EmployeeMenuItem;
 import cs122.ui.MainFrame;
 
 import java.io.IOException;
-import java.math.BigDecimal;
-import java.text.NumberFormat;
-import java.util.Collections;
-import java.util.List;
 
 /**
  * User: Tom Byrne(tom.byrne@apple.com)
@@ -19,34 +18,58 @@ import java.util.List;
  */
 public class EmployeeDataMain {
     //------------------------------------Member vars
-    private final EmployeeDataList employeeDataList = new EmployeeDataList();
-    private final EmployeeDataStdinReader employeeDataReader = new EmployeeDataStdinReader();
-    private final NumberFormat currencyInstance = NumberFormat.getCurrencyInstance();
 
-    private double avgSalaryAsDouble;
     //------------------------------------Static vars
     //since this is an assignment, I'm going to bound the upper limit to 100.
     private static final int MAX_NUMBER_OF_EMPLOYEES = 100;
 
     private EmployeeDataMain(boolean runUI) {
-        if(runUI){
+        if (runUI) {
             runUI();
-        }else{
+        } else {
             runCLI();
         }
-        
+
     }
 
-    private void runUI(){
+    private void runUI() {
         new MainFrame();//launch the UI, it takes care of itself.
+    }
+
+
+    //main CLI Loop
+    private void runCLI() {
+        EmployeeDataList dataList = new EmployeeDataList();
+        EmployeeStdinReader reader = new EmployeeStdinReader();
+        EmployeeStdoutWriter writer = new EmployeeStdoutWriter();
+        CLIActions actionHandler = new CLIActions(dataList, reader, writer);
+
+        EmployeeMenuItem lastItem = null;
+        try {
+            while (true) {
+                writer.printMenu();
+                try {
+                    final EmployeeMenuItem employeeMenuItem = reader.promptForMenuItem();
+                    final Action action = actionHandler.actionForMenuItem(employeeMenuItem);
+                    action.performAction();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        } finally {
+            reader.closeStreams();
+        }
+
     }
 
     /**
      * Deprecating the CLI version - it will work for the Assignment2 stuff, but not Assignment3.
-     *
      */
     @Deprecated
-    private void runCLI(){
+    /*private void runCLI(){
+        
+        
+        EmployeeStdoutWriter writer = new EmployeeStdoutWriter();
         //Set up Buffered reader to read lines.
         //First, prompt for number of employees
         int numberOfEmployees = 0;
@@ -84,21 +107,21 @@ public class EmployeeDataMain {
             System.out.println();//Spacing.
 
             List<Employee> list = employeeDataList.getEmployeeList();
-            printEmployeeList(list);
+            EmployeeStdoutWriter.printEmployeeList(list, avgSalaryAsDouble);
 
             //sort into employee number order
             System.out.println();//Spacing.
             System.out.println("After Sorting");
             System.out.println();//Spacing.
             Collections.sort(list, new Employee.EmployeeNumberComparator());
-            printEmployeeList(list);
+            EmployeeStdoutWriter.printEmployeeList(list, avgSalaryAsDouble);
 
             int employeeNumberToSearchFor = employeeDataReader.promptForEmployeeNumberForSearch(employeeDataList);
 
 
             while(0 != employeeNumberToSearchFor){
                 //look for the employee #, then print out it's info.
-                printEmployee(employeeDataList.getEmployee(employeeNumberToSearchFor));
+                EmployeeStdoutWriter.printEmployee(employeeDataList.getEmployee(employeeNumberToSearchFor), avgSalaryAsDouble);
                 employeeNumberToSearchFor = employeeDataReader.promptForEmployeeNumberForSearch(employeeDataList);
             }
 
@@ -115,32 +138,10 @@ public class EmployeeDataMain {
 
             employeeDataReader.closeStreams();
         }
-    }
-    private void printEmployeeList(final List<Employee> listToPrint) {
-        //Loop through the employees
-        for (final Employee e : listToPrint) {
+    }*/
 
-            printEmployee(e);
-            System.out.println();//Spacing.
-        }
-    }
-
-    private void printEmployee(final Employee employeeToPrint){
-        //Print out the 3 pieces of data
-            System.out.println("Employee Name: " + employeeToPrint.getName());
-            System.out.println("Employee Number: " + employeeToPrint.getNumber());
-            System.out.println(employeeToPrint.getName() + "'s salary: " + currencyInstance.format(employeeToPrint.getSalary()));
-
-            //Let's look to see if it's average, or else above/below.
-            if (avgSalaryAsDouble == employeeToPrint.getSalary()) {
-                System.out.println(employeeToPrint.getName() + "'s salary is exactly average.");
-            } else {
-                System.out.println(employeeToPrint.getName() + "'s salary is " + ((employeeToPrint.getSalary() < avgSalaryAsDouble) ? "below" : "above") + " average.");
-            }
-        System.out.println("***************************************************");
-    }
 
     public static void main(String[] args) {
-        new EmployeeDataMain(true);
+        new EmployeeDataMain(false);
     }
 }

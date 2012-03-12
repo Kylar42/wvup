@@ -8,7 +8,7 @@ import java.util.Comparator;
  * "I code not because I have a problem to solve, but because there is
  * code within me, crying to get out."
  */
-public class Employee {
+public class Employee implements Comparable<Employee>{
 
     public final static int EMPLOYEE_NUMBER_MAXIMUM = 99999999;
     public final static int EMPLOYEE_SALARY_MAXIMUM = 1000000;
@@ -43,6 +43,15 @@ public class Employee {
         employeeSalary = empSalary;
     }
 
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+        sb.append("[Employee - ID:").append(employeeNumber).append(" - Name: ").append(employeeName).append(" - Salary:").append(employeeSalary)
+                .append("]");
+
+        return sb.toString();
+
+    }
 
     public int getSalary() {
         return employeeSalary;
@@ -52,11 +61,11 @@ public class Employee {
         employeeSalary = sal;
     }
 
-    public int getNumber() {
+    public int getEmployeeNumber() {
         return employeeNumber;
     }
 
-    public void setNumber(int empNum){
+    public void setEmployeeNumber(int empNum){
         employeeNumber = empNum;
     }
 
@@ -102,6 +111,10 @@ public class Employee {
 
 
     //============================================================================Inner Class
+
+    public int compareTo(Employee o) {
+        return this.employeeNumber - o.employeeNumber;
+    }
 
 
     public static final class EmployeeNumberComparator implements Comparator<Employee> {

@@ -32,6 +32,19 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/cs122/ui/EmployeeListTableModel.java" line="33" class="cs122.ui.EmployeeListTableModel" package="cs122.ui">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
@@ -73,11 +86,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainFrame.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cs122/ui/MainFrame.java">
+      <file leaf-file-name="EmployeeDataMain.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/EmployeeDataMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="30" selection-start="3186" selection-end="3186" vertical-scroll-proportion="0.0">
+            <state line="53" column="0" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CLIActions.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/action/CLIActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="110" column="0" selection-start="3742" selection-end="3742" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1009#1035#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeDataList.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cs122/model/EmployeeDataList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="63" column="0" selection-start="2166" selection-end="2166" vertical-scroll-proportion="-0.20784314">
+              <folding>
+                <element signature="e#621#640#0" expanded="true" />
+                <element signature="e#801#815#0" expanded="true" />
+                <element signature="e#1450#1459#0" expanded="true" />
+                <element signature="e#1765#1775#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -85,34 +124,16 @@
       <file leaf-file-name="EmployeeListTableModel.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs122/ui/EmployeeListTableModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="195" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0">
+            <state line="39" column="58" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JTable.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/javax/swing/JTable.java">
+      <file leaf-file-name="AbstractEmployeeAction.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/action/AbstractEmployeeAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5719" column="0" selection-start="214369" selection-end="214369" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BasicTableUI.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/javax/swing/plaf/basic/BasicTableUI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1970" column="0" selection-start="74835" selection-end="74835" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EmployeeDataTableCellRenderer.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/cs122/ui/EmployeeDataTableCellRenderer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="905" selection-end="905" vertical-scroll-proportion="0.30096307">
+            <state line="13" column="29" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -120,46 +141,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Color.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/java/awt/Color.java">
+      <file leaf-file-name="EmployeeStdoutWriter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/io/EmployeeStdoutWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="609" column="27" selection-start="18755" selection-end="18765" vertical-scroll-proportion="0.0">
+            <state line="34" column="0" selection-start="931" selection-end="931" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeStdinReader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/io/EmployeeStdinReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="180" column="87" selection-start="8187" selection-end="8187" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DefaultTableCellRenderer.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/javax/swing/table/DefaultTableCellRenderer.java">
+      <file leaf-file-name="Manager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/model/Manager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="0" selection-start="4823" selection-end="4823" vertical-scroll-proportion="0.0">
+            <state line="40" column="55" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JComponent.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/javax/swing/JComponent.java">
+      <file leaf-file-name="Employee.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/model/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2700" column="0" selection-start="99630" selection-end="99630" vertical-scroll-proportion="0.0">
+            <state line="67" column="33" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeDataList.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cs122/model/EmployeeDataList.java">
+      <file leaf-file-name="EmployeeMenuItem.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/model/EmployeeMenuItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Container.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/java/awt/Container.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="940" column="192" selection-start="38652" selection-end="38652" vertical-scroll-proportion="0.0">
+            <state line="17" column="54" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -179,15 +202,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/PS5.java" />
-        <option value="$PROJECT_DIR$/src/cs122/ui/DefaultFrameWindowAdapter.java" />
-        <option value="$PROJECT_DIR$/src/cs122/model/EmployeeDataList.java" />
+        <option value="$PROJECT_DIR$/src/cs122/ui/EmployeeListActionHandler.java" />
+        <option value="$PROJECT_DIR$/src/cs122/ui/EmployeeMenuItem.java" />
+        <option value="$PROJECT_DIR$/src/cs122/ui/EmployeeInputDialog.java" />
+        <option value="$PROJECT_DIR$/src/cs122/Tmp.java" />
+        <option value="$PROJECT_DIR$/src/cs122/action/Action.java" />
+        <option value="$PROJECT_DIR$/src/cs122/action/AbstractEmployeeAction.java" />
+        <option value="$PROJECT_DIR$/src/cs122/io/EmployeeDataStdinReader.java" />
         <option value="$PROJECT_DIR$/src/cs122/model/Employee.java" />
         <option value="$PROJECT_DIR$/src/cs122/model/Manager.java" />
-        <option value="$PROJECT_DIR$/src/cs122/EmployeeDataMain.java" />
         <option value="$PROJECT_DIR$/src/cs122/ui/EmployeeListTableModel.java" />
-        <option value="$PROJECT_DIR$/src/cs122/ui/MainFrame.java" />
-        <option value="$PROJECT_DIR$/src/cs122/ui/EmployeeDataTableCellRenderer.java" />
+        <option value="$PROJECT_DIR$/src/cs122/model/EmployeeDataList.java" />
+        <option value="$PROJECT_DIR$/src/cs122/model/EmployeeMenuItem.java" />
+        <option value="$PROJECT_DIR$/src/cs122/EmployeeDataMain.java" />
+        <option value="$PROJECT_DIR$/src/cs122/io/EmployeeStdoutWriter.java" />
+        <option value="$PROJECT_DIR$/src/cs122/action/CLIActions.java" />
+        <option value="$PROJECT_DIR$/src/cs122/io/EmployeeStdinReader.java" />
       </list>
     </option>
   </component>
@@ -196,9 +226,10 @@
     <option name="LAST_EDITED_TAB_NAME" />
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="1" />
     <option name="y" value="22" />
-    <option name="width" value="2560" />
-    <option name="height" value="1414" />
+    <option name="width" value="1680" />
+    <option name="height" value="1024" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -226,17 +257,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Assignment3" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane>
           <PATH>
@@ -317,6 +337,35 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assignment3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assignment3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cs122" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageElementNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Assignment3" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Favorites" />
@@ -335,12 +384,12 @@
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -348,6 +397,66 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.EmployeeDataMain">
+    <configuration default="false" name="EmployeeInputDialog" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cs122.ui.EmployeeInputDialog" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Assignment3" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tmp" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cs122.Tmp" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Assignment3" />
+      <envs />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="EmployeeDataList" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cs122.model.EmployeeDataList" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Assignment3" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -471,9 +580,12 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
-    <list size="2">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.PS5" />
       <item index="1" class="java.lang.String" itemvalue="Application.EmployeeDataMain" />
+      <item index="2" class="java.lang.String" itemvalue="Application.EmployeeInputDialog" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Tmp" />
+      <item index="4" class="java.lang.String" itemvalue="Application.EmployeeDataList" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -508,26 +620,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="2560" height="1414" extended-state="0" />
+    <frame x="1" y="22" width="1680" height="1024" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3983308" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39827773" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32938644" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30971336" sideWeight="0.6015444" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32895753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32965687" sideWeight="0.6017223" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32831" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="JProfiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -592,88 +704,128 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/PS5.java">
+    <entry file="file:///source/jdk-1.6/j2se/src/share/classes/java/util/TreeSet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="0" selection-start="1550" selection-end="1550" vertical-scroll-proportion="0.67429024" />
+        <state line="88" column="24" selection-start="3891" selection-end="3903" vertical-scroll-proportion="0.19789842">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/java/awt/Dimension.java">
+    <entry file="file:///source/jdk-1.6/j2se/src/share/classes/java/util/AbstractSequentialList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="119" column="18" selection-start="3049" selection-end="3049" vertical-scroll-proportion="0.0" />
+        <state line="51" column="22" selection-start="1991" selection-end="1991" vertical-scroll-proportion="-2.839196">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/javax/swing/Box.java">
+    <entry file="file:///source/jdk-1.6/j2se/src/share/classes/java/util/LinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="228" column="28" selection-start="7880" selection-end="7880" vertical-scroll-proportion="0.0" />
+        <state line="29" column="38" selection-start="1286" selection-end="1358" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs122/model/Employee.java">
+    <entry file="file:///source/jdk-1.6/j2se/src/share/classes/java/util/Collections.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="31" selection-start="1720" selection-end="1720" vertical-scroll-proportion="0.0" />
+        <state line="53" column="14" selection-start="2180" selection-end="2181" vertical-scroll-proportion="-7.3076925">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs122/model/Manager.java">
+    <entry file="file://$PROJECT_DIR$/src/cs122/model/ListListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="180" selection-start="571" selection-end="571" vertical-scroll-proportion="0.0" />
+        <state line="8" column="17" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs122/EmployeeDataMain.java">
+    <entry file="file://$PROJECT_DIR$/src/cs122/action/Action.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="62" selection-start="2290" selection-end="2290" vertical-scroll-proportion="0.0" />
+        <state line="9" column="25" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs122/ui/MainFrame.java">
+    <entry file="file://$PROJECT_DIR$/src/cs122/action/AbstractEmployeeAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="30" selection-start="3186" selection-end="3186" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs122/ui/EmployeeListTableModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="195" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/javax/swing/JTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5719" column="0" selection-start="214369" selection-end="214369" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/javax/swing/plaf/basic/BasicTableUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1970" column="0" selection-start="74835" selection-end="74835" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs122/ui/EmployeeDataTableCellRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="905" selection-end="905" vertical-scroll-proportion="0.30096307">
+        <state line="13" column="29" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/java/awt/Color.java">
+    <entry file="file://$PROJECT_DIR$/src/cs122/model/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="609" column="27" selection-start="18755" selection-end="18765" vertical-scroll-proportion="0.0" />
+        <state line="67" column="33" selection-start="2028" selection-end="2028" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/javax/swing/table/DefaultTableCellRenderer.java">
+    <entry file="file://$PROJECT_DIR$/src/cs122/model/Manager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="0" selection-start="4823" selection-end="4823" vertical-scroll-proportion="0.0" />
+        <state line="40" column="55" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/javax/swing/JComponent.java">
+    <entry file="file://$PROJECT_DIR$/src/cs122/ui/EmployeeListTableModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2700" column="0" selection-start="99630" selection-end="99630" vertical-scroll-proportion="0.0" />
+        <state line="39" column="58" selection-start="1286" selection-end="1286" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/model/EmployeeMenuItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="54" selection-start="642" selection-end="642" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/io/EmployeeStdoutWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="0" selection-start="931" selection-end="931" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/EmployeeDataMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="0" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/io/EmployeeStdinReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="180" column="87" selection-start="8187" selection-end="8187" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/action/CLIActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="110" column="0" selection-start="3742" selection-end="3742" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1009#1035#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs122/model/EmployeeDataList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../../jdk1.6-source/j2se/src/share/classes/java/awt/Container.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="940" column="192" selection-start="38652" selection-end="38652" vertical-scroll-proportion="0.0" />
+        <state line="63" column="0" selection-start="2166" selection-end="2166" vertical-scroll-proportion="-0.20784314">
+          <folding>
+            <element signature="e#621#640#0" expanded="true" />
+            <element signature="e#801#815#0" expanded="true" />
+            <element signature="e#1450#1459#0" expanded="true" />
+            <element signature="e#1765#1775#0" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

@@ -8,6 +8,10 @@ import javax.swing.*;
 import javax.swing.event.MenuEvent;
 import javax.swing.event.MenuListener;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 /**
  * @Author Tom Byrne, tom.byrne@apple.com
@@ -77,7 +81,14 @@ public class MainFrame extends JFrame {
         this.getContentPane().add(splitPane, BorderLayout.CENTER);
         
         JPanel menuPanel = new EmployeeMenuPanel();
-        splitPane.add(menuPanel, JSplitPane.TOP);
+        JPanel inset = new JPanel(new BorderLayout());
+        JTextPane outputPane = new JTextPane();//going to use a textPane so that we can use HTML.
+        JScrollPane outputPaneScroller = new JScrollPane(outputPane);
+        outputPaneScroller.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+
+        inset.add(menuPanel, BorderLayout.WEST);
+        inset.add(outputPaneScroller, BorderLayout.CENTER);//making the outputpane the 'center' so it will take up extra space :)
+        splitPane.add(inset, JSplitPane.TOP);
 
 
         //OK let's get the screen we're on and make sure it's big enough, and calculate the center of it.
@@ -133,8 +144,11 @@ public class MainFrame extends JFrame {
         mainMenuBar.add(aboutMenuItem);
         this.setJMenuBar(mainMenuBar);
     }
+    private void menuChosen(final String s){
 
-    private static class EmployeeMenuPanel extends JPanel{
+    }
+
+    private class EmployeeMenuPanel extends JPanel{
         EmployeeMenuPanel(){
             this.setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
             this.add(new JLabel("1. Enter an Employee"));
@@ -145,9 +159,15 @@ public class MainFrame extends JFrame {
             this.add(new JLabel("6. Search For A Manager (By Employee ID)"));
             this.add(new JLabel("7. Search For An Employee (By Employee ID)"));
             this.add(new JLabel("8. Search for anyone (By Employee ID)"));
-            JTextField tf = new JTextField();
+            final JTextField tf = new JTextField();
             this.add(tf);
             this.add(Box.createHorizontalGlue());
+            
+            tf.addActionListener(new ActionListener() {         
+                public void actionPerformed(ActionEvent e) {
+                    MainFrame.this.menuChosen(tf.getText());
+                }
+            });
         }
     }
 }
