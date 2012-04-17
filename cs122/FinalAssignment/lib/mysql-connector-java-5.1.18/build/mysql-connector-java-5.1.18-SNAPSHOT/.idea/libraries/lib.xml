@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ant-contrib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/c3p0-0.9.1-pre6.src.zip!/" />
+      <root url="jar://$PROJECT_DIR$/lib/slf4j-api-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/c3p0-0.9.1-pre6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jboss-common-jdbc-wrapper-src.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jboss-common-jdbc-wrapper.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
