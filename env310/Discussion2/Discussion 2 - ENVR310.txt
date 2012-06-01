@@ -16,4 +16,22 @@ Also, find the answer to ONE of these questions and list it somewhere in your po
 
 *What is currently being done with the leftover material (ash) that remains after the coal is burned?
 
-This discussion will be considered active until Sunday, June 3rd at 9:00 PM. If you post after this time, points will be deducted for lateness.
+
+Positives:
+The primary positive outcome for humankind is the short term economic benefit. Coal is still one of the cheapest methods of producing energy worldwide, and provides a tremendous secondary boon to the economy. A single coal plant can burn as much as 80,000 tons of coal per day, and the associated labor to mine, process and transport the coal provides many thousands of jobs. A second benefit is that electricity production via coal is relatively safe, when worst case scenarios are considered and contrasted with a more volatile energy source such as nuclear fission.
+
+Negatives:
+One of the most obvious drawback of coal is the pollution. Despite the advances in reducing toxic emissions, coal plants still release sulphur dioxide, carbon dioxide, mercury and Nitrous oxide into the environment.  A more pressing issue is the associated healthcare and environmental costs directly from mining, transporting and burning coal. A recent estimate states that in the US, yearly healthcare, deaths and ecological from coal mining and power top 345 billion dollars yearly.
+
+Question:
+What are the most dangerous pollutants of coal, and what are their side effects?
+The most dangerous pollutants released into the environment are Sulphur Dioxide, Nitrogen Oxide, Carbon Dioxide, and Mercury.  Sulphur Dioxide has been linked to breathing difficulties, respiratory illnesses and chronic heart and lung diseases, and along with Nitrogen Oxide, is a major cause of acid rain. Mercury has been shown to affect the immune and nervous system, and is particularly toxic to embryos, both human and animal, causing deformation and other difficulties. Carbon Dioxide levels have been rising in the atmosphere for decades, and are a primary contributor to global warming.   
+
+http://www.airqualityontario.com/science/pollutants/sulphur.php
+http://chge.med.harvard.edu/sites/default/files/resources/MiningCoalMountingCosts.pdf
+http://www.ncpa.org/pub/ba573
+http://www.ornl.gov/info/ornlreview/rev26-34/text/colmain.html
+http://en.citizendium.org/wiki/Conventional_coal-fired_power_plant
+http://www.usgs.gov/themes/factsheet/146-00/
+http://www.airqualityontario.com/science/pollutants/sulphur.php
+http://www.int-res.com/articles/cr/13/c013p149.pdf
