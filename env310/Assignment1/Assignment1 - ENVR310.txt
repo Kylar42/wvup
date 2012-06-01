@@ -1,0 +1,23 @@
+16.5 - 18.5 V, 4.6A.
+
+(4.6x17.5)=80.5w
+
+0.007245 per Kw/h * 50 hr/week = 0.362 = $0.36 /week or $18.83 a year.
+
+Page 37, Question 2:
+
+Although I use several computers on a daily basis, my "most used" computer is a MacBook Pro laptop, and the label states 16.5-18.5V, 4.6A. Based on the calculations in the book, Volts * Amps = 80.5 watts (17.5*4.6). This works out to $0.007245 per hour, which at the 50 hours a week I use the computer, works out to about $0.36/week or $18.83 a year. However, this number seems extremely high to me. Based upon Apple's publication here: http://images.apple.com/environment/reports/docs/MacBookPro_15-inch_Product_Environmental_Report_Oct2011.pdf - the Macbook Pro should be using only 17.6 watts at idle. Even comparing full load to idle, the disparity in the amounts (80.5 vs 17.6) seems huge. However, I found some research here: http://www.consunet.com.au/blog/index.php?itemid=45. This person tested a slightly older model of MacBook Pro, and running full out, it measured 60-84W, so the amount reached by the calculation (80.5) seems reasonable. The researcher also noted that idle watt usage was 24-36W with a fully charged battery, so it would appear that Apple has made strides in reducing the power consumptions of it's laptops while idle, while full use draw is relatively unchanged. 
+
+Page 37, Question 4:
+
+Carbon-14 Dating (also referred to as Radiocarbon Dating) is a method used to calculate the approximate age of fossils by comparing the amount of C-14 remaining in an artifact to the amount of C-12 in it. Carbon occurs in 3 different isotopes, two of which are considered "stable" (C-12 and C-13), and one that is considered "unstable" (C-14). The C-14 isotope of carbon is considered unstable because it suffers from radioactive decay, with a half life of 5,730 years. This means that given a sample of C-14, half of it will remain after 5,730 years, with the rest having decayed into Nitrogen-14, a stable isotope of Nitrogen. Using varying techniques, the amount of C-14 remaining is measured and compared to the amount of C-12 present in the artifact. This gives a rough estimate of the age of the artifact. Exact dating is still uncertain, and often the age will be given with a modifier - eg: 5000 ± 45 BP can be read as "5000 years, plus or minus 45 years Before Present", where "Present" is defined as the year 1950 AD. Radiocarbon dating has several uses - it can be used to date specific historic artifacts, such as mummies or the dead sea scrolls, but by analyzing the amount of C-14 in the atmosphere, much can be gathered about the movement of carbon in the oceans and ecosystem.
+
+Page 98, Question 2:
+Some species migrate long distances to their breeding grounds. How could natural selection favor such behavior?
+
+Natural selection would favor long migrations in two ways: availability of variety of mating partners (and therefore multiple gene possibilities), and the removal of specimens that display poor migration specific behaviors. In the latter case - if a species must travel a long distance, it stands to reason that specimens that do not have strong migratory traits (eg: the ability to travel quickly, or to adapt to multiple environments) would eventually be replaced by those who do. In addition, the specimens must become adept at adapting to the originating and ending environments, along with any environments that they pass through. Regarding the availibility of mating partners - if a species travels a long distance to breed, they are more likely to encounter multiple possible partners than if they were restricted to a small geographic area - thus increasing the likelyhood of finding a partner. If both these assertions hold true, then natural selection would, over time, produce specimens that have evolved to migrate and adapt well, and would be likely to find other specimens who have evolved in a smiliar manner.
+
+Page 98, Question 4:
+Supose you have two energy pyramids, both with five trophic positions. One pyramid is dominated by ectotherms; the other is dominated by endotherms. Assuming that the environmental concentration of pesticides as the same for both pyramids, in which pyramid would the top level predator have the greatest concentration of pesticides?
+
+In theory, the amount of pesticides in each type top level predator would be nearly the same - since biomagnification would increase the amount of pesticides at each level similarly, and each pyramid has 5 levels. However, my hypothesis is that the top predator in the endothermic pyramid would have a larger concentration of pesticides. Ectotherms use less energy for maintenance and are therefore more 'efficient' in their energy use, so they will accumulate less pesticides in their bodies. 
