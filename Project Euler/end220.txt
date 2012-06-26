@@ -1,0 +1,6 @@
+Current run line:999900000000
+i:999999999999 tuple: X:139777 Y:963904 dir:0
+tuple: X:139776 Y:963904 dir:3
+tuple: X:139776 Y:963905 dir:0
+tuple: X:139777 Y:963905 dir:1
+78295324
