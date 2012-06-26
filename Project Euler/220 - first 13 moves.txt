@@ -1,0 +1,14 @@
+x: 0 y: 0 d: 0
+x: 0 y: 1 d: 0#move 0
+x: 1 y: 1 d: 1#move 1
+x: 1 y: 0 d: 2#move 2
+x: 2 y: 0 d: 1#move 3
+x: 2 y: -1 d: 2#move 4
+x: 1 y: -1 d: 3#move 5
+x: 1 y: -2 d: 2#move 6
+x: 2 y: -2 d: 1#move 7
+x: 2 y: -3 d: 2#move 8
+x: 1 y: -3 d: 3#move 9
+x: 1 y: -2 d: 0#move 10
+x: 0 y: -2 d: 3#move 11
+x: 0 y: -3 d: 2#move 12
