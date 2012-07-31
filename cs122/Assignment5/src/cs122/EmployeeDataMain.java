@@ -2,11 +2,11 @@ package cs122;
 
 import cs122.action.Action;
 import cs122.action.CLIActions;
+import cs122.db.EmployeeDataDBImpl;
 import cs122.io.EmployeeStdinReader;
 import cs122.io.EmployeeStdoutWriter;
 import cs122.model.EmployeeDataList;
 import cs122.model.EmployeeMenuItem;
-import cs122.ui.MainFrame;
 
 import java.io.IOException;
 
@@ -24,22 +24,15 @@ public class EmployeeDataMain {
     private static final int MAX_NUMBER_OF_EMPLOYEES = 100;
 
     private EmployeeDataMain(boolean runUI) {
-        if (runUI) {
-            runUI();
-        } else {
-            runCLI();
-        }
-
+       runCLI();
     }
 
-    private void runUI() {
-        new MainFrame();//launch the UI, it takes care of itself.
-    }
 
 
     //main CLI Loop
     private void runCLI() {
-        EmployeeDataList dataList = new EmployeeDataList();
+        //EmployeeDataList dataList = new EmployeeDataImpl();
+        EmployeeDataList dataList = new EmployeeDataDBImpl();
         EmployeeStdinReader reader = new EmployeeStdinReader();
         EmployeeStdoutWriter writer = new EmployeeStdoutWriter();
         CLIActions actionHandler = new CLIActions(dataList, reader, writer);

@@ -15,16 +15,14 @@ public class Employee implements Comparable<Employee>{
 
     //Data members
     private int employeeNumber;
-    private String employeeName;
     private int employeeSalary;
 
     public Employee(){
-        employeeName = null;
-        employeeNumber = -1;
+         employeeNumber = -1;
         employeeSalary = -1;
     }
     
-    public Employee(final int empNumber, final String name, final int empSalary) {
+    public Employee(final int empNumber,  final int empSalary) {
 
         //Check all values, even though they should be correct already.
         if (0 > empNumber || EMPLOYEE_NUMBER_MAXIMUM < empNumber) {
@@ -32,11 +30,7 @@ public class Employee implements Comparable<Employee>{
         }
         employeeNumber = empNumber;
 
-        if (null == name || name.length() > 40) {
-            throw new IllegalArgumentException("Employee Name must be 40 characters or less.");
-        }
 
-        employeeName = name;
         if (0 > empSalary || EMPLOYEE_NUMBER_MAXIMUM < empSalary) {
             throw new IllegalArgumentException("Employee Salary must be between 0 and 1000000, inclusive.");
         }
@@ -46,7 +40,7 @@ public class Employee implements Comparable<Employee>{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("[Employee - ID:").append(employeeNumber).append(" - Name: ").append(employeeName).append(" - Salary:").append(employeeSalary)
+        sb.append("[Employee - ID:").append(employeeNumber).append(" - Salary:").append(employeeSalary)
                 .append("]");
 
         return sb.toString();
@@ -69,12 +63,6 @@ public class Employee implements Comparable<Employee>{
         employeeNumber = empNum;
     }
 
-    public String getName() {
-        return employeeName;
-    }
-    public void setName(String name){
-        employeeName = name;
-    }
 
 
     @Override
@@ -94,17 +82,12 @@ public class Employee implements Comparable<Employee>{
         if (employeeSalary != employee.employeeSalary) {
             return false;
         }
-        if (!employeeName.equals(employee.employeeName)) {
-            return false;
-        }
-
         return true;
     }
 
     @Override
     public int hashCode() {
         int result = employeeNumber;
-        result = 31 * result + employeeName.hashCode();
         result = 31 * result + employeeSalary;
         return result;
     }
