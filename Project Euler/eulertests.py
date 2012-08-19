@@ -1,8 +1,4 @@
-x = 0
-dest = pow(10,12)
-i = 0
-while i < dest:
-	i += 1
-	x += i
-	
-print x
+#test Eulerutils circle
+from decimal import *
+
+a=Decimal(.03846153846153846153846153846153846153846153846153846153846153846153846153846153846153846153846153846)

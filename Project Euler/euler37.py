@@ -1,26 +1,70 @@
-def i2b(n):
-	'''convert denary integer n to binary string bStr'''
-	bStr = ''
-	if n < 0:  raise ValueError, "must be a positive integer"
-	if n == 0: return '0'
-	while n > 0:
-		bStr = str(n % 2) + bStr
-		n = n >> 1
+import eulerutils as eu
+
+import eulerutils as eu
+import OrderedSet
+import time
+
+def currentMillis():
+    return int(round(time.time() * 1000))
+
+startTime = currentMillis()
+
+def getTruncLeftList(someNumber):
+	#truncate left, ie if 3437 is passed in, I should return 437, 37 and 7.
+	numAsStr = str(someNumber)
+	size = len(numAsStr)	
+	returnList = []
+	end = size-1
+	for index in range(0, end):
+		char = numAsStr[index]
+		value = int(char)*(10**(size-1))
+		someNumber = someNumber - value
+		returnList.append(someNumber)
+		size = size - 1 
+		#print someNumber
+	return returnList
+
+def getTruncRightList(someNumber):
+	#truncate right - 3437 should return 343, 34 and 3
+	numAsStr = str(someNumber)
+	size = len(numAsStr)
+	returnList = []
+	end = size-1
+	for index in range(0, end):
+		someNumber = someNumber/10
+		returnList.append(someNumber)
 	
-	return bStr
+	return returnList
+
+resultList = []	
+primes = eu.getPrimesBelowAsSet(1000000)
+for prime in primes:
+	if len(str(prime)) < 2:
+		continue
 	
-def isPalindrome(someNumber):
-	strS = str(someNumber)
-	return strS == strS[::-1];
+	good = True
+	for num in getTruncLeftList(prime):
+		if num not in primes:
+			good = False
+			break
 	
-someSum = 0
-for i in range(1, 1000000):
-	#print "is Palindrome: %i" % i
-	#print isPalindrome(i)
-	if(isPalindrome(i)):
-		tmp = i2b(i)
-		if(tmp == tmp[::-1]):
-			someSum += i
-			
-print someSum
+	if good:
+		for num in getTruncRightList(prime):
+			if num not in primes:
+				good = False
+				break
 	
+	if good:
+		resultList.append(prime)
+	
+	if len(resultList) > 10:
+		break
+
+print "Result List found."
+print resultList
+print "Sum is: %d" % sum(resultList)
+
+
+
+
+

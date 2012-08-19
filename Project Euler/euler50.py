@@ -50,10 +50,10 @@ for windowsize in xrange(1, listLen):
     smallestPrimesSum = smallestPrimesSum + primesList[windowsize] #smallestPrimesSum now equals the sum of all the primes from 0..windowSize+1
     
     if smallestPrimesSum > 1000000:
+        print "End Run. Time: %d" % (currentMillis() - startTime)
         exit(0)
 
 
-print "End Run. Time: %d" % (currentMillis() - startTime)
 
 
 

@@ -1,73 +1,52 @@
 import eulerutils as eu
-
-def uniqueList(seq): 
-    # not order preserving 
-    set = {} 
-    map(set.__setitem__, seq, []) 
-    return set.keys()
-
-def getNumberAsList(number):
-	toReturn = []
-	while(number > 0):
-		toReturn.append(number % 10)
-		number /= 10
-	#print toReturn
-	return toReturn
-	
+import OrderedSet
+import time
 
 
-def getRotations(numberList):
-	toReturn = [];
-	#print "c"
-	#print numberList
-	if(len(numberList) == 2):
-		#print "a"
-		#2 digits. return both rotations.
-		firstDigit = numberList[0]
-		secondDigit = numberList[1]
-		toReturn.append((firstDigit*10 + secondDigit))
-		toReturn.append((secondDigit*10 + firstDigit))
-	elif(len(numberList) < 2):
-		print("Can't check single Digit")
-	else:
-		#print "b"
-		multiplier = 10**(len(numberList)-1)
-		for i in range(0, len(numberList)):
-			tmplist = numberList[:]
-			del tmplist[i]
-			for num in getRotations(tmplist):
-			    toReturn.append((multiplier*numberList[i])+num)
-		
-	return uniqueList(toReturn)
+def currentMillis():
+    return int(round(time.time() * 1000))
 
-#for prime in primes:
-#	getRotations(prime)
-#getNumberAsList(1799)
+startTime = currentMillis()
 
-primes = eu.getPrimesBelow(1000000000000);
-print len(primes);
+primes = eu.getPrimesBelowAsSet(1000000)
+ 
+print "Got Primes. Time: %d" % (currentMillis() - startTime)
+    
+print len(primes)
+
 circularPrimes = []
 primecount = 0
 for prime in primes:
 	primecount += 1
-	rots = getRotations(getNumberAsList(prime))
-	running = True
-	count = 0;
-	while(running and count < len(rots)):
-		curRot = rots[count]
-		count += 1
-		if curRot not in primes:
-			running = False
+	rots = eu.numericRotations(prime)
+	count = 0
+	good = True
+	for rotation in rots:
+	    if(rotation not in primes):
+		good = False
+		break
 	
-	if(running):
-		print "Circular Prime Found: %i" % prime
-		circularPrimes.append(prime)
+	if good:
+	    circularPrimes.append(prime)
 	
-	if 0 == (primecount % 1000):
-		print "On Prime # %i" % primecount
-		
-print "Primes found: %i" % len(circularPrimes)
+
+print "Primes found: %d" % len(circularPrimes)
 print circularPrimes
+print "End Run. Time: %d" % (currentMillis() - startTime)
+
+	
+	#while(running and count < len(rots)):
+	#	curRot = rots[count]
+	#	count += 1
+	#	if curRot not in primes:
+	#		running = False
+	#
+	#if(running):
+	#	print "Circular Prime Found: %i" % prime
+	
+	#if 0 == (primecount % 1000):
+	#	print "On Prime # %i" % primecount
+	#	
 	
 		
 		
