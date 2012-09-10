@@ -282,11 +282,35 @@ def findCircleInDecimal(number, x):
 def currentMillis():
     return int(round(time.time() * 1000))
 
+def getCombinationsOfNumberAsString(num):
+		num = str(num)
+		toReturn = []
+		if len(num) == 1:
+				toReturn.append(num)
+				return toReturn #only one
+		elif len(num) == 2:
+				#two combinations.
+				toReturn.append(num)
+				toReturn.append(num[1] + num [0])
+				return toReturn
+		else:
+				stringRotations = numericRotationsAsString(num)
+				for rotStr in stringRotations:
+				#take the last digit and pass the rest in.
+						digit = rotStr[-1]
+						passIn = rotStr[0:-1]
+						returnList = getCombinationsOfNumberAsString(passIn)
+						for tmpNumber in returnList:
+								toReturn.append(tmpNumber+digit)
+        
+				return toReturn
+
+
 def getCombinationsOfNumber(num):
     #for 541 we need to return 145, 154, 514, 541, 415, 451
     toReturn = []
     if num < 10:
-        toReturn.append[num]
+        toReturn.append(num)
         return toReturn #only one
     elif num < 100:
         #two combinations.
@@ -319,7 +343,17 @@ def isPrime(num):
     
     return True
     
-
+    
+def numericRotationsAsString(ofNumber):
+		numAsString = str(ofNumber)
+		size = len(numAsString)
+		returnList = []
+		for x in range(0, size):
+				#chop off first, make it last.				
+				numAsString = numAsString[-1]+numAsString[0:-1]
+				returnList.append(numAsString)
+		
+		return returnList
 
 def numericRotations(ofNumber):
     size = len(str(ofNumber))
