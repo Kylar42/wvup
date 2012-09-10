@@ -21,7 +21,14 @@ public class EmployeeDataList {
     private List<ListListener>      _listeners                      = new ArrayList<ListListener>();
 
 
-
+    public void printHashMapContents(){
+        for(Integer empNum : _employeeMap.keySet()){
+            System.out.println(String.format("Employee Number: %d", empNum));
+            Employee currentEmployee = _employeeMap.get(empNum);
+            System.out.println("Employee Name: "+currentEmployee.getName());
+            System.out.println("Employee Salary: "+currentEmployee.getSalary());
+        }
+    }
 
     public void addEmployee(Employee employeeToAdd){
         _employeeMap.put(employeeToAdd.getEmployeeNumber(), employeeToAdd);

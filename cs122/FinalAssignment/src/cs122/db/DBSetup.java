@@ -15,10 +15,15 @@ public class DBSetup {
     private static final DBSetup INSTANCE = new DBSetup();
 
 
-    private static final String DB_CREATE = "create database if not exists hr_info";
+    private static final String DB_CREATE = "create database if not exists hr_info;";
+    private static final String DB_DROP = "drop database hr_info;";
+    private static final String USER_DROP = "drop user '"+ConnectionPool.getInstance().dbUser+"'@'localhost';";
+    private static final String USER_CREATE = "create user '"+ConnectionPool.getInstance().dbUser+"'@'localhost' identified by '"+ConnectionPool.getInstance().dbPassword+"';";
+    private static final String USER_GRANT = "GRANT ALL ON hr_info.* to '"+ConnectionPool.getInstance().dbUser+"'@'localhost' identified by '"+ConnectionPool.getInstance().dbPassword+"';";
+    private static final String CREATE_EMPLOYEE_TABLE = "CREATE TABLE Employee (EMP_ID int NOT NULL,FirstName varchar(50),LastName varchar(50),Salary int NOT NULL, isManager BOOLEAN NOT NULL, bonus int, PRIMARY KEY (EMP_ID));";
 
     public static void createOrSetupDB(){
-        Connection myConnection = ConnectionPool.getInstance().newRootConnection();
+        Connection myConnection = ConnectionPool.getInstance().getRootConnection();
         try{
             final PreparedStatement preparedStatement = myConnection.prepareStatement(DB_CREATE);
             final int executed = preparedStatement.executeUpdate();
@@ -29,24 +34,41 @@ public class DBSetup {
             ConnectionPool.getInstance().returnRootConnection(myConnection);
         }
     }
-
+    public static void dropUser(){
+        Connection myConnection = ConnectionPool.getInstance().getRootConnection();
+        try{
+            final PreparedStatement preparedStatement = myConnection.prepareStatement(USER_DROP);
+            final int executed = preparedStatement.executeUpdate();
+            System.out.println("DB Created:"+executed);
+        }catch(SQLException sql){
+            sql.printStackTrace();
+        }finally{
+            ConnectionPool.getInstance().returnRootConnection(myConnection);
+        }
+    }
+    public static void createUser(){
+        Connection myConnection = ConnectionPool.getInstance().getRootConnection();
+        try{
+            PreparedStatement preparedStatement = myConnection.prepareStatement(USER_CREATE);
+            int executed = preparedStatement.executeUpdate();
+            System.out.println("User Created:"+executed);
+            preparedStatement = myConnection.prepareStatement(USER_GRANT);
+            executed = preparedStatement.executeUpdate();
+            System.out.println("User Granted:"+executed);
+        }catch(SQLException sql){
+            sql.printStackTrace();
+        }finally{
+            ConnectionPool.getInstance().returnRootConnection(myConnection);
+        }
+    }
     
-    private static final String CREATE_EMPLOYEE_TABLE = "CREATE TABLE Employee\n" +
-            "\t(\n" +
-            "\t\tEMP_ID int NOT NULL,\n" +
-            "\t\tFirstName varchar(50),\n" +
-            "\t\tLastName varchar(50),\n" +
-            "\t\tSalary int NOT NULL,\n" +
-            "\t\tPRIMARY KEY (EMP_ID)\n" +
-            "\t)\n" +
-            "";
 
     public static void createOrSetupTables(){
         Connection myConnection = ConnectionPool.getInstance().getConnection();
         try{
             final PreparedStatement preparedStatement = myConnection.prepareStatement(CREATE_EMPLOYEE_TABLE);
             final int executed = preparedStatement.executeUpdate();
-            System.out.println("Created:"+executed);
+            System.out.println("Table Created:"+executed);
         }catch(SQLException sql){
             sql.printStackTrace();
         }finally{
@@ -54,8 +76,24 @@ public class DBSetup {
         }
     }
 
+    public static void dropHRInfoDB(){
+        Connection myConnection = ConnectionPool.getInstance().getRootConnection();
+        try{
+            final PreparedStatement preparedStatement = myConnection.prepareStatement(DB_DROP);
+            final int executed = preparedStatement.executeUpdate();
+            System.out.println("DB Dropped:"+executed);
+        }catch(SQLException sql){
+            sql.printStackTrace();
+        }finally{
+            ConnectionPool.getInstance().returnRootConnection(myConnection);
+        }
+    }
+
     public static void main(String[] args) {
+        DBSetup.dropHRInfoDB();
+        DBSetup.dropUser();
         DBSetup.createOrSetupDB();
+        DBSetup.createUser();
         DBSetup.createOrSetupTables();
     }
 }

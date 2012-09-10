@@ -10,12 +10,14 @@ public enum EmployeeMenuItem {
 
     ENTER_EMPLOYEE(1, "Enter an Employee"),
     ENTER_MANAGER(2, "Enter a Manager"),
-    PRINT_EMPLOYEES(3, "Print All Employees"),
-    PRINT_MANAGERS(4, "Print All Managers"),
-    PRINT_ALL(5, "Print Everyone"),
-    SEARCH_FOR_MANAGER(6, "Search For Manager By Employee ID"),
-    SEARCH_FOR_EMPLOYEE(7, "Search For Employee By Employee ID"),
-    SEARCH_ALL(8, "Search For Anyone By Employee ID"),
+    SEARCH_ALL(3, "Search For Anyone By Employee ID"),
+    SEARCH_BY_FIRST(4, "Search for an employee or manager by first name."),
+    SEARCH_BY_LAST(5, "Search for an employee or manager by last name"),
+    PRINT_ALL(6, "Print Everyone"),
+    PRINT_BY_SALARY(7, "Print everyone by Sorted Salary (Highest To Lowest)"),
+    PRINT_LOWEST_SALARY(8,"Display the employee(s) with the lowest salary."),
+    PRINT_HIGHEST_SALARY(9, "Display the employee(s) with the highest salary."),
+    PRINT_AVG_SALARY(10, "Print out the average salary of all employees."),
     QUIT(0, "Quit");
     
     

@@ -43,13 +43,8 @@ public class CLIActions {
         _writer = writer;
 
         ACTION_MAP.put(EmployeeMenuItem.ENTER_EMPLOYEE, new EnterEmployeeAction());
-        ACTION_MAP.put(EmployeeMenuItem.ENTER_MANAGER, new EnterManagerAction());
-        ACTION_MAP.put(EmployeeMenuItem.PRINT_EMPLOYEES, new PrintEmployeesAction());
-        ACTION_MAP.put(EmployeeMenuItem.PRINT_MANAGERS, new PrintManagersAction());
-        ACTION_MAP.put(EmployeeMenuItem.PRINT_ALL, new PrintAllEmployeesAction());
+        ACTION_MAP.put(EmployeeMenuItem.PRINT_EMPLOYEES, new PrintEmployeeListAction());
         ACTION_MAP.put(EmployeeMenuItem.SEARCH_FOR_EMPLOYEE, new SearchForEmployeeAction());
-        ACTION_MAP.put(EmployeeMenuItem.SEARCH_FOR_MANAGER, new SearchForManagerAction());
-        ACTION_MAP.put(EmployeeMenuItem.SEARCH_ALL, new SearchForAnyAction());
         ACTION_MAP.put(EmployeeMenuItem.QUIT, new QuitAction());
 
     }
@@ -119,17 +114,9 @@ public class CLIActions {
         }
     }
 
-    private class SearchForManagerAction implements Action {
+    private class PrintEmployeeListAction implements Action {
         public void performAction() {
-            try {
-                final int employeeNum = _reader.promptForEmployeeOrManagerNumberForSearch(_list, true);
-                Employee employee = _list.getEmployee(employeeNum);
-                if (null != employee) {
-                    _writer.printEmployee(employee, _list.getAvgSalary());
-                }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+            _list.printHashMapContents();
         }
     }
 

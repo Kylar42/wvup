@@ -5,6 +5,8 @@ import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.concurrent.ConcurrentLinkedQueue;
 
 /**
  * User: Tom Byrne(tom.byrne@apple.com)
@@ -14,18 +16,32 @@ import java.sql.SQLException;
  */
 
 public class ConnectionPool {
-    String dbRootUrl = "jdbc:mysql://localhost/";
+    final String dbRootUrl = "jdbc:mysql://localhost/";
+    final String dbRootUser = "root";
+    final String dbRootPassword = "";//yes, yes, it's in plain text.
 
-    String dbUrl = "jdbc:mysql://localhost/HR_INFO";
-    String dbClass = "com.mysql.jdbc.Driver";
-    
+
+
+    final String dbUrl = "jdbc:mysql://localhost/hr_info";
+    final String dbClass = "com.mysql.jdbc.Driver";
+    final String dbUser = "cs122";
+    final String dbPassword = "cs122";
+
     private static final ConnectionPool INSTANCE = new ConnectionPool();
-    
+
+    private final ConcurrentLinkedQueue<Connection> ROOT_CONNECTIONS = new ConcurrentLinkedQueue<Connection>() ;
+    private final ConcurrentLinkedQueue<Connection> NORMAL_CONNECTIONS = new ConcurrentLinkedQueue<Connection>() ;
+
     public static ConnectionPool getInstance(){ return INSTANCE; }
 
     /** I am going to make this just create a new one for now. */
     public synchronized Connection getConnection(){
-        return INSTANCE.newDefaultConnection();
+        if(null == NORMAL_CONNECTIONS.peek()){
+            return INSTANCE.newDefaultConnection();
+        }else{
+            return NORMAL_CONNECTIONS.poll();
+        }
+
     }
     
     private Connection newDefaultConnection(){
@@ -35,32 +51,41 @@ public class ConnectionPool {
             e.printStackTrace();
         }
         try {
-            return DriverManager.getConnection(dbUrl, "cs122", "cs122");
+            return DriverManager.getConnection(dbUrl, dbUser, dbPassword);
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return null;
     }
 
-    Connection newRootConnection(){
+    private Connection newRootConnection(){
         try {
             Class.forName(dbClass);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
         try {
-            return DriverManager.getConnection(dbRootUrl,"root", "");
+            return DriverManager.getConnection(dbRootUrl,dbRootUser, dbRootPassword);
         } catch (SQLException e) {
             e.printStackTrace();
         }
         return null;
     }
 
+    public Connection getRootConnection(){
+        if(null == ROOT_CONNECTIONS.peek()){
+            return newRootConnection();
+        }else{
+            return ROOT_CONNECTIONS.poll();
+        }
+
+    }
     
     public synchronized void returnConnection(Connection c){
-        //nothing right now.
+        NORMAL_CONNECTIONS.add(c);
     }
     public synchronized void returnRootConnection(Connection c){
-        //nothing right now.
+        ROOT_CONNECTIONS.add(c);
     }
+
 }

@@ -2,9 +2,11 @@ package cs122;
 
 import cs122.action.Action;
 import cs122.action.CLIActions;
+import cs122.db.EmployeeDataDBImpl;
 import cs122.io.EmployeeStdinReader;
 import cs122.io.EmployeeStdoutWriter;
 import cs122.model.EmployeeDataImpl;
+import cs122.model.EmployeeDataList;
 import cs122.model.EmployeeMenuItem;
 import cs122.ui.MainFrame;
 
@@ -39,7 +41,8 @@ public class EmployeeDataMain {
 
     //main CLI Loop
     private void runCLI() {
-        EmployeeDataImpl dataList = new EmployeeDataImpl();
+        //EmployeeDataList dataList = new EmployeeDataImpl();
+        EmployeeDataList dataList = new EmployeeDataDBImpl();
         EmployeeStdinReader reader = new EmployeeStdinReader();
         EmployeeStdoutWriter writer = new EmployeeStdoutWriter();
         CLIActions actionHandler = new CLIActions(dataList, reader, writer);

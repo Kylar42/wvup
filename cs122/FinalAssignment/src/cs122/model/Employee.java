@@ -15,16 +15,18 @@ public class Employee implements Comparable<Employee>{
 
     //Data members
     private int employeeNumber;
-    private String employeeName;
+    private String employeeFirstName;
+    private String employeeLastName;
     private int employeeSalary;
 
     public Employee(){
-        employeeName = null;
+        employeeFirstName = null;
+        employeeLastName = null;
         employeeNumber = -1;
         employeeSalary = -1;
     }
     
-    public Employee(final int empNumber, final String name, final int empSalary) {
+    public Employee(final int empNumber, final String firstname, final String lastname, final int empSalary) {
 
         //Check all values, even though they should be correct already.
         if (0 > empNumber || EMPLOYEE_NUMBER_MAXIMUM < empNumber) {
@@ -32,11 +34,16 @@ public class Employee implements Comparable<Employee>{
         }
         employeeNumber = empNumber;
 
-        if (null == name || name.length() > 40) {
-            throw new IllegalArgumentException("Employee Name must be 40 characters or less.");
+        if (null == firstname || firstname.length() > 50) {
+            throw new IllegalArgumentException("Employee First Name must be 40 characters or less.");
         }
+        employeeFirstName = firstname;
 
-        employeeName = name;
+        if (null == lastname || lastname.length() > 50) {
+            throw new IllegalArgumentException("Employee First Name must be 40 characters or less.");
+        }
+        employeeLastName = lastname;
+
         if (0 > empSalary || EMPLOYEE_NUMBER_MAXIMUM < empSalary) {
             throw new IllegalArgumentException("Employee Salary must be between 0 and 1000000, inclusive.");
         }
@@ -46,7 +53,7 @@ public class Employee implements Comparable<Employee>{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("[Employee - ID:").append(employeeNumber).append(" - Name: ").append(employeeName).append(" - Salary:").append(employeeSalary)
+        sb.append("[Employee - ID:").append(employeeNumber).append(" - Name: ").append(employeeFirstName).append(" ").append(employeeLastName).append(" - Salary:").append(employeeSalary)
                 .append("]");
 
         return sb.toString();
@@ -69,11 +76,21 @@ public class Employee implements Comparable<Employee>{
         employeeNumber = empNum;
     }
 
-    public String getName() {
-        return employeeName;
+    public String getFirstName() {
+        return employeeFirstName;
     }
-    public void setName(String name){
-        employeeName = name;
+    public void setFirstName(String name){
+        employeeFirstName = name;
+    }
+    public String getLastName(){
+        return employeeLastName;
+    }
+    public void setLastName(String lastName){
+        employeeLastName = lastName;
+    }
+
+    public String getName(){
+        return getFirstName()+" "+getLastName();
     }
 
 
@@ -94,17 +111,20 @@ public class Employee implements Comparable<Employee>{
         if (employeeSalary != employee.employeeSalary) {
             return false;
         }
-        if (!employeeName.equals(employee.employeeName)) {
+        if (!employeeLastName.equals(employee.employeeLastName)) {
             return false;
         }
-
+        if (!employeeFirstName.equals(employee.employeeFirstName)) {
+            return false;
+        }
         return true;
     }
 
     @Override
     public int hashCode() {
         int result = employeeNumber;
-        result = 31 * result + employeeName.hashCode();
+        result = 31 * result + employeeLastName.hashCode();
+        result = 31 * result + employeeFirstName.hashCode();
         result = 31 * result + employeeSalary;
         return result;
     }

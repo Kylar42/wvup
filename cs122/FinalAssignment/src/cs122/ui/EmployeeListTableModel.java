@@ -45,7 +45,7 @@ public class EmployeeListTableModel extends AbstractTableModel{
             case 3:
                 return currentEmployee instanceof Manager;
             case 4:
-                return currentEmployee.getSalary() - _dataStructure.getAvgSalary();
+                return currentEmployee.getSalary() - _dataStructure.getAverageSalary().doubleValue();
             //no default case.
         }
         

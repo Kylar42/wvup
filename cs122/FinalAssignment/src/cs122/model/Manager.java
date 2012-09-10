@@ -14,11 +14,11 @@ public class Manager extends Employee{
         super();
         bonus = -1;
     }
-    public Manager(int empNumber, String name, int empSalary){
-        super(empNumber, name, empSalary);
+    public Manager(int empNumber, String firstName, String lastName, int empSalary){
+        super(empNumber, firstName, lastName, empSalary);
     }
-    public Manager(int empNumber, String name, int empSalary, int bonus) {
-        this(empNumber, name, empSalary);
+    public Manager(int empNumber, String firstName, String lastName, int empSalary, int bonus) {
+        this(empNumber, firstName, lastName, empSalary);
         this.bonus = bonus;
     }
     
@@ -37,7 +37,7 @@ public class Manager extends Employee{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("[Employee - ID:").append(getEmployeeNumber()).append(" - Name: ").append(getName()).append(" - Salary:").append(getSalary())
+        sb.append("[Manager: Employee - ID:").append(getEmployeeNumber()).append(" - Name: ").append(getFirstName()).append(" ").append(getLastName()).append(" - Salary:").append(getSalary())
                 .append(" - Bonus:").append(getBonus()).append("]");
 
         return sb.toString();

@@ -1,6 +1,9 @@
 package cs122.model;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -13,54 +16,108 @@ import java.util.Map;
  */
 public class EmployeeDataImpl implements EmployeeDataList {
     // I could keep two maps of employees and managers, but I'm going to be lazy and just filter.
-    private Map<Integer, Employee>  _employeeMap                    = new LinkedHashMap<Integer, Employee>();
-    private long                    _totalSalary                    = 0L;
-    private List<ListListener>      _listeners                      = new ArrayList<ListListener>();
+    private Map<Integer, Employee> _employeeMap = new LinkedHashMap<Integer, Employee>();
+    private long _totalSalary = 0L;
+    private List<ListListener> _listeners = new ArrayList<ListListener>();
 
 
-
-
-    public void addEmployee(Employee employeeToAdd){
+    public boolean addEmployee(Employee employeeToAdd) {
         _employeeMap.put(employeeToAdd.getEmployeeNumber(), employeeToAdd);
         _totalSalary += employeeToAdd.getSalary();
         fireListChanged(ListListener.Action.ADDED, employeeToAdd);
+        return true;
     }
 
-    public List<Employee> getCompleteEmployeeList(){
-        return new ArrayList<Employee>(_employeeMap.values());//return wrapped list so they can't modify it.
+    public List<Employee> getCompleteEmployeeList(boolean sortBySalary) {
+        ArrayList<Employee> toReturn = new ArrayList<Employee>(_employeeMap.values());
+        if (sortBySalary) {
+            Collections.sort(toReturn, new Comparator<Employee>() {
+                public int compare(Employee o1, Employee o2) {
+                    return o1.getSalary() - o2.getSalary();
+                }
+            });
+        }
+
+        return toReturn;
     }
 
     /**
      * get List of managers. I could save these, but I'm going to just filter.
+     *
      * @return
      */
-    public List<Manager> getManagerList(){
+    public List<Manager> getManagerList() {
         ArrayList<Manager> toReturn = new ArrayList<Manager>();
-        for(Employee e : _employeeMap.values()){
-            if(e instanceof Manager){
-                toReturn.add((Manager)e);
+        for (Employee e : _employeeMap.values()) {
+            if (e instanceof Manager) {
+                toReturn.add((Manager) e);
             }
         }
-        return toReturn;                
+        return toReturn;
     }
-    
-    public List<Employee> getEmployeeList(){
+
+
+    public List<Employee> getHighestSalariedEmployees() {
+        ArrayList<Employee> toReturn = new ArrayList<Employee>();
+        int currentHighSalary = Integer.MIN_VALUE;
+        for(Employee e : _employeeMap.values()){
+            if(e.getSalary() > currentHighSalary){
+                currentHighSalary = e.getSalary();
+                toReturn.clear();
+                toReturn.add(e);
+            }else if(e.getSalary() == currentHighSalary){
+                toReturn.add(e);
+            }
+
+        }
+        return toReturn;
+    }
+
+    public List<Employee> getAllEmployeesWithName(String name, boolean firstName) {
         ArrayList<Employee> toReturn = new ArrayList<Employee>();
         for(Employee e : _employeeMap.values()){
-            if(!(e instanceof Manager)){
+            String nameToMatch = firstName ? e.getFirstName() : e.getLastName();
+            if(name.equals(nameToMatch)){
                 toReturn.add(e);
             }
         }
         return toReturn;
     }
-    
-    public boolean employeeNumberExists(int employeeNumber){
+
+    public List<Employee> getLowestSalariedEmployees() {
+        ArrayList<Employee> toReturn = new ArrayList<Employee>();
+        int currentLowSalary = Integer.MAX_VALUE;
+        for(Employee e : _employeeMap.values()){
+            if(e.getSalary() < currentLowSalary){
+                currentLowSalary = e.getSalary();
+                toReturn.clear();
+                toReturn.add(e);
+            }else if(e.getSalary() == currentLowSalary){
+                toReturn.add(e);
+            }
+        }
+        return toReturn;
+    }
+
+
+    public List<Employee> getEmployeeList() {
+        ArrayList<Employee> toReturn = new ArrayList<Employee>();
+        for (Employee e : _employeeMap.values()) {
+            if (!(e instanceof Manager)) {
+                toReturn.add(e);
+            }
+        }
+        return toReturn;
+    }
+
+    public boolean employeeNumberExists(int employeeNumber) {
         return _employeeMap.containsKey(employeeNumber);
     }
-    public boolean employeeNumberExists(int employeeNumber, boolean isManager){
+
+    public boolean employeeNumberExists(int employeeNumber, boolean isManager) {
         Employee e = _employeeMap.get(employeeNumber);
 
-        if(null == e){
+        if (null == e) {
             return false;
         }
 
@@ -82,35 +139,40 @@ public class EmployeeDataImpl implements EmployeeDataList {
         return !(isManager ^ (e instanceof Manager));
 
     }
-    public int getEmployeeCount(){
+
+    public int getEmployeeCount() {
         return _employeeMap.size();
-    } 
-    public Employee getEmployeeAtIndex(final int index){
+    }
+
+    public Employee getEmployeeAtIndex(final int index) {
         return _employeeMap.get(index);
     }
 
     /**
      * Get employee by number.
+     *
      * @param employeeNumber
      * @return Appropriate employee, null if not found.
      */
-    public Employee getEmployee(int employeeNumber){
+    public Employee getEmployee(int employeeNumber) {
         return _employeeMap.get(employeeNumber);
     }
 
-    public long getTotalSalary(){
+    public long getTotalSalary() {
         return _totalSalary;
     }
 
-    public double getAvgSalary(){
+    public BigDecimal getAverageSalary() {
         //tempting to cache this whenever calculated...
         //but for now I'll just calc on the fly.
-        return _totalSalary / (_employeeMap.size()+1);
+        BigDecimal totalSalary = new BigDecimal(_totalSalary);
+        BigDecimal avgSalary = totalSalary.divide(new BigDecimal(_employeeMap.size()), BigDecimal.ROUND_DOWN);
+        return avgSalary;
     }
 
 
-    private void fireListChanged(ListListener.Action action, Employee employee){
-        for(ListListener ll : _listeners){
+    private void fireListChanged(ListListener.Action action, Employee employee) {
+        for (ListListener ll : _listeners) {
             ll.listChanged(action, employee);
         }
     }
@@ -119,14 +181,14 @@ public class EmployeeDataImpl implements EmployeeDataList {
     public static void main(String[] args) {
         //test this
         EmployeeDataList list = new EmployeeDataImpl();
-        list.addEmployee(new Manager(1, "", 10, 10));
-        list.addEmployee(new Employee(2, "", 10));
+        list.addEmployee(new Manager(1, "", "", 10, 10));
+        list.addEmployee(new Employee(2, "", "", 10));
 
         System.out.println(list.employeeNumberExists(1, true));
         System.out.println(list.employeeNumberExists(1, false));
         System.out.println(list.employeeNumberExists(2, true));
         System.out.println(list.employeeNumberExists(2, false));
     }
-   
+
 
 }

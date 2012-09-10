@@ -1,5 +1,6 @@
 package cs122.model;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -10,13 +11,21 @@ import java.util.List;
  */
 public interface EmployeeDataList {
 
-    void addEmployee(Employee employeeToAdd);
+    boolean addEmployee(Employee employeeToAdd);
 
-    List<Employee> getCompleteEmployeeList();
+    List<Employee> getCompleteEmployeeList(boolean orderBySalary);
 
     List<Manager> getManagerList();
 
     List<Employee> getEmployeeList();
+
+    List<Employee> getHighestSalariedEmployees();
+
+    List<Employee> getLowestSalariedEmployees();
+
+    List<Employee> getAllEmployeesWithName(String name, boolean firstName);
+
+    BigDecimal getAverageSalary();
 
     boolean employeeNumberExists(int employeeNumber);
 

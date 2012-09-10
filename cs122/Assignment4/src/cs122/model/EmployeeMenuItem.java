@@ -9,13 +9,8 @@ package cs122.model;
 public enum EmployeeMenuItem {
 
     ENTER_EMPLOYEE(1, "Enter an Employee"),
-    ENTER_MANAGER(2, "Enter a Manager"),
     PRINT_EMPLOYEES(3, "Print All Employees"),
-    PRINT_MANAGERS(4, "Print All Managers"),
-    PRINT_ALL(5, "Print Everyone"),
-    SEARCH_FOR_MANAGER(6, "Search For Manager By Employee ID"),
-    SEARCH_FOR_EMPLOYEE(7, "Search For Employee By Employee ID"),
-    SEARCH_ALL(8, "Search For Anyone By Employee ID"),
+    SEARCH_FOR_EMPLOYEE(2, "Search For Employee By Employee ID"),
     QUIT(0, "Quit");
     
     

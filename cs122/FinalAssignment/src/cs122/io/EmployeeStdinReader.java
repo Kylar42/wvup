@@ -23,18 +23,22 @@ public class EmployeeStdinReader {
     }
 
     public void readAndAddEmployee(EmployeeDataList dataList) throws IOException{
-        String name = promptForEmployeeName(false);
-        int number = promptForEmployeeNumber(name, dataList);
-        int salary = promptForSalary(name);
-        dataList.addEmployee(new Employee(number, name, salary));
+        String firstname = promptForEmployeeName(false, true);
+        String lastname = promptForEmployeeName(false, false);
+        int number = promptForEmployeeNumber(firstname, dataList);
+        int salary = promptForSalary(firstname);
+        //TODO: Fix
+        dataList.addEmployee(new Employee(number, firstname, lastname, salary));
     }
     
     public void readAndAddManager(EmployeeDataList dataList) throws IOException{
-        String name = promptForEmployeeName(false);
-        int number = promptForEmployeeNumber(name, dataList);
-        int salary = promptForSalary(name);
-        int bonus = promptForBonus(name);
-        dataList.addEmployee(new Manager(number, name, salary, bonus));
+        String firstname = promptForEmployeeName(true, true);
+        String lastname = promptForEmployeeName(true, false);
+        int number = promptForEmployeeNumber(firstname, dataList);
+        int salary = promptForSalary(firstname);
+        int bonus = promptForBonus(firstname);
+        //TODO: Fix
+        dataList.addEmployee(new Manager(number, firstname, lastname, salary, bonus));
     }
     public EmployeeMenuItem promptForMenuItem() throws IOException {
         EmployeeMenuItem mi = null;
@@ -199,31 +203,48 @@ public class EmployeeStdinReader {
         return input;
     }
 
-    public String promptForEmployeeName(boolean isManager) throws IOException {
+    public String promptForEmployeeName(boolean isManager, boolean firstName) throws IOException {
         //generic error string
-        String genericError = "The Employee name must be less than 40 characters.";
+        String genericError = "The Employee's name must be less than 50 characters.";
+        String info = String.format("Please enter the %s name of the %s:", (firstName?"First":"Last"), (isManager?"Manager":"Employee"));
 
         String input = null;
         //loop until we get valid input.
-        while (null == input || 0 >= input.length() || 40 < input.length()) {
-            if(isManager){
-                System.out.print("Please enter the name of Manager: ");   
-            }else{
-                System.out.print("Please enter the name of employee: ");
-            }
+        while (null == input || 0 >= input.length() || 50 < input.length()) {
+            System.out.print(info);
             input = standardInReader.readLine();
             //check input.
             if (null == input || 0 == input.length()) {
                 //Ugh, how did this happen?
                 System.out.println("You entered a name that was too short. " + genericError);
-            } else if (input.length() > 40) {
+            } else if (input.length() > 50) {
                 System.out.println("You entered a name that was too long. " + genericError);
             }
         }
 
         return input;
     }
-    
+    public String promptForEmployeeNameToSearchFor(boolean firstName) throws IOException {
+        //generic error string
+        String genericError = "The Employee's name must be less than 50 characters.";
+        String info = String.format("Please enter the %s name of the Employee to search for:", (firstName?"First":"Last"));
+
+        String input = null;
+        //loop until we get valid input.
+        while (null == input || 0 >= input.length() || 50 < input.length()) {
+            System.out.print(info);
+            input = standardInReader.readLine();
+            //check input.
+            if (null == input || 0 == input.length()) {
+                //Ugh, how did this happen?
+                System.out.println("You entered a name that was too short. " + genericError);
+            } else if (input.length() > 50) {
+                System.out.println("You entered a name that was too long. " + genericError);
+            }
+        }
+
+        return input;
+    }
     
     @Deprecated
     public int promptForNumberOfEmployees(final int maxNumberOfEmployees) throws IOException {

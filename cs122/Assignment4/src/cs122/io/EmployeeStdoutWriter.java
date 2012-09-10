@@ -17,7 +17,7 @@ public class EmployeeStdoutWriter {
     private final NumberFormat currencyInstance = NumberFormat.getCurrencyInstance();
 
 
-    public EmployeeStdoutWriter(){
+    public EmployeeStdoutWriter() {
 
     }
 
@@ -30,25 +30,28 @@ public class EmployeeStdoutWriter {
         }
     }
 
-    public void printEmployee(final Employee employeeToPrint, double avgSalaryAsDouble){
+    public void printEmployee(final Employee employeeToPrint, double avgSalaryAsDouble) {
         //Print out the 3 pieces of data
         System.out.println("Employee Name: " + employeeToPrint.getName());
         System.out.println("Employee Number: " + employeeToPrint.getEmployeeNumber());
         System.out.println(employeeToPrint.getName() + "'s salary: " + currencyInstance.format(employeeToPrint.getSalary()));
 
-        //Let's look to see if it's average, or else above/below.
-        if (avgSalaryAsDouble == employeeToPrint.getSalary()) {
-            System.out.println(employeeToPrint.getName() + "'s salary is exactly average.");
-        } else {
-            System.out.println(employeeToPrint.getName() + "'s salary is " + ((employeeToPrint.getSalary() < avgSalaryAsDouble) ? "below" : "above") + " average.");
+        if (Double.NaN != avgSalaryAsDouble) {
+
+            //Let's look to see if it's average, or else above/below.
+            if (avgSalaryAsDouble == employeeToPrint.getSalary()) {
+                System.out.println(employeeToPrint.getName() + "'s salary is exactly average.");
+            } else {
+                System.out.println(employeeToPrint.getName() + "'s salary is " + ((employeeToPrint.getSalary() < avgSalaryAsDouble) ? "below" : "above") + " average.");
+            }
         }
         System.out.println("***************************************************");
     }
-    
-    public void printMenu(){
+
+    public void printMenu() {
         System.out.println("***************************************************");
         System.out.println("What would you like to do?");
-        for(EmployeeMenuItem mi : EmployeeMenuItem.values()){
+        for (EmployeeMenuItem mi : EmployeeMenuItem.values()) {
             System.out.println(mi.getMenuFormattedString());
         }
         System.out.println("***************************************************");

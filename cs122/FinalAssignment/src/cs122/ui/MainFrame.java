@@ -25,11 +25,11 @@ public class MainFrame extends JFrame {
 
     public MainFrame() throws HeadlessException {
         super("Assignment 3");
-        _mainDataList.addEmployee(new Employee(212, "Tom", 91000));
-        _mainDataList.addEmployee(new Manager(9182, "Landon", 100000, 21000));
-        _mainDataList.addEmployee(new Employee(4165, "Phil", 27555));
-        _mainDataList.addEmployee(new Employee(911, "Ed", 38911));
-        _mainDataList.addEmployee(new Employee(5, "Jake", 21000));
+        _mainDataList.addEmployee(new Employee(212, "Tom", "Byrne", 91000));
+        _mainDataList.addEmployee(new Manager(9182, "Landon", "Cole",100000, 21000));
+        _mainDataList.addEmployee(new Employee(4165, "Phil", "Mickleson", 27555));
+        _mainDataList.addEmployee(new Employee(911, "Ed", "Jovanovski", 38911));
+        _mainDataList.addEmployee(new Employee(5, "Jake", "Baumgarten", 21000));
         setupOnlyCallFromCtor();
     }
 

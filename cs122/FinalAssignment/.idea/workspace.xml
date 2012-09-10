@@ -61,7 +61,7 @@
       <file leaf-file-name="EmployeeDataImpl.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs122/model/EmployeeDataImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="25" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
+            <state line="138" column="16" selection-start="4658" selection-end="4712" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -70,49 +70,87 @@
       <file leaf-file-name="EmployeeDataList.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs122/model/EmployeeDataList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="4" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
+            <state line="35" column="0" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmployeeDataDBImpl.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="EmployeeDataDBImpl.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/cs122/db/EmployeeDataDBImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="4" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0">
+            <state line="325" column="36" selection-start="13906" selection-end="15150" vertical-scroll-proportion="0.09565917">
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2563#2573#0" expanded="true" />
+                <element signature="e#4001#4011#0" expanded="true" />
+                <element signature="e#5356#5366#0" expanded="true" />
+                <element signature="e#8613#8623#0" expanded="true" />
+                <element signature="e#9999#10008#0" expanded="true" />
+                <element signature="e#11413#11423#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBSetup.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Manager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/model/Manager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="40" selection-start="864" selection-end="869" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeListTableModel.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/ui/EmployeeListTableModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="100" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeStdinReader.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/io/EmployeeStdinReader.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="226" column="28" selection-start="10109" selection-end="10141" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CLIActions.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/action/CLIActions.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="158" column="0" selection-start="6272" selection-end="6272" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeDataMain.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/EmployeeDataMain.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="61" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBSetup.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cs122/db/DBSetup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="38" selection-start="2051" selection-end="2051" vertical-scroll-proportion="0.81920904">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="91" column="25" selection-start="4165" selection-end="4165" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ConnectionPool.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cs122/db/ConnectionPool.java">
+      <file leaf-file-name="EmployeeStdoutWriter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/cs122/io/EmployeeStdoutWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DriverManager.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///source/jdk-1.6/j2se/src/share/classes/java/sql/DriverManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="29" selection-start="5840" selection-end="5840" vertical-scroll-proportion="0.0">
+            <state line="31" column="34" selection-start="817" selection-end="835" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -126,25 +164,32 @@
     </FindUsagesManager>
   </component>
   <component name="Git.Settings">
-    <option name="CHECKOUT_INCLUDE_TAGS" value="false" />
-    <option name="UPDATE_CHANGES_POLICY" value="STASH" />
     <option name="LINE_SEPARATORS_CONVERSION" value="ASK" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/cs122/model/EmployeeDataImpl.java" />
-        <option value="$PROJECT_DIR$/src/cs122/model/EmployeeDataList.java" />
-        <option value="$PROJECT_DIR$/src/cs122/db/EmployeeDataDBImpl.java" />
-        <option value="$PROJECT_DIR$/src/cs122/db/ConnectionPool.java" />
+        <option value="$PROJECT_DIR$/src/cs122/ui/MainFrame.java" />
         <option value="$PROJECT_DIR$/src/cs122/db/DBSetup.java" />
+        <option value="$PROJECT_DIR$/src/cs122/db/ConnectionPool.java" />
+        <option value="$PROJECT_DIR$/src/cs122/model/Employee.java" />
+        <option value="$PROJECT_DIR$/src/cs122/model/EmployeeMenuItem.java" />
+        <option value="$PROJECT_DIR$/src/cs122/model/EmployeeDataList.java" />
+        <option value="$PROJECT_DIR$/src/cs122/ui/EmployeeListTableModel.java" />
+        <option value="$PROJECT_DIR$/src/cs122/model/Manager.java" />
+        <option value="$PROJECT_DIR$/src/cs122/io/EmployeeStdinReader.java" />
+        <option value="$PROJECT_DIR$/src/cs122/model/EmployeeDataImpl.java" />
+        <option value="$PROJECT_DIR$/src/cs122/io/EmployeeStdoutWriter.java" />
+        <option value="$PROJECT_DIR$/src/cs122/EmployeeDataMain.java" />
+        <option value="$PROJECT_DIR$/src/cs122/action/CLIActions.java" />
+        <option value="$PROJECT_DIR$/src/cs122/db/EmployeeDataDBImpl.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1680" />
-    <option name="height" value="1024" />
+    <option name="width" value="2560" />
+    <option name="height" value="1414" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -172,7 +217,16 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -188,20 +242,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="FinalAssignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FinalAssignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FinalAssignment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -335,7 +375,20 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FinalAssignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FinalAssignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -353,16 +406,16 @@
     <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="cs122.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.DBSetup">
+  <component name="RunManager" selected="Application.EmployeeDataMain">
     <configuration default="false" name="DBSetup" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="cs122.db.DBSetup" />
       <option name="VM_PARAMETERS" />
@@ -380,7 +433,31 @@
         <option name="TRANSPORT" value="0" />
         <option name="LOCAL" value="true" />
       </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="EmployeeDataDBImpl" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="cs122.db.EmployeeDataDBImpl" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="FinalAssignment" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
@@ -457,8 +534,32 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="1">
+    <configuration default="false" name="EmployeeDataMain" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="cs122.EmployeeDataMain" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="FinalAssignment" />
+      <envs />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="" />
+        <option name="TRANSPORT" value="0" />
+        <option name="LOCAL" value="true" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Debug" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.DBSetup" />
+      <item index="1" class="java.lang.String" itemvalue="Application.EmployeeDataDBImpl" />
+      <item index="2" class="java.lang.String" itemvalue="Application.EmployeeDataMain" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -486,32 +587,34 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+      <changelist id="536cde51-3779-4d52-9f86-abbfc7939cd7" name="Default" comment="" />
       <created>1332879881133</created>
       <updated>1332879881133</updated>
     </task>
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="1024" extended-state="0" />
+    <frame x="0" y="22" width="2560" height="1414" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39935413" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39907193" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.60064584" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960192" sideWeight="0.60092807" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5491106" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32869297" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -551,7 +654,10 @@
     <option name="INCLUDE_TEXT_INTO_PATCH" value="false" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <option name="CREATE_PATCH_EXPAND_DETAILS_DEFAULT" value="true" />
+    <option name="SHOW_FILE_HISTORY_DETAILS" value="true" />
+    <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -574,59 +680,89 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/cs122/model/EmployeeDataImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/cs122/ui/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="344" selection-end="344" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="27" column="67" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs122/model/EmployeeDataList.java">
+    <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.18-bin.jar!/com/mysql/jdbc/SQLError.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="4" selection-start="273" selection-end="273" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cs122/db/EmployeeDataDBImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="4" selection-start="391" selection-end="391" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///source/jdk-1.6/j2se/src/share/classes/java/sql/CallableStatement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="17" selection-start="1777" selection-end="1777" vertical-scroll-proportion="0.50554323">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///source/jdk-1.6/j2se/src/share/classes/java/sql/DriverManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="29" selection-start="5840" selection-end="5840" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="92" column="0" selection-start="7269" selection-end="7269" vertical-scroll-proportion="-29.52" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cs122/db/ConnectionPool.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="361" selection-end="361" vertical-scroll-proportion="0.0">
+        <state line="31" column="216" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="54" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/model/EmployeeMenuItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="23" selection-start="249" selection-end="904" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/model/EmployeeDataImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="16" selection-start="4658" selection-end="4712" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/model/EmployeeDataList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="869" selection-end="869" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/db/EmployeeDataDBImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="325" column="36" selection-start="13906" selection-end="15150" vertical-scroll-proportion="0.09565917">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2563#2573#0" expanded="true" />
+            <element signature="e#4001#4011#0" expanded="true" />
+            <element signature="e#5356#5366#0" expanded="true" />
+            <element signature="e#8613#8623#0" expanded="true" />
+            <element signature="e#9999#10008#0" expanded="true" />
+            <element signature="e#11413#11423#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/model/Manager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="40" selection-start="864" selection-end="869" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/ui/EmployeeListTableModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="100" selection-start="1628" selection-end="1628" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/io/EmployeeStdinReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="226" column="28" selection-start="10109" selection-end="10141" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/action/CLIActions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="158" column="0" selection-start="6272" selection-end="6272" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/EmployeeDataMain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="61" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/cs122/db/DBSetup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="38" selection-start="2051" selection-end="2051" vertical-scroll-proportion="0.81920904">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+        <state line="91" column="25" selection-start="4165" selection-end="4165" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cs122/io/EmployeeStdoutWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="34" selection-start="817" selection-end="835" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
   </component>
