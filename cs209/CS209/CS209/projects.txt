@@ -1,0 +1,33 @@
+8
+104
+embedded gps bikes : Spokes and Sprockets
+-1 -1 -1 -1 5
+                 dos            embedded                ipad                  .c               cocoa
+105
+linux sql customers: Blue Lake Travel
+-1 -1 -1 -1 5
+               linux                 php                 sql                html            graphics
+106
+mood music: Stop and Sleep
+-1 -1 -1 -1 5
+             windows            embedded             asembly          web-socket                java
+107
+the seahorse game: Learn and Play inc.
+-1 -1 -1 -1 5
+                ipad                  .c                .c++               cocoa            graphics
+108
+multi track recording system: Space Lab Music lcc.
+-1 -1 -1 -1 5
+                 mac            embedded               basic               flash            graphics
+109
+the talking lights: St. Marks Church
+-1 -1 -1 -1 5
+               linux            embedded             asembly                  .c                .c++
+110
+the rv shop on-line:  Homes away from Home
+-1 -1 -1 -1 5
+             windows               basic                .c++                 sql            graphics
+111
+remote video and audio attached to dogs: Watchers inc.
+-1 -1 -1 -1 5
+               linux            embedded                ipad          web-socket               cocoa

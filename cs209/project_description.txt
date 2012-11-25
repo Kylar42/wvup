@@ -1,0 +1,37 @@
+CS-209 Fall-2011 Project-2
+use the .c programming language for this project
+
+For this project you are to use the following three data files and generate two reports. The data files you are to use for this project are. Skills.txt programmers.txt
+and projects.txt
+
+skills.txt format
+The skills.txt file has the following format. The first line of the file is the record count for the number of records that follow. The remaining records of the skills.txt data file are skills that a programmer may have or skills that may be needed for a programmer to have to work on a project.
+
+programmers.txt format
+The format of the programmers.txt is as follows the first line of the file is the record count for this file. It is followed by the data records. The data records in the programmers.txt data file has the following fields. 
+The programmers id as an integer, 
+the programmers first name as a string, 
+the programmers last name as a string, 
+project 1 id as integer set to -1 if no project , 
+project 2 id as an integer set to -1 if not working on a project 2, 
+skill count as an integer number of skills for this programmer 5 .. 10, 
+followed by the programmers skills as strings 1 .. skill count
+
+projects.txt format
+the third data file is projects.txt, and the format of this file is as follows. The first line is the number of data records in the file, and it is an integer. It is then followed by the data records for the projects.txt data file. Each record is made up of four lines. 
+The first line is the project id and is saved as an integer, 
+the second line is the project title and is saved as a string, 
+the third line is made up of five fields programmer 1 id, programmer 2 id, programmer 3 id, programmer 4 id and the number of skills needed for the project. 
+The programmer's id will be set to -1 to indicate no programmer. The skill count will be set to the integer value five. 
+The fourth line is the five skills needed by a programmer for this project, and they are saved as strings.
+You are to write a program that will use the above data files to generate two reports. The first of the reports should save the projects that are doable. The second report is to save the projects that are not doable. The first of these reports should save the project id, project title, and the programmers id that will be working on the project. The second report is to save the project id, project title, and the skills needed by the programmers to work on the project.
+
+No programmer can work on more than two projects.
+
+For a programmer to work on a project they must have no less than two matching skills for a given project.
+
+There can not be less than three programmers working on a project. If you have one or two programmers marked for a project, and you can not find a third programmer for that project, you must free the other programmers from that project.
+
+Have fun with this project, and you should get started on it soon.
+
+
