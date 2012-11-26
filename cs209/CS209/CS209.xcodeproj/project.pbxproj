@@ -40,6 +40,7 @@
 		34C99ABE1655629D00BE5A35 /* linkedlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linkedlist.h; sourceTree = "<group>"; };
 		34C99ABF165562E100BE5A35 /* programmers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programmers.h; sourceTree = "<group>"; };
 		34C99AC01655630900BE5A35 /* unused.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unused.c; sourceTree = "<group>"; };
+		34F155ED1661AAB600764A81 /* linkedset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linkedset.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +85,7 @@
 				34C99ABE1655629D00BE5A35 /* linkedlist.h */,
 				34C99ABF165562E100BE5A35 /* programmers.h */,
 				34C99AC01655630900BE5A35 /* unused.c */,
+				34F155ED1661AAB600764A81 /* linkedset.h */,
 			);
 			path = CS209;
 			sourceTree = "<group>";
@@ -234,6 +236,7 @@
 				34C99AB5165537A000BE5A35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
