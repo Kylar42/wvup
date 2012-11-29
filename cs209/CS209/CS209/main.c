@@ -10,7 +10,17 @@
 #include <string.h>
 #include <stdlib.h>
 
-int main2(int argc, const char * argv[])
+
+#include "projectconstants.h"
+#include "linkedset.h"
+#include "programmers.h"
+#include "linkedlist.h"
+#include "myfunctions.h"
+
+
+int main(int argc, const char * argv[])
 {
-    
+    printf ("Start");
+    return 0;
 }
+

@@ -3,30 +3,21 @@
 //  09/19/2011
 //  used to create a linked list of programmers from the programmers.txt file
 
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdlib.h>
 //#include <malloc.h>
 
 
 #include "myfunctions.h"
 
-#include "linkedlist.h"
-
 #include "programmers.h"
-
-#include "menu.h"
-
-
 
 int mainP( int argc, char *args[] )
 {  //  int main( argc, *args[] )
     
     //  initialize data structures
     InitializeProgram();
-    
-    //  the program menu
-    Menu();
-    
+        
     
     //  free allocated memory
     CloseProgram();
@@ -64,3 +55,4 @@ void CloseProgram()
     
 }  //  void CloseProgram()
 
+*/

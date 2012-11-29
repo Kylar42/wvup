@@ -10,28 +10,28 @@
 
 //  used to initialize pointer to structures ...
 //  function body is found after the main function
-void InitializeProgram();
+//void InitializeProgram();
 
 //  used to free any allocated menory from data structures
 //  function body is after the program main function
-void CloseProgram();
+//void CloseProgram();
 
 //  display messages and exit back to the os with an ErrorCode
 
 void ErrorExit( char *Message1, char *Message2, int ErrorCode  )
-{  //  void ErrorExit( *Message1, *Message2, ErrorCode )
+{  
     
     printf("\n%s\n%s\n", Message1, Message2 );
     
-    CloseProgram();  // free any allocated menory
+    //CloseProgram();  // free any allocated menory
     
     
     exit( ErrorCode );
     
-}  //  void ErrorExit( *Message1, *Message2, ErrorCode )
+} 
 
 // open a file for input
-
+/*
 
 FILE * OpenAsInput( char *FileName )
 {  //  FILE * OpenAsInput( *FileName )
@@ -66,5 +66,6 @@ FILE * OpenAsOutput( char *FileName )
     return( TempFile );
     
 }  //  FILE * OpenAsOutput( *FileName )
+ */
 
 

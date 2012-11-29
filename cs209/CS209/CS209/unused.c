@@ -6,11 +6,11 @@
 //  Copyright (c) 2012 Thomas Byrne. All rights reserved.
 //
 
-#include <stdio.h>
-#include <string.h>
-#include <stdlib.h>
+//#include <stdio.h>
+//#include <string.h>
+//#include <stdlib.h>
 //let's put a simple size check for lines, so we don't get too much
-#define MAXLINESIZE 512
+/*#define MAXLINESIZE 512
 
 //arbitrary number of skills that we will read.
 #define MAXSKILLS 100
@@ -161,4 +161,4 @@ Programmer parseProgrammer(char *record, char *delim){
     }
     return pr;
     
-}
+}*/

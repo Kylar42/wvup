@@ -4,6 +4,10 @@
 //  the linked list
 
 
+
+// I've taken out the Programmer specific list, and made this a generic linked list creation/destruction/manipulation library.
+// Now we can create multiple instances of a LinkedList and operate on them seperately.
+
 //  a link node
 #define NODEPTR struct LinkNode *
 
@@ -54,7 +58,7 @@ void FreeNode( NODEPTR N )
 
 // the linked list
 
-#define LISTPTR struct LinkedList *
+//#define LISTPTR struct LinkedList *
 
 struct LinkedList
 {  //  struct LinkedList
@@ -66,21 +70,18 @@ struct LinkedList
 
 
 
-
-struct LinkedList ProgrammersList;
-
-void InitProgrammersList()
-{  //  void InitProgrammersList()
-    
-    ProgrammersList. Count = 0;  // no items in the list
-    ProgrammersList. Head = NULL;  // points to nothing
-    
-}  //  void InitProgrammersList()
+struct LinkedList createEmptyLinkedList(){
+    struct LinkedList toReturn;
+    toReturn.Count = 0;
+    toReturn.Head = NULL;
+    return toReturn;
+}
 
 
-int AddProgrammer( void *P )
-{  //  int AddProgrammer( *P )
-    
+
+//Add this data to the SetList. Return 1(True) if we did,
+//and 0(false) if we didn't.
+int AddItem(struct LinkedList* list, void *P){
     NODEPTR TempNode;  // a temp node
     
     
@@ -88,37 +89,31 @@ int AddProgrammer( void *P )
     TempNode = NewNode();
     
     //  did we get a new node
-    if( TempNode == NULL )
+    if( TempNode == NULL ){
         ErrorExit( "could not get memory for TempNode", "in AddProgrammer", 0 );
-    
-    
+    }
     //  to get here we got a TempNode
     
     TempNode -> Data = P;  // add the programmer
-    TempNode -> Next = ProgrammersList. Head;  // place TempNode at the head of the list
+    TempNode -> Next = list->Head;  // place TempNode at the head of the list
     
-    ProgrammersList. Head = TempNode;  // now point to the new head of the list
-    
-    
-    
-    ++ ProgrammersList. Count;  //  add 1 to the count
-    
-    return( ProgrammersList. Count );
+   list->Head = TempNode;  // now point to the new head of the list
     
     
-}  //  int AddProgrammer( *P )
+    
+    ++ list->Count;  //  add 1 to the count
+    
+    return( list->Count );
+}
 
 
-
-
-
-void FreeProgrammersList()
-{  //  void FreeProgrammersList()
+void FreeLinkedList(struct LinkedList* list)
+{  //  void FreeLinkedList()
     
     
     NODEPTR TempNode;
     NODEPTR NextNode;
-    TempNode = ProgrammersList. Head;
+    TempNode = list->Head;
     
     while( TempNode != NULL )
     {  // while not finished
@@ -133,29 +128,9 @@ void FreeProgrammersList()
     }  //  while not finished
     
     
-    ProgrammersList. Count = 0;
+    list->Count = 0;
     
-    ProgrammersList. Head = NULL;
-    
-    
-}  //  void FreeProgrammersList()
-
-
-
-
-NODEPTR GetHeadProgrammer()
-{  //  NODEPTR GetHeadProgrammer()
-    
-    return( ProgrammersList. Head );  // ghe head of the list
-    
-}  //  NODEPTR GetHeadProgrammer()
-
-
-
-NODEPTR GetNextProgrammer( NODEPTR N )
-{  //  NODEPTR GetNextProgrammer( *N )
+    list->Head = NULL;
     
     
-    return( N -> Next );
-    
-}  //  NODEPTR GetNextProgrammer( *N )
+}  //  void FreeLinkedList()

@@ -3,11 +3,12 @@
 //  09/19/2011
 //  programmers data//  programmers data
 
-#define SKILLNAMESIZE 32
-#define NAMESIZE 32
-#define MAXSKILLS 10
 
-#define PROGRAMMERPTR struct Programmer *
+// tbyrne - I'm going to take this and modify it as well
+// to use my modified LinkedList, and when LoadProgrammers is called, it will return a pointer to the instance of the LinkedList.
+
+/*#define PROGRAMMERPTR struct Programmer *
+
 
 struct Programmer
 {  //  struct Programmer
@@ -32,8 +33,8 @@ PROGRAMMERPTR NewProgrammer()
 }  //  PROGRAMMERPTR NewProgrammer()
 
 
-void LoadProgrammers()
-{  //  void ReadProgrammers()
+struct LinkedList LoadProgrammers()
+{  
     
     FILE *ProgFile;  // file pointer to the programmers.txt data file
     int RecordCount;  // number of programmer records in the data file
@@ -41,6 +42,7 @@ void LoadProgrammers()
     
     PROGRAMMERPTR TempProg;  //  a pointer to a temp programmer to add to the list
     
+    struct LinkedList programmerList = createEmptyLinkedList();
     
     
     // open the data file
@@ -87,7 +89,7 @@ void LoadProgrammers()
         
         
         // add the record to the ProgrammersList
-        AddProgrammer( TempProg );
+        AddItem(&programmerList, TempProg );
         
         -- RecordCount;
         
@@ -95,6 +97,8 @@ void LoadProgrammers()
     
     //  close the input data file
     fclose( ProgFile );
+    
+    return programmerList;
     
 }  //  void LoadProgrammers()
 
@@ -129,7 +133,7 @@ void ShowProgrammer( PROGRAMMERPTR P )
 
 
 
-void DoShowProgrammers()
+/*void DoShowProgrammers(struct LinkedList* programmerList)
 {  //  void DoShowProgrammers()
     
     
@@ -137,7 +141,7 @@ void DoShowProgrammers()
     
     NODEPTR TempNode;
     
-    TempNode = GetHeadProgrammer();
+    TempNode = programmerList->Next;
     
     while( TempNode != NULL )
     {  // while not at end of the linked list of programmers
@@ -153,7 +157,7 @@ void DoShowProgrammers()
         if( TempChar == 'm' )
             return;  // go back to the menu
         
-        TempNode = GetNextProgrammer( TempNode );  //  next record
+        TempNode = TempNode->Next;  //  next record
     }  //  while not at the end of the linked list of programmers
     
     
@@ -254,10 +258,21 @@ void DoFindName()
 }  //  void DoFindName()
 
 
+*/
 
 
+/*int doesProgrammerHaveSkill(char skill[10], PROGRAMMERPTR programmer){
+    
+    for(int i = 0; i < programmer->SkillCount; i++){
+        if(0 == strcmp(skill, programmer->Skills[i])){
+            return 1; //we found it!
+        }
+    }
+    
+    return 0;//does not have skill.
+}
 
-void DoFindSkill()
+/*void DoFindSkill()
 {  //  void DoFindSkill()
     
     
@@ -303,5 +318,6 @@ void DoFindSkill()
     }  //  while not at end of list
     
     BackToMenu();
-    
+ 
 }  //  void DoFindSkill()
+*/
