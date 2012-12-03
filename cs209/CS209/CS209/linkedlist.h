@@ -70,12 +70,17 @@ struct LinkedList
 
 
 
+//return an empty linked list structure.
 struct LinkedList createEmptyLinkedList(){
+    //define our structure
     struct LinkedList toReturn;
+    
+    //set our defaults.
     toReturn.Count = 0;
     toReturn.Head = NULL;
+    
     return toReturn;
-}
+}//end createEmptyLinkedList
 
 
 
@@ -84,8 +89,7 @@ struct LinkedList createEmptyLinkedList(){
 int AddItem(struct LinkedList* list, void *P){
     NODEPTR TempNode;  // a temp node
     
-    
-    
+    //allocate
     TempNode = NewNode();
     
     //  did we get a new node
@@ -94,18 +98,55 @@ int AddItem(struct LinkedList* list, void *P){
     }
     //  to get here we got a TempNode
     
-    TempNode -> Data = P;  // add the programmer
+    TempNode -> Data = P;  // add the data pointer
     TempNode -> Next = list->Head;  // place TempNode at the head of the list
     
    list->Head = TempNode;  // now point to the new head of the list
-    
-    
     
     ++ list->Count;  //  add 1 to the count
     
     return( list->Count );
 }
 
+//add this node to this linked list. This is useful if we've removed this node from a
+//different linked list.
+int addNode(struct LinkedList* list, NODEPTR ptr){
+    ptr->Next = list->Head;//set the next pointer
+    
+    list->Head = ptr;//set the head of the list to this node
+    
+    list->Count++;// add one to count.
+    
+    return (list->Count);
+}//end add
+
+
+//remove the node from the linked list. 
+void RemoveNode(struct LinkedList* list, NODEPTR N){
+    NODEPTR prev = NULL;
+    NODEPTR next = list->Head;
+    
+    //might be the head.
+    if(next == N){
+        //if it is, point the head to the next node
+        list->Head = next->Next;//remove the pointer
+        
+        list->Count --;
+        return;
+    }
+    
+    
+    while(next != NULL){
+        
+        if(next == N){
+            prev->Next = next->Next;
+            list->Count--;
+        }
+        prev = next;
+        next = next->Next;
+    }
+    
+}//End of RemoveNode
 
 void FreeLinkedList(struct LinkedList* list)
 {  //  void FreeLinkedList()

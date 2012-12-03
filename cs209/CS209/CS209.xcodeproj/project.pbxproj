@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		34C99AAE165537A000BE5A35 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 34C99AAD165537A000BE5A35 /* main.c */; };
 		34C99AB0165537A000BE5A35 /* CS209.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 34C99AAF165537A000BE5A35 /* CS209.1 */; };
-		34C99ABC1655622900BE5A35 /* programmers.c in Sources */ = {isa = PBXBuildFile; fileRef = 34C99ABB1655622900BE5A35 /* programmers.c */; };
 		34C99AC11655630900BE5A35 /* unused.c in Sources */ = {isa = PBXBuildFile; fileRef = 34C99AC01655630900BE5A35 /* unused.c */; };
 /* End PBXBuildFile section */
 
@@ -30,15 +29,15 @@
 		34C99AA9165537A000BE5A35 /* CS209 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CS209; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C99AAD165537A000BE5A35 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		34C99AAF165537A000BE5A35 /* CS209.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CS209.1; sourceTree = "<group>"; };
-		34C99AB6165539E900BE5A35 /* programmers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = programmers.txt; sourceTree = "<group>"; };
+		34C99AB6165539E900BE5A35 /* programmers.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = programmers.txt; path = CS209/programmers.txt; sourceTree = SOURCE_ROOT; };
 		34C99AB7165539E900BE5A35 /* project_description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = project_description.txt; sourceTree = "<group>"; };
 		34C99AB8165539E900BE5A35 /* projects.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = projects.txt; sourceTree = "<group>"; };
 		34C99AB9165539E900BE5A35 /* skills.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = skills.txt; sourceTree = "<group>"; };
-		34C99ABB1655622900BE5A35 /* programmers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = programmers.c; sourceTree = "<group>"; };
 		34C99ABD1655626900BE5A35 /* myfunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = myfunctions.h; sourceTree = "<group>"; };
 		34C99ABE1655629D00BE5A35 /* linkedlist.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linkedlist.h; sourceTree = "<group>"; };
 		34C99ABF165562E100BE5A35 /* programmers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = programmers.h; sourceTree = "<group>"; };
 		34C99AC01655630900BE5A35 /* unused.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unused.c; sourceTree = "<group>"; };
+		34EB71031668405600F36445 /* projects.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = projects.h; sourceTree = "<group>"; };
 		34F155ED1661AAB600764A81 /* linkedset.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = linkedset.h; sourceTree = "<group>"; };
 		34F155EF1666525100764A81 /* projectconstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = projectconstants.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,13 +78,13 @@
 				34C99AB9165539E900BE5A35 /* skills.txt */,
 				34C99AAD165537A000BE5A35 /* main.c */,
 				34C99AAF165537A000BE5A35 /* CS209.1 */,
-				34C99ABB1655622900BE5A35 /* programmers.c */,
 				34C99ABD1655626900BE5A35 /* myfunctions.h */,
 				34C99ABE1655629D00BE5A35 /* linkedlist.h */,
 				34C99ABF165562E100BE5A35 /* programmers.h */,
 				34C99AC01655630900BE5A35 /* unused.c */,
 				34F155ED1661AAB600764A81 /* linkedset.h */,
 				34F155EF1666525100764A81 /* projectconstants.h */,
+				34EB71031668405600F36445 /* projects.h */,
 			);
 			path = CS209;
 			sourceTree = "<group>";
@@ -142,7 +141,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				34C99AAE165537A000BE5A35 /* main.c in Sources */,
-				34C99ABC1655622900BE5A35 /* programmers.c in Sources */,
 				34C99AC11655630900BE5A35 /* unused.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

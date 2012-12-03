@@ -106,34 +106,6 @@ SkillList readSkills(char* skillsfileName){
     return sl;
 }
 
-//simple function I took from stackoverflow and modified.
-//I'm going to use the isspace() call to remove whitespace from the beginning
-//and end of the string.
-char *trimwhitespace(char *str)
-{
-    char *end;
-    
-    // Trim leading space
-    while(isspace(*str)){
-        str++;
-    }
-    
-    if(*str == 0){  // All spaces?
-        return str;
-    }
-    
-    // Trim trailing space
-    end = str + strlen(str) - 1;
-    
-    while(end > str && isspace(*end)){
-        end--;
-    }
-    
-    // Write new null terminator
-    *(end+1) = 0;
-    
-    return str;
-}
 
 Programmer parseProgrammer(char *record, char *delim){
     

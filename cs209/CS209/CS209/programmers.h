@@ -7,8 +7,7 @@
 // tbyrne - I'm going to take this and modify it as well
 // to use my modified LinkedList, and when LoadProgrammers is called, it will return a pointer to the instance of the LinkedList.
 
-/*#define PROGRAMMERPTR struct Programmer *
-
+#define PROGRAMMERPTR struct Programmer *
 
 struct Programmer
 {  //  struct Programmer
@@ -43,8 +42,6 @@ struct LinkedList LoadProgrammers()
     PROGRAMMERPTR TempProg;  //  a pointer to a temp programmer to add to the list
     
     struct LinkedList programmerList = createEmptyLinkedList();
-    
-    
     // open the data file
     ProgFile = OpenAsInput( "programmers.txt" );
     
@@ -68,9 +65,9 @@ struct LinkedList LoadProgrammers()
         
         
         // check if we got a block of memory
-        if( TempProg == NULL )
+        if( TempProg == NULL ){
             ErrorExit( "could not get memory for TempProg", "in function LoadProgrammers", 0 );
-        
+        }
         
         // read the id, first name, and last name
         fscanf( ProgFile, "%d %s %s",
@@ -103,6 +100,59 @@ struct LinkedList LoadProgrammers()
 }  //  void LoadProgrammers()
 
 
+void removeUnusableProgrammers(struct LinkedList* programmerList){
+
+    //OK, first thing, let's look through the programmers and remove any of them that are already assigned to 2 projects, since we can't use them for anything.
+    //Going to keep track of the previous node as well, since we're going to need it to drop nodes.
+    
+    struct LinkNode* next = programmerList->Head;
+    struct LinkNode* prev = NULL;
+    
+    while(next != NULL){
+        PROGRAMMERPTR programmer = next->Data;
+        
+        //OK look at both projects, and remove this programmer if they're both assigned
+        if(programmer->Proj1 > -1 && programmer->Proj2 > -1){
+            //OK we need to remove this programmer.
+            
+            //if(DEBUGON){printf("Removing Programmer ID:%d\n", programmer->Id);}
+            
+            //if the PREV is NULL, then we're at the head. Reassign the head, and remove.
+            if(NULL == prev){
+                struct LinkNode* tmpPtr = next;//store this away for later.
+                programmerList->Head = next->Next; //fix up the head of the list
+                programmerList->Count--; //one less in the list
+                next = programmerList->Head;//re-set next for the loop.
+                FreeNode(tmpPtr);//free our memory
+                continue;
+                
+            }else{
+                //Here we need to keep prev, and have it point to the 'next' next.
+                struct LinkNode* tmpPtr = next;//store this away for later.
+                prev->Next = next->Next;//have prev point to the right node
+                next = next->Next; //set for loop iterator.
+                programmerList->Count--;//one less in the list.
+                FreeNode(tmpPtr);//free our memory.
+                continue;//next loop iteration
+            }
+        }else{//else - one project at least was unassigned.
+            prev = next;
+            next = next->Next;
+        }//end if check for projects.
+        
+        
+    }//end while loop.
+    
+}
+
+int assignProgrammerToProject(PROGRAMMERPTR p, int value){
+    if(p->Proj1 == -1){
+        
+    }
+}
+
+
+/*
 void ShowProgrammer( PROGRAMMERPTR P )
 {  //  void ShowProgrammer( *P )
     

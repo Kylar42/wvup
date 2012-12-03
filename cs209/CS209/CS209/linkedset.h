@@ -92,7 +92,7 @@ int add(struct SetList* list, char data[SKILLNAMESIZE]){
 /*
  remove a specific element from the list, and free the associated memory.
  */
-int removeAndFree(struct SetList* list, char data[SKILLNAMESIZE]){
+int removeFromSetListAndFree(struct SetList* list, char data[SKILLNAMESIZE]){
     if(0 == list->count){
         return 0;//failed. Nothing in our list, nothing to free.
     }
@@ -151,6 +151,20 @@ void debugPrintSetList(struct SetList list){
     }
 }
 
+//This method will return 1 if the data exists in the setlist,
+//and 0 if it does not.
+int setListContainsData(struct SetList* list, char data[10]){
+    PTR node = list->head;
+    while(node != NULL){
+        if(0 == strcmp(data, node->data)){
+            return 1;
+        }
+        node = node->Next;
+    }
+    return 0;
+}//end int setListContainsData
+
+
 void testSetList(){
     struct SetList skillList = createEmptySetList();
     char a[10] = ".c";
@@ -167,7 +181,7 @@ void testSetList(){
     add(&skillList, "PHP");
     debugPrintSetList(skillList);
     
-    removeAndFree(&skillList, "basic");
+    removeFromSetListAndFree(&skillList, "basic");
     
     debugPrintSetList(skillList);
     

@@ -31,7 +31,7 @@ void ErrorExit( char *Message1, char *Message2, int ErrorCode  )
 } 
 
 // open a file for input
-/*
+
 
 FILE * OpenAsInput( char *FileName )
 {  //  FILE * OpenAsInput( *FileName )
@@ -66,6 +66,34 @@ FILE * OpenAsOutput( char *FileName )
     return( TempFile );
     
 }  //  FILE * OpenAsOutput( *FileName )
- */
+ 
 
+//simple function I took from stackoverflow and modified.
+//I'm going to use the isspace() call to remove whitespace from the beginning
+//and end of the string.
+char *TrimWhitespace(char *str)
+{
+    char *end;
+    
+    // Trim leading space
+    while(isspace(*str)){
+        str++;
+    }
+    
+    if(*str == 0){  // All spaces?
+        return str;
+    }
+    
+    // Trim trailing space
+    end = str + strlen(str) - 1;
+    
+    while(end > str && isspace(*end)){
+        end--;
+    }
+    
+    // Write new null terminator
+    *(end+1) = 0;
+    
+    return str;
+}//End Trim whitespace.
 
