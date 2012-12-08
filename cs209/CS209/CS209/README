@@ -1,0 +1,17 @@
+ASSIGNMENT 6, CS209, WVUP
+PROFESSOR R. LAMP
+
+STUDENT: TOM BYRNE, kylar42@gmail.com or tom.byrne@apple.com Phone: 408.391.9307
+
+
+Ok, a few notes about this assignment.
+
+It will look for the input files projects.txt and programmers.txt in the working directory.
+
+It will write two output files to the working directory: doable-projects.txt and undoable-projects.txt.
+
+The undoable project file lists the undoable projects, and ALL their skills. I wrote code to keep just the skills that were unavailable, but didn't think that's what you wanted. If it is, let me know and I'll add the code back in.
+
+I added and modified some of your code in myfunctions.h and programmers.h. I removed all the other .c files, and cheated a bit, by putting all my project and programmer related code in their .h files, even when I probably should have declared some of the functions and then implemented them in a .c file. 
+
+I tested this solution on a BSD based system (Darwin) and on RedHat enterprise Linux, and both worked. 

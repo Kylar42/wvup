@@ -92,7 +92,7 @@ int AddDataToSetList(struct SetList* list, char data[SKILLNAMESIZE]){
 /*
  remove a specific element from the list, and free the associated memory.
  */
-int removeFromSetListAndFree(struct SetList* list, char data[SKILLNAMESIZE]){
+int RemoveFromSetListAndFree(struct SetList* list, char data[SKILLNAMESIZE]){
     if(0 == list->Count){
         return 0;//failed. Nothing in our list, nothing to free.
     }
@@ -180,38 +180,4 @@ void FreeSetList(struct SetList* list)
     list->Tail = NULL;
     
 }  //  void FreeLinkedList()
-
-void debugPrintSetList(struct SetList list){
-    PTR node = list.Head;
-    printf("\n==================\n");
-    while(node != NULL){
-        printf("%s", node->data);
-        printf("\n");
-        node = node->Next;
-    }
-}
-
-
-
-void testSetList(){
-    struct SetList skillList = createEmptySetList();
-    char a[10] = ".c";
-    
-    AddDataToSetList(&skillList, a);
-    AddDataToSetList(&skillList, "assembly");
-    AddDataToSetList(&skillList, "basic");
-    debugPrintSetList(skillList);
-    AddDataToSetList(&skillList, "c++");
-    debugPrintSetList(skillList);
-    AddDataToSetList(&skillList, ".c");
-    debugPrintSetList(skillList);
-    AddDataToSetList(&skillList, "c++");
-    AddDataToSetList(&skillList, "PHP");
-    debugPrintSetList(skillList);
-    
-    removeFromSetListAndFree(&skillList, "basic");
-    
-    debugPrintSetList(skillList);
-    
-}
 

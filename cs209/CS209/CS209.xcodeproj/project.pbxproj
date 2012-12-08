@@ -26,6 +26,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3409BCFE1672311300F3DE33 /* tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tests.h; sourceTree = "<group>"; };
+		3409BD001673BFD500F3DE33 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 		34C99AA9165537A000BE5A35 /* CS209 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CS209; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C99AAD165537A000BE5A35 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		34C99AAF165537A000BE5A35 /* CS209.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = CS209.1; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				34C99AB8165539E900BE5A35 /* projects.txt */,
 				34C99AB9165539E900BE5A35 /* skills.txt */,
 				34C99AAD165537A000BE5A35 /* main.c */,
+				3409BCFE1672311300F3DE33 /* tests.h */,
 				34C99AAF165537A000BE5A35 /* CS209.1 */,
 				34C99ABD1655626900BE5A35 /* myfunctions.h */,
 				34C99ABE1655629D00BE5A35 /* linkedlist.h */,
@@ -85,6 +88,7 @@
 				34F155ED1661AAB600764A81 /* linkedset.h */,
 				34F155EF1666525100764A81 /* projectconstants.h */,
 				34EB71031668405600F36445 /* projects.h */,
+				3409BD001673BFD500F3DE33 /* README */,
 			);
 			path = CS209;
 			sourceTree = "<group>";
