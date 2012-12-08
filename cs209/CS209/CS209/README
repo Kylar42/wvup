@@ -6,12 +6,34 @@ STUDENT: TOM BYRNE, kylar42@gmail.com or tom.byrne@apple.com Phone: 408.391.9307
 
 Ok, a few notes about this assignment.
 
+
+1. INPUT
 It will look for the input files projects.txt and programmers.txt in the working directory.
 
+2. OUTPUT
 It will write two output files to the working directory: doable-projects.txt and undoable-projects.txt.
 
 The undoable project file lists the undoable projects, and ALL their skills. I wrote code to keep just the skills that were unavailable, but didn't think that's what you wanted. If it is, let me know and I'll add the code back in.
 
+3. CODE
 I added and modified some of your code in myfunctions.h and programmers.h. I removed all the other .c files, and cheated a bit, by putting all my project and programmer related code in their .h files, even when I probably should have declared some of the functions and then implemented them in a .c file. 
 
-I tested this solution on a BSD based system (Darwin) and on RedHat enterprise Linux, and both worked. 
+4. BUILD
+I tested this solution on a BSD based system (Darwin) and on RedHat enterprise Linux, and both worked.
+
+5. CODE COMMENTS
+I have an unorthodox comment method. You will see code that looks like this sometimes:
+
+if(!IsProjectAssigned(currentProject)){ // [project.h]
+
+The implication is that the function call (IsProjectAssigned) - is declared and implemented in the file that is mentioned in the comments (project.h). If there is no comment, it is in the same file.
+
+6. CODE STRUCTURE
+
+Where possible, I've made code functions stateless and self-contained. In a lot of cases, this means passing in the LinkedList or struct into the function,
+and not keeping it as a data member inside the .c file (as previously was being done with the programmer.c file. This means that I have to pass pointers back and forth,
+which I'm OK doing. If you'd prefer that I encapsulate the data differently, I can do that.
+
+I've chosen not to use the bool datatype, even though in a few cases it would be clearer. Instead I've gone with the c styled int return, where 1 = true, and 0 = false. This is usually spelled out as well in the function comments.
+
+You'll also find a DEBUGON define at the top of main.c - It is set to off(0), but if you set it to on(1) some additional debug printing will happen. 

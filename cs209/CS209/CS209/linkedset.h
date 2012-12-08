@@ -7,9 +7,9 @@
 // An unordered doubly linked list that contains char[10] objects, and compares them for equality on insert.
 //
 
-#define PTR struct Node *
+#define PTR struct SetListNode *
 
-struct Node
+struct SetListNode
 {
     char data[SKILLNAMESIZE]; //data - will hold a skill
     PTR Prev; // previous node.
@@ -18,9 +18,9 @@ struct Node
 
 
 
-PTR newNode(){
+PTR NewSetListNode(){
     PTR toReturn;
-    toReturn = malloc( sizeof(struct Node));
+    toReturn = malloc( sizeof(struct SetListNode));
     return toReturn;
 }
 
@@ -39,6 +39,7 @@ struct SetList
     PTR Tail;
 };
 
+//Function to create a new, empty SetList.
 struct SetList createEmptySetList(){
     struct SetList toReturn;
     toReturn.Count = 0;
@@ -56,7 +57,7 @@ int AddDataToSetList(struct SetList* list, char data[SKILLNAMESIZE]){
     //OK, let's first see if our list is empty.
     
     if(0 == list->Count){
-        PTR node = newNode();
+        PTR node = NewSetListNode();
         strncpy(node->data, data, 10);
         node->Prev = NULL;//nothing before
         node->Next = NULL;//nothing after.
@@ -69,26 +70,30 @@ int AddDataToSetList(struct SetList* list, char data[SKILLNAMESIZE]){
     PTR nxt = list->Head;
     while(nxt != NULL){
         
-        //printf("Comparing %s to %s \n", nxt->data, data);
+        if(DEBUGON){printf("Comparing %s to %s \n", nxt->data, data);}
         
-        if(0 == strcmp(nxt->data, data)){
+        if(0 == strcmp(nxt->data, data)){ //is this data right?
             return 0;//found a match, no insert.
         }
         nxt = nxt->Next;
     }
     
-    //If we got here, we should be at the end. 
-    PTR node = newNode();
-    strcpy(node->data, data);
-    node->Prev = list->Tail;
+    //If we got here, we should be at the end of the SetList, and didn't find the data. 
+    PTR node = NewSetListNode(); //new node
+    
+    strcpy(node->data, data); //copy the data into the node.
+    
+    node->Prev = list->Tail; //add it at the end.
     node->Next = NULL;
-    list->Tail->Next = node;
-    list->Tail = node;
-    list->Count++;
-    return 1;
+    
+    list->Tail->Next = node; //update the previous tail.
+    list->Tail = node; //we are the new tail.
+    list->Count++; //one more node.
+    return 1; //return true!
     
     
-}
+}//End AddDataToSetList
+
 /*
  remove a specific element from the list, and free the associated memory.
  */
@@ -144,13 +149,16 @@ int RemoveFromSetListAndFree(struct SetList* list, char data[SKILLNAMESIZE]){
 //and 0 if it does not.
 int DoesSetListContainData(struct SetList* list, char data[10]){
     PTR node = list->Head;
-    while(node != NULL){
-        if(0 == strcmp(data, node->data)){
-            return 1;
+    
+    while(node != NULL){ //loop through nodes
+        if(0 == strcmp(data, node->data)){ //does it match?
+            return 1; //Yes! Return true(1).
         }
         node = node->Next;
     }
-    return 0;
+    
+    return 0; //got here, didn't find this data. Return false(0).
+
 }//end int setListContainsData
 
 void FreeSetList(struct SetList* list)
@@ -167,7 +175,7 @@ void FreeSetList(struct SetList* list)
         
         NextNode = TempNode -> Next;  // next node in the list
         
-        FreeSetListNode( TempNode );
+        FreeSetListNode( TempNode ); // free the memory.
         
         TempNode = NextNode;  // go to next node in the list
         

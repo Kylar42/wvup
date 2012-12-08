@@ -114,6 +114,7 @@ int IntArrayContainsValue(int values[], int sizeOfArray, int valueToCheck){
 }//end intArrayContainsValue
 
 
+
 //This will generate a starting array, with the correct numBits set to 1.
 //for example, if you pass in a size of 10 and a numBits of 3, you will end up with:
 // [1, 1, 1, 0, 0, 0, 0, 0, 0, 0]
@@ -121,7 +122,7 @@ void InitializeMaskArray(int *mask, int size, int numBits){
     for(int i = 0; i < size; i++){
         mask[i] = (i < numBits) ? 1 : 0;
     }
-}
+}//end InitializeMaskArray
 
 
 // This function looks at a mask/bitset, and determines if the 1's are all in the highest-order positions.
@@ -218,10 +219,10 @@ int GetNextMaskIteration(int *mask, int size, int stack){
     }//end else
     
     return 0;//the end of the method, we return a 0, so any recursive calls that are looking for a stack will work correctly.
-}
+}//end GetNextMaskIteration
 
-
-void printMask(int *mask, int size){
+//Simple function to print out a Mask
+void PrintMask(int *mask, int size){
     for(int i = 0; i < size; i++){
         printf("%d",mask[i]);
     }

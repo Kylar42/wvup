@@ -38,7 +38,7 @@ PROGRAMMERPTR NewProgrammer()
 
 
 struct LinkedList LoadProgrammers()
-{  
+{//LoadProgrammers
     
     FILE *ProgFile;  // file pointer to the programmers.txt data file
     int RecordCount;  // number of programmer records in the data file
@@ -104,12 +104,15 @@ struct LinkedList LoadProgrammers()
     
 }  //  void LoadProgrammers()
 
+
 //return 1(true) if this programmer has any available project slots,
-//and 0, if it doesn't.
+//and 0(false), if it doesn't.
 int ProgrammerHasAvailableSlots(struct Programmer* programmer){
     return (programmer->Proj1 == -1 || programmer->Proj2 == -1) ? 1 : 0;
 }
 
+
+//This will remove programmers that are already assigned to two projects, and free their nodes.
 void RemoveUnusableProgrammers(struct LinkedList* programmerList){
 
     //OK, first thing, let's look through the programmers and remove any of them that are already assigned to 2 projects, since we can't use them for anything.
@@ -178,7 +181,7 @@ struct ProgrammerTuple ProgrammerTupleFromMask(PROGRAMMERPTR *arbitraryProgramme
     toReturn.Count = count;
     
     return toReturn; //return our new tuple.
-}
+}//end ProgrammerTupleFromMask
 
 
 

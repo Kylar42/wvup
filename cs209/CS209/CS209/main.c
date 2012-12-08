@@ -211,8 +211,8 @@ int main(int argc, const char * argv[])
             //mark this project as undoable,
             struct LinkNode* tmpNode = projectNode->Next;
             
-            RemoveNode(&projectList, projectNode); //remove it from the project list
-            AddNode(&undoableProjectList, projectNode); //add it to the undoable project list
+            RemoveNode(&projectList, projectNode); //remove it from the project list            [linkedlist.h]
+            AddNode(&undoableProjectList, projectNode); //add it to the undoable project list   [linkedlist.h]
             
             projectNode = tmpNode;//reassign for loop.
             continue;

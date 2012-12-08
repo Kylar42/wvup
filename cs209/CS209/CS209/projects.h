@@ -46,7 +46,7 @@ struct LinkedList LoadProjects()
     
     struct LinkedList projectList = createEmptyLinkedList();
     // open the data file
-    ProjFile = OpenAsInput( "projects.txt" );
+    ProjFile = OpenAsInput( "projects.txt" );// [myfunctions.h]
     char buff[MAXLINELENGTH];
     //read to end of file.
         //first read the record count.
@@ -76,7 +76,7 @@ struct LinkedList LoadProjects()
            
             //second line has project name.
             fgets(buff, MAXLINELENGTH, ProjFile);
-            strcpy(TempProj->ProjectName, TrimWhitespace(buff));
+            strcpy(TempProj->ProjectName, TrimWhitespace(buff)); // [mufunctions.h]
 
             //third line has programmers assigned, and skill count.
             fgets(buff, MAXLINELENGTH, ProjFile);
@@ -89,12 +89,12 @@ struct LinkedList LoadProjects()
             //tokenize the string on a space, and copy them into the skill array
             char *tmpPtr = strtok(buff, " ");            
             for( int i = 0;  i < TempProj->skillcount;  i ++ ){
-                strcpy(TempProj->Skills[i], TrimWhitespace(tmpPtr));
+                strcpy(TempProj->Skills[i], TrimWhitespace(tmpPtr));// [mufunctions.h]
                 tmpPtr = strtok(NULL,  " ");
             }
                 
             
-            AddItem(&projectList, TempProj); //add the item to the linked list.
+            AddItem(&projectList, TempProj); //add the item to the linked list. [linkedlist.h]
             
             RecordCount--;
         }
@@ -106,6 +106,7 @@ struct LinkedList LoadProjects()
     //return our list.
     return projectList;
 }//end ReadProject
+
 
 //This will remove this programmer from the project, and remove the project from the programmer.
 //returns 1 if done, 0 if not.
@@ -145,7 +146,7 @@ int RemoveProgrammerFromProject(struct Project* project, struct Programmer* prog
 
 
 //this adds this programmer to the first available slot, and assigns the project to the programmer as well.
-//returns 1 if successful, 0 if not.
+//returns 1(true) if successful, 0(false) if not.
 int AssignProgrammerToProject(struct Project* project, struct Programmer* programmer){
     
     //first check if programer has room. I could check this later,
@@ -180,7 +181,7 @@ int AssignProgrammerToProject(struct Project* project, struct Programmer* progra
     }
     
     return 1;//was successful
-}//end addProgrammerToProject
+}//end AssignProgrammerToProject
 
 //this function will assign all the programmers in a tuple to the project.
 void AssignProgrammersToProject(struct ProgrammerTuple* tuple, struct Project* project, struct LinkedList* programmerList ){
@@ -188,14 +189,16 @@ void AssignProgrammersToProject(struct ProgrammerTuple* tuple, struct Project* p
     
     while(nextNode != NULL){
         struct Programmer* currentProgrammer = nextNode->Data;
-        if(IntArrayContainsValue(tuple->IDs, tuple->Count, currentProgrammer->Id)){
-            if(!AssignProgrammerToProject(project, currentProgrammer)){
-                ErrorExit("Exit from Assign Programmer, wasn't able to assign correctly.", "Turn DEBUGON on to find more information.", -2);
+        if(IntArrayContainsValue(tuple->IDs, tuple->Count, currentProgrammer->Id)){// [myfunctions.h] do we want to assign this programmer?
+            
+            if(!AssignProgrammerToProject(project, currentProgrammer)){ //assign it.
+                ErrorExit("Exit from Assign Programmer, wasn't able to assign correctly.", "Turn DEBUGON on to find more information.", -2); // [mufunctions.h]
             }
+            
         }
         nextNode = nextNode->Next;
     }
-}
+}//end AssignProgrammersToProject
 
 
 //This function will return true (1) if this programmer can work on this project, and false (0) if it can't.
@@ -211,11 +214,11 @@ int ProgrammerHasMatchingSkills(struct Project* project, struct Programmer* prog
     }
     
     if(matchingSkillCount >= 2){
-        return 1;
+        return 1; //Success. we matched at least 2 skills.
     }
     
     return 0;//End, match not found.
-}
+}//end ProgrammerHasMatchingSkills
 
 //This is a complicated function. It will look at a set of programmers, and determine whether those programmers can complete this project.
 //return 1(true) if these programmers can complete the project, 0(false) if not.
@@ -226,7 +229,9 @@ int CanSelectedProgrammersCompleteProject(struct ProgrammerTuple* programmerTupl
     
     //add all the project skills into the setList.
     for(int i = 0; i < project->skillcount; i++){
-        AddDataToSetList(&projectSkillList, project->Skills[i]);
+        
+        AddDataToSetList(&projectSkillList, project->Skills[i]); //[linkedset.h]
+    
     }//for skill loop
     
     //loop through the programmers, find matching ones, remove their skills from the setlist.
@@ -234,10 +239,12 @@ int CanSelectedProgrammersCompleteProject(struct ProgrammerTuple* programmerTupl
     
     while(nextNode != NULL){
         struct Programmer* currentProgrammer = nextNode->Data;
-        if(IntArrayContainsValue(programmerTuple->IDs, programmerTuple->Count, currentProgrammer->Id)){
-            //remove his skills from the required list.
+        
+        if(IntArrayContainsValue(programmerTuple->IDs, programmerTuple->Count, currentProgrammer->Id)){ // is this programmer working on this project? [myfunctions.h]\
+            
+            //yes. remove his skills from the required list.
             for(int j = 0; j < currentProgrammer->SkillCount; j++){
-                RemoveFromSetListAndFree(&projectSkillList, currentProgrammer->Skills[j]);
+                RemoveFromSetListAndFree(&projectSkillList, currentProgrammer->Skills[j]); // [linkedset.h]
             }
         }
         
@@ -246,26 +253,27 @@ int CanSelectedProgrammersCompleteProject(struct ProgrammerTuple* programmerTupl
     
     //if there's anything left, they are missing some skills. Probably nunchuck or sword skills, because not too many programmers do martial arts. ;)
     if(projectSkillList.Count > 0){
-        toReturn = 0;
+        toReturn = 0; //return false(0)
     }
     
     
-    FreeSetList(&projectSkillList);
+    FreeSetList(&projectSkillList); // [linkedset.h]
+    
     return toReturn;
 }//end CanSelectedProgrammersCompleteProject
 
 
 
-//This function will find all the projects that are COMPLETELY undoable, ie: no compatible programmers have at least one required skill.
+// This function will find all the projects that are COMPLETELY undoable, ie: no compatible programmers have at least one required skill.
 
-//let's look and see if any projects are entirely undoable (they require any skill that we don't have.)
-//in order to do this, we'll need to get a list of programmers that can work on the project, and see if that list
-//has every skill the project needs when put together.
-//this isn't exact, since we don't know which programmers
-//will work on each project, but it will help us to
-//eliminate projects that definitely can't be done.
-//This function will return a LinkedList that lists project node, followed by a node containing a SetList of the skills that are not doable.
-//so there should always be 2*N nodes, where N=undoable projects.
+// let's look and see if any projects are entirely undoable (they require any skill that we don't have.)
+// in order to do this, we'll need to get a list of programmers that can work on the project, and see if that list
+// has every skill the project needs when put together.
+// this isn't exact, since we don't know which programmers
+// will work on each project, but it will help us to
+// eliminate projects that definitely can't be done.
+// This function will return a LinkedList that lists project node, followed by a node containing a SetList of the skills that are not doable.
+// so there should always be 2*N nodes, where N=undoable projects.
 
 void FindUndoableProjects(struct LinkedList* undoableProjects, struct LinkedList* projectList, struct LinkedList* programmerList){
     
@@ -278,7 +286,7 @@ void FindUndoableProjects(struct LinkedList* undoableProjects, struct LinkedList
         
         //add all the project skills into the setList.
         for(int i = 0; i < currentProject->skillcount; i++){
-            AddDataToSetList(&projectSkillList, currentProject->Skills[i]);
+            AddDataToSetList(&projectSkillList, currentProject->Skills[i]); // [linkedset.h]
         }//for skill loop
         
         
@@ -334,7 +342,7 @@ void FindUndoableProjects(struct LinkedList* undoableProjects, struct LinkedList
             nextProject = tmpPointer;
             
         }else{
-            nextProject = nextProject->Next;
+            nextProject = nextProject->Next; //next loop
         }
         
         
@@ -342,7 +350,7 @@ void FindUndoableProjects(struct LinkedList* undoableProjects, struct LinkedList
     
     
     
-}//end findUndoableProjects
+}//end FindUndoableProjects
 
 //this function determines if the project is already assigned. It's a bit of a shortcut,
 //but since we'll only assign programmers once we determine they can complete a project,
@@ -350,5 +358,7 @@ void FindUndoableProjects(struct LinkedList* undoableProjects, struct LinkedList
 //return 1(true) if the project is assigned, 0(false) if it's not.
 
 int IsProjectAssigned(struct Project* project){
+    
     return (project->ProgrammerID1 != -1 && project->ProgrammerID2 != -1 && project->ProgrammerID3 != -1) ? 1 : 0;
-}
+
+}//end isproject assigned.
