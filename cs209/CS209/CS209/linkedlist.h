@@ -110,7 +110,7 @@ int AddItem(struct LinkedList* list, void *P){
 
 //add this node to this linked list. This is useful if we've removed this node from a
 //different linked list.
-int addNode(struct LinkedList* list, NODEPTR ptr){
+int AddNode(struct LinkedList* list, NODEPTR ptr){
     ptr->Next = list->Head;//set the next pointer
     
     list->Head = ptr;//set the head of the list to this node

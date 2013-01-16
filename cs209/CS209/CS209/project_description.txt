@@ -24,7 +24,18 @@ the second line is the project title and is saved as a string,
 the third line is made up of five fields programmer 1 id, programmer 2 id, programmer 3 id, programmer 4 id and the number of skills needed for the project. 
 The programmer's id will be set to -1 to indicate no programmer. The skill count will be set to the integer value five. 
 The fourth line is the five skills needed by a programmer for this project, and they are saved as strings.
-You are to write a program that will use the above data files to generate two reports. The first of the reports should save the projects that are doable. The second report is to save the projects that are not doable. The first of these reports should save the project id, project title, and the programmers id that will be working on the project. The second report is to save the project id, project title, and the skills needed by the programmers to work on the project.
+
+
+You are to write a program that will use the above data files to generate two reports. 
+
+
+
+The first of the reports should save the projects that are doable. 
+The first of these reports should save the project id, project title, and the programmers id that will be working on the project.
+
+The second report is to save the projects that are not doable.  
+The second report is to save the project id, project title, and the skills needed by the programmers to work on the project.
+
 
 No programmer can work on more than two projects.
 

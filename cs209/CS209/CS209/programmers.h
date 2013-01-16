@@ -18,10 +18,15 @@ struct Programmer
     int Proj1;  //  project 1 that the programmer is working on
     int Proj2;  //  project 2 that the programmer is working on
     int SkillCount;  // the number of skills the programmer has
-    char Skills[ MAXSKILLS ][ SKILLNAMESIZE ];  // the array of zstrings of the programmer's skills
+    char Skills[ MAXSKILLS ][ SKILLNAMESIZE ];  // the array of strings of the programmer's skills
     
 };  //  struct Programmer
 
+
+struct ProgrammerTuple{//programmer tuple - contains a group of programmers. Max size is 4, since that's how many can work on a project.
+    int IDs[4];
+    int Count;
+};
 
 
 PROGRAMMERPTR NewProgrammer()
@@ -33,7 +38,7 @@ PROGRAMMERPTR NewProgrammer()
 
 
 struct LinkedList LoadProgrammers()
-{  
+{//LoadProgrammers
     
     FILE *ProgFile;  // file pointer to the programmers.txt data file
     int RecordCount;  // number of programmer records in the data file
@@ -100,7 +105,15 @@ struct LinkedList LoadProgrammers()
 }  //  void LoadProgrammers()
 
 
-void removeUnusableProgrammers(struct LinkedList* programmerList){
+//return 1(true) if this programmer has any available project slots,
+//and 0(false), if it doesn't.
+int ProgrammerHasAvailableSlots(struct Programmer* programmer){
+    return (programmer->Proj1 == -1 || programmer->Proj2 == -1) ? 1 : 0;
+}
+
+
+//This will remove programmers that are already assigned to two projects, and free their nodes.
+void RemoveUnusableProgrammers(struct LinkedList* programmerList){
 
     //OK, first thing, let's look through the programmers and remove any of them that are already assigned to 2 projects, since we can't use them for anything.
     //Going to keep track of the previous node as well, since we're going to need it to drop nodes.
@@ -115,7 +128,7 @@ void removeUnusableProgrammers(struct LinkedList* programmerList){
         if(programmer->Proj1 > -1 && programmer->Proj2 > -1){
             //OK we need to remove this programmer.
             
-            //if(DEBUGON){printf("Removing Programmer ID:%d\n", programmer->Id);}
+            if(DEBUGON){printf("In RemoveUnusableProgrammers: Removing Programmer ID:%d\n", programmer->Id);}
             
             //if the PREV is NULL, then we're at the head. Reassign the head, and remove.
             if(NULL == prev){
@@ -143,231 +156,32 @@ void removeUnusableProgrammers(struct LinkedList* programmerList){
         
     }//end while loop.
     
-}
+}//End RemoveUnusable Programmers
 
-int assignProgrammerToProject(PROGRAMMERPTR p, int value){
-    if(p->Proj1 == -1){
+
+//This will cycle through the list of programmers, and assemble a programmer tuple based on the bits set in the current mask. This way
+//I can iteratively go through every 3 and 4tuple, and find out which ones can complete each project.
+
+struct ProgrammerTuple ProgrammerTupleFromMask(PROGRAMMERPTR *arbitraryProgrammerList, int programmerListSize, int *mask, int tupleSize){
+    struct ProgrammerTuple toReturn;
+    //toReturn.Count = tupleSize;
+    int count = 0;// how many programmers we've assigned to this tuple.
+    
+    for(int i = 0; i < programmerListSize; i++){
+        struct Programmer *currentProgrammer = arbitraryProgrammerList[i];//just for clarity.
         
-    }
-}
-
-
-/*
-void ShowProgrammer( PROGRAMMERPTR P )
-{  //  void ShowProgrammer( *P )
-    
-    
-    int Index;
-    
-    //  id, first name, and last name
-    printf( "\n\n     %6d %s %s\n",
-           P -> Id, P-> FirstName, P -> LastName );
-    
-    
-    // project1, project 2, and skill count
-    printf( "     %6d %6d %6d\n",
-           P -> Proj1, P -> Proj2, P -> SkillCount );
-    
-    //  the skills
-    
-    printf( "     " );
-    
-    for( Index = 0;  Index < P -> SkillCount;  Index ++ )
-        printf( "%s ",
-               P -> Skills[ Index ] );
-    
-    
-    puts( "" );
-    
-}  //  void ShowProgrammer( *P )
-
-
-
-/*void DoShowProgrammers(struct LinkedList* programmerList)
-{  //  void DoShowProgrammers()
-    
-    
-    char TempChar;
-    
-    NODEPTR TempNode;
-    
-    TempNode = programmerList->Next;
-    
-    while( TempNode != NULL )
-    {  // while not at end of the linked list of programmers
+        //if(DEBUGON){ printf("Examining programmer: %d\n", currentProgrammer->Id);}//debug printing
         
-        
-        ShowProgrammer( TempNode -> Data );
-        
-        TempChar = ' ';
-        printf( "\n\n     enter n for next programmer or m to go back to the menu: " );
-        while(( TempChar != 'n' ) && ( TempChar != 'm' ))
-            scanf( " %c", &TempChar );
-        
-        if( TempChar == 'm' )
-            return;  // go back to the menu
-        
-        TempNode = TempNode->Next;  //  next record
-    }  //  while not at the end of the linked list of programmers
-    
-    
-    
-    
-    TempChar = ' ';
-    
-    // display prompt and get char
-    printf( "\n\n     enter m to go back to the menu: " );
-    while( TempChar != 'm' )
-        scanf( " %c", &TempChar );
-    
-}  //  void DoShowProgrammers()
-
-
-
-
-char BackToMenu()
-{  //  char BackToMenu()
-    
-    char TempChar;
-    
-    TempChar = ' ';
-    printf( "\n\n     enter m to go back to the main menu: " );
-    while( TempChar != 'm' )
-        scanf( " %c", &TempChar );
-    
-    return( TempChar );  // should only return 'm'
-    
-}  // char BackToMenu()
-
-char NextOrMenu()
-{  //  char NextOrMenu()
-    
-    char TempChar;
-    
-    
-    TempChar = ' ';
-    printf("\n\n     enter n for next record or m to go back to the menu: " );
-    while(( TempChar != 'n' ) && ( TempChar != 'm' ))
-        scanf( " %c", &TempChar );
-    
-    return( TempChar );  // return 'n' or 'm'
-    
-}  //  char NextOrMenu()
-
-
-
-void PromptForString( char *Prompt, char *Str )
-{  //  void PromptForString( *Prompt, *Str )
-    
-    printf("\n\n     %s: ", Prompt );
-    scanf( "%s", Str );
-    
-    
-}  //  void PromptForString( *Prompt, *Str )
-
-
-void DoFindName()
-{  //  void DoFindName()
-    
-    
-    char TempStr[ NAMESIZE ];
-    NODEPTR TempNode;
-    PROGRAMMERPTR TempProg;
-    
-    PromptForString( "enter the name to search for", TempStr );
-    
-    
-    
-    TempNode = GetHeadProgrammer();
-    
-    while( TempNode != NULL )
-    {  // while not at end of the list
-        
-        TempProg = TempNode -> Data;
-        
-        if(
-           ( strcmp( TempProg -> FirstName, TempStr ) == 0 )
-           || ( strcmp( TempProg -> LastName, TempStr ) == 0 ) )
-        {  // if a match was found
-            
-            ShowProgrammer( TempProg );
-            
-            if( NextOrMenu() == 'm' )
-                return;  // go back to the menu
-            
-        }  // if a match was found
-        
-        TempNode = GetNextProgrammer( TempNode );
-        
-        
-    }  //  while not at the end of the list
-    
-    BackToMenu();
-    
-    
-}  //  void DoFindName()
-
-
-*/
-
-
-/*int doesProgrammerHaveSkill(char skill[10], PROGRAMMERPTR programmer){
-    
-    for(int i = 0; i < programmer->SkillCount; i++){
-        if(0 == strcmp(skill, programmer->Skills[i])){
-            return 1; //we found it!
+        if(mask[i] == 1){
+            toReturn.IDs[count++] = currentProgrammer->Id;
         }
     }
     
-    return 0;//does not have skill.
-}
+    //set count.
+    toReturn.Count = count;
+    
+    return toReturn; //return our new tuple.
+}//end ProgrammerTupleFromMask
 
-/*void DoFindSkill()
-{  //  void DoFindSkill()
-    
-    
-    int Index;
-    char TempStr[ SKILLNAMESIZE ];
-    NODEPTR TempNode;
-    PROGRAMMERPTR TempProg;
-    int Found;
-    
-    PromptForString( "enter the skill to search for: ", TempStr );
-    
-    TempNode = GetHeadProgrammer();
-    
-    while( TempNode != NULL )
-    {  //  while not at end of list
-        
-        // search the skills
-        
-        Found = 0;  // no match found
-        
-        TempProg = TempNode -> Data;
-        
-        for( Index = 0;  Index < TempProg -> SkillCount;  Index ++ )
-            if( strcmp( TempProg -> Skills[ Index ], TempStr ) == 0 )
-                Found = 1;  // a match was found
-        
-        
-        
-        if( Found == 1 )
-        {  // if a match was found
-            
-            ShowProgrammer( TempProg );
-            
-            if( NextOrMenu() == 'm' )
-                return;  // back to the menu
-            
-        }  // if a match was found
-        
-        
-        TempNode = GetNextProgrammer( TempNode );
-        
-        
-    }  //  while not at end of list
-    
-    BackToMenu();
- 
-}  //  void DoFindSkill()
-*/
+
+

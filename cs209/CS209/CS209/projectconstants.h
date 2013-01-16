@@ -6,6 +6,7 @@
 //  Copyright (c) 2012 Thomas Byrne. All rights reserved.
 //
 
+
 #define SKILLNAMESIZE 32
 #define NAMESIZE 32
 #define MAXSKILLS 10
