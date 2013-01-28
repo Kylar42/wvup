@@ -1,0 +1,2371 @@
+MIME-Version: 1.0
+Content-Type: multipart/related; boundary="----=_NextPart_01CBB659.8AFBBF50"
+
+This document is a Single File Web Page, also known as a Web Archive file.  If you are seeing this message, your browser or editor doesn't support Web Archive files.  Please download a browser that supports Web Archive, such as Windows® Internet Explorer®.
+
+------=_NextPart_01CBB659.8AFBBF50
+Content-Location: file:///C:/89764A33/BATCapstoneReportSpecifications.htm
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/html; charset="us-ascii"
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml"
+xmlns:o=3D"urn:schemas-microsoft-com:office:office"
+xmlns:w=3D"urn:schemas-microsoft-com:office:word"
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:st1=3D"urn:schemas-microsoft-com:office:smarttags"
+xmlns=3D"http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=3DContent-Type content=3D"text/html; charset=3Dus-ascii">
+<meta name=3DProgId content=3DWord.Document>
+<meta name=3DGenerator content=3D"Microsoft Word 12">
+<meta name=3DOriginator content=3D"Microsoft Word 12">
+<link rel=3DFile-List href=3D"BATCapstoneReportSpecifications_files/filelis=
+t.xml">
+<title>BAT Capstone Report Specifications</title>
+<o:SmartTagType namespaceuri=3D"urn:schemas-microsoft-com:office:smarttags"
+ name=3D"City"/>
+<o:SmartTagType namespaceuri=3D"urn:schemas-microsoft-com:office:smarttags"
+ name=3D"country-region"/>
+<o:SmartTagType namespaceuri=3D"urn:schemas-microsoft-com:office:smarttags"
+ name=3D"place"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>demoCapstone Report Specifications</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>jdawkins</o:LastAuthor>
+  <o:Revision>6</o:Revision>
+  <o:TotalTime>412</o:TotalTime>
+  <o:LastPrinted>2008-08-26T17:56:00Z</o:LastPrinted>
+  <o:Created>2008-08-27T18:55:00Z</o:Created>
+  <o:LastSaved>2011-01-17T20:16:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>3650</o:Words>
+  <o:Characters>20805</o:Characters>
+  <o:Company>wvup</o:Company>
+  <o:Lines>173</o:Lines>
+  <o:Paragraphs>48</o:Paragraphs>
+  <o:CharactersWithSpaces>24407</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=3DthemeData href=3D"BATCapstoneReportSpecifications_files/themeda=
+ta.thmx">
+<link rel=3DcolorSchemeMapping
+href=3D"BATCapstoneReportSpecifications_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>BestFit</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DoNotHyphenateCaps/>
+  <w:PunctuationKerning/>
+  <w:DrawingGridHorizontalSpacing>6 pt</w:DrawingGridHorizontalSpacing>
+  <w:DrawingGridVerticalSpacing>6 pt</w:DrawingGridVerticalSpacing>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEve=
+ry>
+  <w:DisplayVerticalDrawingGridEvery>3</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas>false</w:ValidateAgainstSchemas>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotUnderlineInvalidXML/>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:DoNotShadeFormData/>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val=3D"Cambria Math"/>
+   <m:brkBin m:val=3D"before"/>
+   <m:brkBinSub m:val=3D"&#45;-"/>
+   <m:smallFrac m:val=3D"off"/>
+   <m:dispDef/>
+   <m:lMargin m:val=3D"0"/>
+   <m:rMargin m:val=3D"0"/>
+   <m:defJc m:val=3D"centerGroup"/>
+   <m:wrapIndent m:val=3D"1440"/>
+   <m:intLim m:val=3D"subSup"/>
+   <m:naryLim m:val=3D"undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState=3D"false" DefUnhideWhenUsed=3D"false"
+  DefSemiHidden=3D"false" DefQFormat=3D"false" LatentStyleCount=3D"267">
+  <w:LsdException Locked=3D"false" QFormat=3D"true" Name=3D"Normal"/>
+  <w:LsdException Locked=3D"false" QFormat=3D"true" Name=3D"heading 1"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   QFormat=3D"true" Name=3D"heading 2"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   QFormat=3D"true" Name=3D"heading 3"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   QFormat=3D"true" Name=3D"heading 4"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   QFormat=3D"true" Name=3D"heading 5"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   QFormat=3D"true" Name=3D"heading 6"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   QFormat=3D"true" Name=3D"heading 7"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   QFormat=3D"true" Name=3D"heading 8"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   QFormat=3D"true" Name=3D"heading 9"/>
+  <w:LsdException Locked=3D"false" SemiHidden=3D"true" UnhideWhenUsed=3D"tr=
+ue"
+   QFormat=3D"true" Name=3D"caption"/>
+  <w:LsdException Locked=3D"false" QFormat=3D"true" Name=3D"Title"/>
+  <w:LsdException Locked=3D"false" Priority=3D"1" Name=3D"Default Paragraph=
+ Font"/>
+  <w:LsdException Locked=3D"false" QFormat=3D"true" Name=3D"Subtitle"/>
+  <w:LsdException Locked=3D"false" QFormat=3D"true" Name=3D"Strong"/>
+  <w:LsdException Locked=3D"false" QFormat=3D"true" Name=3D"Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"99" Name=3D"No List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"99" SemiHidden=3D"true"
+   Name=3D"Placeholder Text"/>
+  <w:LsdException Locked=3D"false" Priority=3D"1" QFormat=3D"true" Name=3D"=
+No Spacing"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List Accen=
+t 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid Accen=
+t 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+ Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+ Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"99" SemiHidden=3D"true" Name=
+=3D"Revision"/>
+  <w:LsdException Locked=3D"false" Priority=3D"34" QFormat=3D"true"
+   Name=3D"List Paragraph"/>
+  <w:LsdException Locked=3D"false" Priority=3D"29" QFormat=3D"true" Name=3D=
+"Quote"/>
+  <w:LsdException Locked=3D"false" Priority=3D"30" QFormat=3D"true"
+   Name=3D"Intense Quote"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List Accent=
+ 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+ Accent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid Ac=
+cent 1"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List Accen=
+t 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid Accen=
+t 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+ Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+ Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List Accent=
+ 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+ Accent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid Ac=
+cent 2"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List Accen=
+t 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid Accen=
+t 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+ Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+ Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List Accent=
+ 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+ Accent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid Ac=
+cent 3"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List Accen=
+t 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid Accen=
+t 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+ Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+ Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List Accent=
+ 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+ Accent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid Ac=
+cent 4"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List Accen=
+t 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid Accen=
+t 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+ Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+ Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List Accent=
+ 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+ Accent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid Ac=
+cent 5"/>
+  <w:LsdException Locked=3D"false" Priority=3D"60" Name=3D"Light Shading Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"61" Name=3D"Light List Accen=
+t 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"62" Name=3D"Light Grid Accen=
+t 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"63" Name=3D"Medium Shading 1=
+ Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"64" Name=3D"Medium Shading 2=
+ Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"65" Name=3D"Medium List 1 Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"66" Name=3D"Medium List 2 Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"67" Name=3D"Medium Grid 1 Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"68" Name=3D"Medium Grid 2 Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"69" Name=3D"Medium Grid 3 Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"70" Name=3D"Dark List Accent=
+ 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"71" Name=3D"Colorful Shading=
+ Accent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"72" Name=3D"Colorful List Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"73" Name=3D"Colorful Grid Ac=
+cent 6"/>
+  <w:LsdException Locked=3D"false" Priority=3D"19" QFormat=3D"true"
+   Name=3D"Subtle Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"21" QFormat=3D"true"
+   Name=3D"Intense Emphasis"/>
+  <w:LsdException Locked=3D"false" Priority=3D"31" QFormat=3D"true"
+   Name=3D"Subtle Reference"/>
+  <w:LsdException Locked=3D"false" Priority=3D"32" QFormat=3D"true"
+   Name=3D"Intense Reference"/>
+  <w:LsdException Locked=3D"false" Priority=3D"33" QFormat=3D"true" Name=3D=
+"Book Title"/>
+  <w:LsdException Locked=3D"false" Priority=3D"37" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" Name=3D"Bibliography"/>
+  <w:LsdException Locked=3D"false" Priority=3D"39" SemiHidden=3D"true"
+   UnhideWhenUsed=3D"true" QFormat=3D"true" Name=3D"TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid=3D"clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=3Dieooui></objec=
+t>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+p.CM1, li.CM1, div.CM1
+	{mso-style-name:CM1;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:42.55pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM17, li.CM17, div.CM17
+	{mso-style-name:CM17;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:28.25pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM2, li.CM2, div.CM2
+	{mso-style-name:CM2;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM3, li.CM3, div.CM3
+	{mso-style-name:CM3;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM18, li.CM18, div.CM18
+	{mso-style-name:CM18;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.5pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM4, li.CM4, div.CM4
+	{mso-style-name:CM4;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM19, li.CM19, div.CM19
+	{mso-style-name:CM19;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:36.35pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM5, li.CM5, div.CM5
+	{mso-style-name:CM5;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM6, li.CM6, div.CM6
+	{mso-style-name:CM6;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM7, li.CM7, div.CM7
+	{mso-style-name:CM7;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:21.3pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM8, li.CM8, div.CM8
+	{mso-style-name:CM8;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:21.3pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM20, li.CM20, div.CM20
+	{mso-style-name:CM20;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:21.5pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM9, li.CM9, div.CM9
+	{mso-style-name:CM9;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:21.3pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM10, li.CM10, div.CM10
+	{mso-style-name:CM10;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:21.3pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM23, li.CM23, div.CM23
+	{mso-style-name:CM23;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:56.5pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM11, li.CM11, div.CM11
+	{mso-style-name:CM11;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:14.15pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM24, li.CM24, div.CM24
+	{mso-style-name:CM24;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:14.15pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM12, li.CM12, div.CM12
+	{mso-style-name:CM12;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:28.4pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM13, li.CM13, div.CM13
+	{mso-style-name:CM13;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:23.65pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM25, li.CM25, div.CM25
+	{mso-style-name:CM25;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:42.5pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM22, li.CM22, div.CM22
+	{mso-style-name:CM22;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:19.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM14, li.CM14, div.CM14
+	{mso-style-name:CM14;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:23.65pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM26, li.CM26, div.CM26
+	{mso-style-name:CM26;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:66.0pt;
+	margin-left:0in;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM15, li.CM15, div.CM15
+	{mso-style-name:CM15;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:28.4pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.CM16, li.CM16, div.CM16
+	{mso-style-name:CM16;
+	mso-style-unhide:no;
+	mso-style-parent:Default;
+	mso-style-next:Default;
+	margin:0in;
+	margin-bottom:.0001pt;
+	line-height:14.15pt;
+	mso-pagination:none;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:40.5pt 31.5pt 49.5pt 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:-1798287714;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-427342672 -1 -1 -1 -1 -1 -1 -1 -1 -1;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level2
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level3
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level4
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level5
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level6
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level7
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level8
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l0:level9
+	{mso-level-start-at:0;
+	mso-level-text:"";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext=3D"edit" spidmax=3D"3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext=3D"edit">
+  <o:idmap v:ext=3D"edit" data=3D"1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=3DEN-US style=3D'tab-interval:.5in;text-justify-trim:punctuation=
+'>
+
+<div class=3DWordSection1>
+
+<p class=3DCM1 align=3Dcenter style=3D'text-align:center'><b><span style=3D=
+'color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DCM1 align=3Dcenter style=3D'text-align:center'><b><span style=3D=
+'color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DCM1 align=3Dcenter style=3D'text-align:center'><b><span style=3D=
+'color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DCM1 align=3Dcenter style=3D'text-align:center'><b><span style=3D=
+'color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DCM1 align=3Dcenter style=3D'text-align:center'><b><span style=3D=
+'color:black'>SPECIFICATIONS
+FOR CAPSTONE REPORT <o:p></o:p></span></b></p>
+
+<p class=3DCM1 align=3Dcenter style=3D'text-align:center'><b><span style=3D=
+'color:black'>WVU-Parkersburg
+Computer &amp; Information Technology </span></b><span style=3D'color:black=
+'><o:p></o:p></span></p>
+
+<p class=3DCM17 align=3Dcenter style=3D'text-align:center;line-height:42.55=
+pt'><b><span
+style=3D'color:black'>B.A.T. Mainframe Computing Technology (Your Degree Pr=
+ogram)</span></b><span
+style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM1><span style=3D'color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DCM2 align=3Dcenter style=3D'text-align:center'><b><span style=3D=
+'color:black'>TABLE
+OF CONTENTS<br style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]></span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM18 style=3D'margin-bottom:0in;margin-bottom:.0001pt;text-align=
+:justify'><span
+style=3D'color:black'>SECTION <o:p></o:p></span></p>
+
+<p class=3DCM19 style=3D'margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-align:justify'>1.<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>GENERAL <span class=3DGramE>REQUIR=
+EMENTS<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>..................................=
+......................................</span></p>
+
+<p class=3DCM19 style=3D'margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:63.0pt;margin-bottom:.0001pt;text-align:justify'>1.1<span
+class=3DGramE>.<span style=3D'mso-spacerun:yes'>&nbsp; </span>PRINTREQUIREM=
+ENTS</span><span
+style=3D'mso-spacerun:yes'>&nbsp;
+</span>.................................................................<sp=
+an
+style=3D'mso-spacerun:yes'>&nbsp; </span>1<br>
+1.2.<span style=3D'mso-spacerun:yes'>&nbsp; </span><span class=3DGramE>PAPE=
+R<span
+style=3D'mso-spacerun:yes'>&nbsp;
+</span>....................................................................=
+............................<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>1<br>
+1.3.</span><span style=3D'mso-spacerun:yes'>&nbsp; </span><span class=3DGra=
+mE>MARGINS<span
+style=3D'mso-spacerun:yes'>&nbsp;
+</span>....................................................................=
+......................<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>1<br>
+1.4.</span><span style=3D'mso-spacerun:yes'>&nbsp; </span><span class=3DGra=
+mE>LINE
+SPACING
+...........................................................................=
+.......<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>1<br>
+1.5.</span><span style=3D'mso-spacerun:yes'>&nbsp; </span><span class=3DGra=
+mE>HEADINGS<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>..................................=
+......................................................<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>2<br>
+1.6.</span><span style=3D'mso-spacerun:yes'>&nbsp; </span><span class=3DGra=
+mE>PAGINATION<span
+style=3D'mso-spacerun:yes'>&nbsp;
+</span>....................................................................=
+................<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>2<br>
+1.7.</span><span style=3D'mso-spacerun:yes'>&nbsp; </span><span class=3DGra=
+mE>QUOTATIONS<span
+style=3D'mso-spacerun:yes'>&nbsp;
+</span>....................................................................=
+...............</span><span
+style=3D'mso-spacerun:yes'>&nbsp; </span>3<br style=3D'mso-special-characte=
+r:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]></p>
+
+<p class=3DCM19 style=3D'margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:67.5pt;margin-bottom:.0001pt;text-indent:-31.5pt'>2.<span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span style=3D'mso-tab-count:1'>&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=3DGramE>FORMAT<span style=3D'mso-spacerun:yes'>&nbsp;
+</span>....................................................................=
+...............................................................</span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp; </span><span style=3D'mso-tab=
+-count:
+1'>&nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+>4<br>
+2.1. <span style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <=
+/span><span
+class=3DGramE>ORDER OF MATERIAL<span style=3D'mso-spacerun:yes'>&nbsp;
+</span>....................................................................=
+..........................<span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span style=3D'mso-tab-count:1'>&n=
+bsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+>4<br>
+2.2.</span> <span style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp; </span><span
+class=3DGramE>TITLE PAGE<span style=3D'mso-spacerun:yes'>&nbsp;
+</span>....................................................................=
+............................................<span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span style=3D'mso-tab-count:1'>&n=
+bsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+>4<br>
+2.3.</span> <span style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp; </span>ABSTRACT
+...........................................................................=
+.......................................
+<span style=3D'mso-tab-count:1'>&nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+>4<br>
+2.4. <span style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <=
+/span><span
+class=3DGramE>TABLE OF CONTENTS
+...........................................................................=
+...................<span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span style=3D'mso-tab-count:1'>&n=
+bsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+>5<br>
+<span style=3D'color:black'>2.5.</span></span><span style=3D'color:black'><=
+span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp; </span><span style=3D'mso-tab-count=
+:1'>&nbsp;&nbsp;&nbsp;&nbsp; </span>OPTIONAL
+<span class=3DGramE>SECTIONS
+...........................................................................=
+....................</span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'mso-tab-count:1'>&nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+>5<o:p></o:p></span></p>
+
+<p class=3DCM19 style=3D'margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:1.5in;margin-bottom:.0001pt;text-indent:-31.5pt'><span
+style=3D'color:black'><br>
+2.5.1. <span style=3D'mso-tab-count:1'>&nbsp; </span>Lists of Tables, Figur=
+es and
+Plates ....................................................................=
+..<span
+style=3D'mso-tab-count:1'>&nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=3DGramE>5<br>
+2.5.2</span>.<span style=3D'mso-spacerun:yes'>&nbsp; </span><span class=3DG=
+ramE>Acknowledgments
+...........................................................................=
+....................<span
+style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp;&nbsp;&nbsp; </span></span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=3DGramE>5<br>
+2.5.3.</span><span style=3D'mso-spacerun:yes'>&nbsp; </span>Appendices
+...........................................................................=
+..............................<span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span style=3D'mso-tab-count:1'>&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><sp=
+an
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+><span
+class=3DGramE>5<br>
+2.5.4</span>.<span style=3D'mso-spacerun:yes'>&nbsp; </span>Footnotes/Endno=
+tes
+...........................................................................=
+..................<span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span style=3D'mso-tab-count:1'>&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><sp=
+an
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+>6<br
+style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DCM19 style=3D'margin-left:67.5pt;text-indent:-31.5pt'>3.<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>TEXT
+...........................................................................=
+.....................................................................<span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span style=3D'mso-tab-count:1'>&n=
+bsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+>7<br>
+<span style=3D'color:black'>3.1.<span style=3D'mso-spacerun:yes'>&nbsp; </s=
+pan><span
+style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>SUBDIVISION=
+ OF <span
+class=3DGramE>TEXT<span style=3D'mso-spacerun:yes'>&nbsp;
+</span>....................................................................=
+........................</span><span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span style=3D'mso-tab-count:1'>&n=
+bsp;&nbsp;&nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+>7<br>
+3.2.<span style=3D'mso-spacerun:yes'>&nbsp; </span><span style=3D'mso-tab-c=
+ount:
+1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=3DGramE>TABLES<span
+style=3D'mso-spacerun:yes'>&nbsp;
+</span>....................................................................=
+...................................................</span><span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span style=3D'mso-tab-count:1'>&n=
+bsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+>7<br>
+3.3.<span style=3D'mso-spacerun:yes'>&nbsp; </span><span style=3D'mso-tab-c=
+ount:
+1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class=3DGramE>ILLUSTRATIONS
+...........................................................................=
+..............................<span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span style=3D'mso-tab-count:1'>&n=
+bsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+>7<br>
+3.4.</span> <span style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&=
+nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;</span>CD ROMS
+...........................................................................=
+..........................................<span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span style=3D'mso-tab-count:1'>&n=
+bsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+>8<br
+style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DDefault style=3D'margin-left:33.0pt;text-align:justify;text-inde=
+nt:-1.5pt;
+line-height:21.3pt'>4.<span style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
+<span class=3DGramE>REFERENCES<span style=3D'mso-spacerun:yes'>&nbsp;
+</span>....................................................................=
+......................................................</span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'mso-tab-count:1'> </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span=
+>9</p>
+
+<p class=3DCM7 style=3D'margin-left:67.5pt'><span class=3DGramE>ATTACHMENTS=
+<br>
+A.</span> <span style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; </span><span
+class=3DGramE>EXAMPLE OF TITLE PAGE
+...........................................................................=
+...............
+<span style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span=
+><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>10<br>
+B.</span> <span style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; </span><span
+class=3DGramE>EXAMPLE OF ABSTRACT
+...........................................................................=
+................<span
+style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>11<br>
+C.</span> <span style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nb=
+sp;&nbsp;&nbsp; </span>EXAMPLE
+OF TABLE OF <span class=3DGramE>CONTENTS
+.......................................................................</sp=
+an> <span
+style=3D'mso-tab-count:1'>&nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=3DGramE>12<br>
+<span style=3D'color:black'>D.</span></span><span style=3D'color:black'> <s=
+pan
+style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; =
+</span>EXAMPLES
+OF BIBLIOGRAPHIC
+ENTRIES................................................................<span
+style=3D'mso-tab-count:1'>&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp; </span>14<br
+style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DCM17 align=3Dcenter style=3D'text-align:center'><b><span style=
+=3D'color:
+black'>1. GENERAL REQUIREMENTS </span></b><span style=3D'color:black'><o:p>=
+</o:p></span></p>
+
+<p class=3DCM3 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+1.1. PRINT
+REQUIREMENTS </span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>All print must be letter-quality and must be clear, d=
+ense,
+and consistent throughout the document. Print must be no smaller than 11 or=
+ 12
+point. The same print style should be maintained throughout. Times New Roma=
+n,
+12 points, is preferred. The use of italics or other special style types is=
+ not
+acceptable, except for emphasis (titles of books, etc.), and then should be
+used only sparingly. Bold face in the next larger point may be used for sec=
+tion
+headings, section titles, and other limited applications such as appendix
+titles. <o:p></o:p></span></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>Word division should be kept to a minimum, and approp=
+riate
+word division should be determined by reference to a dictionary. Avoid
+hyphenation at the end of a page. <o:p></o:p></span></p>
+
+<p class=3DCM20 style=3D'text-align:justify;text-indent:.5in;line-height:21=
+.3pt'><span
+style=3D'color:black'>Quality is important. No form of correction tape or f=
+luid
+can be used. <o:p></o:p></span></p>
+
+<p class=3DCM7 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+1.2. PAPER
+</span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM20 style=3D'margin-left:.5in;text-align:justify;line-height:21=
+.3pt'><span
+style=3D'color:black'>White bond paper of twenty pound weight should be use=
+d. <o:p></o:p></span></p>
+
+<p class=3DCM7 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+1.3.
+MARGINS </span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM20 style=3D'text-align:justify;text-indent:.5in;line-height:21=
+.3pt'><span
+style=3D'color:black'>Each page must have margins of not less than one and
+one-half inches on the left-hand side (the side which will be bound), and o=
+ne
+inch on the other three sides. <o:p></o:p></span></p>
+
+<p class=3DCM7 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+1.4. LINE
+SPACING </span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DDefault style=3D'text-align:justify;text-indent:39.0pt;line-heig=
+ht:21.3pt'>Reports
+must be printed on one side of the sheet only, and the lines of type should=
+ be
+separated by either one and one-half or two line spaces (double spacing is
+preferred) except for footnotes, bibliographical entries, and long quoted
+passages (extracts) which are normally single-spaced. Use double-spacing
+between footnotes, between bibliographical entries, and between single-spac=
+ed
+quotations and text. Leave at least four lines of blank space above and bel=
+ow
+figures and tables that are placed on pages with text and/or other figures =
+and
+tables. </p>
+
+<p class=3DCM20 style=3D'text-align:justify;text-indent:.5in;line-height:21=
+.3pt'><span
+style=3D'color:black'>The first line of each paragraph and all lines of oth=
+er
+indented material must be indented one-half inch from the left-hand margin =
+of
+the typed copy. Quotations longer than three typed lines are also preferred=
+ to
+be extracted, that is, indented one-half inch on both right and left margin=
+s.
+Beginning and ending quotation marks are omitted from extracts, but any
+internal punctuation is reproduced exactly as was in the original. All line=
+s of
+other indented material are also indented one-half inch. The number of lines
+between paragraphs may be either double or triple-spaced or have more space=
+s if
+necessary. The selected paragraph spacing must be retained throughout the b=
+ody
+of the typed material. <o:p></o:p></span></p>
+
+<p class=3DCM7 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+1.5.
+HEADINGS </span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM20 style=3D'text-align:justify;text-indent:.5in;line-height:21=
+.3pt'><span
+style=3D'color:black'>Major headings should be designated by Arabic numbers=
+ (1,
+2, etc.). Each major section so designated must start on a new page, and the
+heading must be centered at the top of the page and typed in bold face and
+capital letters. Principal subheadings must be designated with the section
+number and the number of the principal section (for example, 2.1, 2.2), pla=
+ced
+flush with the left-hand margin of the typed copy one line above the
+subsection&#8217;s lead paragraph and typed in bold face and capital letter=
+s.
+Additional subheadings must be designated as 2.1.1, 2.1.2, 2.1.3, and so on.
+Subheadings at this level should be placed at the beginning of a paragraph
+(typed on the same line as the first line of the paragraph), and typed in b=
+old
+face using capital and lowercase letters. <o:p></o:p></span></p>
+
+<p class=3DCM7 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+1.6.
+PAGINATION </span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>All printed pages must be counted consecutively. All =
+pages
+preceding the text must bear lowercase Roman numerals, such as iii and <span
+class=3DGramE>iv</span>. This sequence starts with the title page, which sh=
+ould
+not bear a number. The rest of the preliminary pages bear consecutive lower=
+case
+Roman numerals. All subsequent pages containing the text, appendices, and
+references must bear Arabic numerals, such as 2, 3, and 4, and must be numb=
+ered
+from the second page of the text. The page numbers should be placed at the
+bottom of each numbered page, centered. Title pages of appendices are count=
+ed
+in the page numbering sequence but should not have page numbers typed on th=
+em. <o:p></o:p></span></p>
+
+<p class=3DCM7 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+1.7.
+QUOTATIONS </span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>The form and wording of quotations should correspond
+exactly to the original text. If individual words or parts of a quoted sent=
+ence
+are left out, the omission should be indicated by an ellipsis. The omission
+should not distort or alter the original sense of the quotation. If the aut=
+hor
+inserts a word or words to clarify or emphasize any part of a quotation, the
+insertion should be enclosed in brackets: [ ]. Quotations exceeding three
+typewritten lines are best quoted in EXTRACT form. In an extract the author
+does not enclose the words in his or her own quotation marks (though he or =
+she
+must be faithful to any original punctuation that was in the text.) Extracts
+are set apart from the text, typed single-spaced, and indented five charact=
+er
+spaces from each side margin of the typed copy. <o:p></o:p></span></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>Quotations from unpublished material or from oral
+communications or letters are referenced in the same way as published mater=
+ial
+in the text. The corresponding citation in the bibliography should give the
+nature of the source. <o:p></o:p></span></p>
+
+<p class=3DCM20><b><span style=3D'color:black'><o:p>&nbsp;</o:p></span></b>=
+</p>
+
+<p class=3DCM20><b><span style=3D'color:black'>2. FORMAT </span></b><span
+style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DDefault><b>2.1. ORDER OF MATERIAL </b></p>
+
+<p class=3DCM20 style=3D'text-indent:.5in;line-height:21.3pt'><span
+style=3D'color:black'>The following items marked with a single bullet are
+required; those indicated otherwise may be optional, depending on your repo=
+rt.
+All materials should be arranged into the following three sections: (1) the
+preliminary matter, (2) the text, and (3) the back matter: <o:p></o:p></spa=
+n></p>
+
+<p class=3DCM10><span style=3D'color:black'>Preliminary pages (front matter=
+): <o:p></o:p></span></p>
+
+<p class=3DDefault>&#8226; Title page/ (see Attachment A) </p>
+
+<p class=3DDefault>&#8226; Abstract (250 to 350 words, one page maximum; see
+Attachment B) </p>
+
+<p class=3DDefault>&#8226; Acknowledgments </p>
+
+<p class=3DDefault>&#8226; Table of Contents (see Attachment C) </p>
+
+<p class=3DDefault>&#8226; List of Illustrations (if figures are included) =
+</p>
+
+<p class=3DDefault>&#8226; List of Tables (if tables are included) Text: </=
+p>
+
+<p class=3DDefault>&#8226; Body of the report (includes text, illustrations=
+, and
+tables) </p>
+
+<p class=3DDefault><span style=3D'mso-spacerun:yes'>&nbsp;&nbsp; </span>Back
+Matter: Appendices, if included Endnotes, if included </p>
+
+<p class=3DDefault>&#8226; Bibliography or references (See Attachment G) </=
+p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DCM10><b><span style=3D'color:black'>2.2. TITLE PAGE </span></b><=
+span
+style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM20 style=3D'text-indent:.5in;line-height:21.3pt'><span
+style=3D'color:black'>The title page must conform to the style of the attac=
+hed
+samples (see Attachment A). Count as page <span class=3DSpellE>i</span>, bu=
+t do
+not type a page number on it. Date this page with the month and year of the
+capstone defense. The title should be a meaningful description of the subje=
+ct
+of the project. Avoid using formulae, symbols, superscripts, Greek letters,=
+ and
+so forth. <o:p></o:p></span></p>
+
+<p class=3DCM10><b><span style=3D'color:black'>2.3. ABSTRACT </span></b><sp=
+an
+style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM9 style=3D'text-indent:.5in'><span style=3D'color:black'>Pagin=
+ation
+should begin here (it will be numbered either iii or <span class=3DGramE>iv=
+</span>).
+The abstract cannot exceed 350 words or one page, which ever is shorter (See
+Attachment B). <o:p></o:p></span></p>
+
+<p class=3DCM20 style=3D'text-align:justify;text-indent:.5in;line-height:21=
+.3pt'><span
+style=3D'color:black'>The abstract should be a concise, clear statement of =
+the
+important points which have been brought out in the project report. It shou=
+ld
+summarize the problems dealt with by the work, the methods employed, and the
+major findings. The abstract should be organized to correlate with the repo=
+rt
+outline. It must be double-spaced, and it must not contain more than 350 wo=
+rds.
+<o:p></o:p></span></p>
+
+<p class=3DCM7 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+<o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DCM7 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+2.4. TABLE
+OF CONTENTS </span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM20 style=3D'text-align:justify;text-indent:.5in;line-height:21=
+.3pt'><span
+style=3D'color:black'>The Table of Contents must conform to the style of the
+attached sample. <span class=3DGramE>(See Attachment C.)</span> The paginat=
+ion of
+these pages continues on from prior pages (<span class=3DGramE>iv</span>, e=
+tc.).
+List all parts of the report in the Table of Contents, except the title page
+and table of contents page. Capitalize the section titles and list the sect=
+ion
+headings word-for-word as they appear in the text. Double-space between ite=
+ms,
+and single-space within any heading/subheading that is longer than one line=
+. <o:p></o:p></span></p>
+
+<p class=3DCM7 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+2.5.
+OPTIONAL SECTIONS </span></b><span style=3D'color:black'><o:p></o:p></span>=
+</p>
+
+<p class=3DDefault style=3D'margin-left:0in;text-indent:0in;mso-list:l0 lev=
+el1 lfo2'><![if !supportLists]><span
+style=3D'mso-list:Ignore'>1.<span style=3D'font:7.0pt "Times New Roman"'>&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><b>2.5.1. Lists of Tables, Illustrations and Maps</=
+b>.
+When figures and/or tables are included in the report, a List of Illustrati=
+ons
+and/or Tables, as appropriate, is required. The captions/titles in the List=
+ of
+Illustrations and List of Tables must be identical to the captions/titles in
+the text. The List of Illustrations should include all photographs, charts,
+plates, diagrams, or drawings included in the text. Separate lists must be =
+made
+for maps. Double-space between items on the lists, single-space within. The
+List of Tables and List of Maps should follow the List of Illustrations and
+these pages should be numbered with lowercase Roman numerals (page <span
+class=3DGramE>iv</span>, v, etc.) </p>
+
+<p class=3DDefault style=3D'margin-left:0in;text-indent:0in;mso-list:l0 lev=
+el1 lfo2'><![if !supportLists]><span
+style=3D'mso-list:Ignore'>2.<span style=3D'font:7.0pt "Times New Roman"'>&n=
+bsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><![endif]><b>2.5.2. Acknowledgments</b>. Acknowledgments may =
+be
+included, but must be limited to one page or less. If these optional pages =
+are
+used, number them with lowercase Roman numerals. It is customary to acknowl=
+edge
+graduate fellowships, grants, travel funds, and any special help you may ha=
+ve
+received outside your committee (from people at work, library staff, or oth=
+ers)
+that led to the completion of your project. </p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><b><span
+style=3D'color:black'>2.5.3. Appendices</span></b><span style=3D'color:blac=
+k'>.
+Appendices, if included, should be placed after the text. If the report
+contains only one appendix, do not designate by letter. Center the heading,
+(&#8220;APPENDIX&#8221;), and the title, and start the text on the same pag=
+e. <o:p></o:p></span></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>If the report contains more than one appendix, the fo=
+rmat
+varies a bit. Provide each appendix with a title sheet to identify its cont=
+ents
+and to maintain a clear, logical break between each appendix. For each
+appendix, insert the word, APPENDIX, in all uppercase letters, and center i=
+t on
+the page, along with the appropriate appendix capital letter. Leave two bla=
+nk
+lines of space, and center the title beneath it. Count, but do not type a p=
+age
+number on, each appendix title page. List the title page in the Table of
+Contents as the first page of its corresponding appendix. <o:p></o:p></span=
+></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><b><span
+style=3D'color:black'>2.5.4. Footnotes/Endnotes</span></b><span style=3D'co=
+lor:
+black'>. Footnotes or endnotes are optional. Many style/journal manuals pre=
+fer
+that footnotes be omitted and the major information for the citation <span
+class=3DGramE>be</span> included in the text of the work. Students should c=
+heck
+with their advisors to determine which form to use. Footnotes should appear=
+ at
+the bottom of the page containing the references. Footnotes are preferable =
+to
+endnotes because when reading the work with endnotes, the readers have to
+constantly turn to the end of the report and then relocate their previous
+positions. <o:p></o:p></span></p>
+
+<p class=3DCM20 align=3Dcenter style=3D'text-align:center'><b><span style=
+=3D'color:
+black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DCM20><b><span style=3D'color:black'>3. TEXT </span></b><span
+style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM3 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+3.1.
+SUBDIVISION OF TEXT </span></b><span style=3D'color:black'><o:p></o:p></spa=
+n></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>The material which forms the body of the capstone rep=
+ort
+must contain as a minimum the following major sections (other headings for
+these divisions may be chosen, the topical matter should be similar; be
+consistent when choosing, placing, and naming subheadings): <o:p></o:p></sp=
+an></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><b><span
+style=3D'color:black'>Introduction: </span></b><span style=3D'color:black'>=
+State
+the problem, show the importance of the subject, and give the reasons for i=
+ts
+selection. <o:p></o:p></span></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><b><span
+style=3D'color:black'>Review of Literature: </span></b><span style=3D'color=
+:black'>Cite
+previous work in the field and/or allied fields. <o:p></o:p></span></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><b><span
+style=3D'color:black'>Results and Discussion: </span></b><span style=3D'col=
+or:black'>Describe
+and discuss the actual work; include procedures and results, field work and
+results, criteria, and evidence. Subdivisions with appropriate headings can=
+ be
+used as needed. Clarity is often enhanced by separating the presentation of=
+ the
+method, the results, and the discussion of the results. <o:p></o:p></span><=
+/p>
+
+<p class=3DCM20 style=3D'text-align:justify;text-indent:.5in;line-height:21=
+.3pt'><b><span
+style=3D'color:black'>Conclusions: </span></b><span style=3D'color:black'>E=
+ach
+conclusion should be a simple declarative statement of fact drawn from the
+results but without discussion. <o:p></o:p></span></p>
+
+<p class=3DCM7 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+3.2.
+TABLES </span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM20 style=3D'text-align:justify;text-indent:.5in;line-height:21=
+.3pt'><span
+style=3D'color:black'>Table numbers and titles are placed at the top of the
+table. Tables are numbered consecutively in each section using Arabic numbe=
+rs.
+For example, the first table in section one would be numbered Table 1.1, the
+second table would be Table 1.2, and so on. <o:p></o:p></span></p>
+
+<p class=3DCM7 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+3.3.
+ILLUSTRATIONS </span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>All photographs, <span class=3DSpellE>photostats</spa=
+n>, or
+other photocopied illustrations must be mounted flat and unwrinkled on
+regulations size sheets, and their dimensions must conform as nearly as
+possible to the text margins. Scanning is recommended. Folded inserts in the
+body of the text are discouraged. All illustrations must have captions that
+identify and explain the depicted material. They should be designated with
+Arabic numbers based on the section in which they appear. For example, the
+first figure in the first section would be Figure 1.1. The quality of the
+illustrations must equal that required for publication in a refereed journa=
+l. <o:p></o:p></span></p>
+
+<p class=3DCM7 style=3D'text-align:justify'><b><span style=3D'color:black'>=
+3.4. CD
+ROMS </span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>Two copies of the capstone report, in both PDF and Wo=
+rd
+2003 format, are requested on CD ROM. One copy is intended for checkout from
+the library. The second copy is for the student&#8217;s advisor. <o:p></o:p=
+></span></p>
+
+<p class=3DCM20 style=3D'line-height:21.3pt'><b><span style=3D'color:black'=
+>4.
+REFERENCES </span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>It is very important to give credit when using or
+presenting the words, work, and ideas of others, and a serious omission when
+such credit is not given. Care should be taken that references are cited ap=
+propriately
+in the report. If in doubt about how to cite references, including referenc=
+es
+to electronic text, refer to the Modern Language Association (MLA) Handbook=
+ or
+to one of the other commercially prepared guides or journal style sheets. <=
+o:p></o:p></span></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>The bibliographic references should be started on a n=
+ew
+page and placed at the end of the text under the heading BIBLIOGRAPHY. A
+bibliography is considered to represent a comprehensive search of the perti=
+nent
+literature. Other citations lists, incorporating only directly cited source=
+s,
+are known as &#8220;references&#8221;. The style of reference citation shou=
+ld
+correspond either to the style used in Attachment F or to that used by jour=
+nals
+in the field of the candidate&#8217;s discipline. Reference in the text to =
+a citation
+in the bibliography may be made by stating the name of the author and the y=
+ear
+of publication or by using consecutive superior numbers, or by using superi=
+or.
+There are thus two types of lists which are acceptable for a bibliography: =
+1)
+an unnumbered alphabetical list; 2) a numbered list in which the numbered
+citations correspond to the sequence of references in the text. If referenc=
+e is
+made to a specific piece of information or a specific statement of an autho=
+r,
+or if a quotation is made, the page from which it is taken must be indicate=
+d,
+preferably at the location of the text citation, rather than in the full
+citation appearing in the Bibliography or Reference list. <o:p></o:p></span=
+></p>
+
+<p class=3DCM8 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>The citations in the bibliography should be listed in=
+ one
+consecutive series. Traditionally, it was alphabetically by the author&#821=
+7;s
+last name, but more recent innovations have included order of citation in t=
+he
+text and other logical formats. Usually, bibliographies would not be separa=
+ted
+into types, such as articles, books, periodicals, and documents, unless the
+candidate was writing a non-technical study about an author whose publicati=
+ons
+fell into those categories. For all other bibliographic forms and rules, re=
+fer
+to those that are accepted by the refereed journals in the candidate&#8217;s
+discipline. The main objective is accuracy, clarity, brevity, and uniformit=
+y. <o:p></o:p></span></p>
+
+<p class=3DCM23 align=3Dcenter style=3D'text-align:center'><b><span style=
+=3D'color:
+black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DCM23 align=3Dcenter style=3D'text-align:center'><b><span style=
+=3D'color:
+black'>ATTACHMENT A. EXAMPLE OF TITLE PAGE<br style=3D'mso-special-characte=
+r:
+line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]></span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM23 align=3Dcenter style=3D'text-align:center'><span style=3D'c=
+olor:black'>The
+Title of Your Capstone Report <o:p></o:p></span></p>
+
+<p class=3DCM17 align=3Dcenter style=3D'text-align:center;line-height:14.15=
+pt'><span
+style=3D'color:black'>A Capstone Report submitted to the<br>
+Bachelor of Applied Technology Program at<br>
+WVU-Parkersburg<br style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DCM17 align=3Dcenter style=3D'text-align:center;line-height:14.15=
+pt'><span
+style=3D'color:black'>In Partial Fulfillment of<br>
+the requirements for the degree of<br>
+Bachelor of Applied Technology<br>
+Information Systems<br style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DCM24 align=3Dcenter style=3D'text-align:center;line-height:14.15=
+pt'><span
+class=3DGramE><span style=3D'color:black'>by</span></span><span style=3D'co=
+lor:black'><br
+style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DCM23 align=3Dcenter style=3D'text-align:center;line-height:14.15=
+pt'><span
+class=3DGramE><span style=3D'color:black'>Your</span></span><span style=3D'=
+color:
+black'> Name<br style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DCM11 align=3Dcenter style=3D'margin-bottom:99.15pt;text-align:ce=
+nter'>Isaac
+Newton, Ph.D., Committee Chair<br>
+Gottfried <span class=3DSpellE>Liebnitz</span>, Ph.D<span class=3DGramE>.</=
+span><br>
+Daniel Waterhouse, Ph.D.<br style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]></p>
+
+<p class=3DCM11 align=3Dcenter style=3D'margin-bottom:99.15pt;text-align:ce=
+nter'>WVU-Parkersburg<br>
+<span style=3D'color:black'>December 2008<br style=3D'mso-special-character=
+:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DCM24 style=3D'margin-left:107.65pt;text-align:justify'><b><span
+style=3D'color:black'>ATTACHMENT B. EXAMPLE OF ABSTRACT </span></b><span
+style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DDefault style=3D'margin-left:202.65pt;text-align:justify'>ABSTRA=
+CT </p>
+
+<p class=3DCM12 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>This report focuses on the development and implementa=
+tion
+of classical mechanics to describe coherence parameters for ion-atom
+collisions. Such studies require a complete description of the quantum numb=
+ers
+n, l, and m which characterize the bound electron. For <span class=3DSpellE=
+>hydrogenic</span>
+systems, the shape and rotational tendencies of the charge cloud can also be
+expressed in terms of parameters which define the classical <span class=3DS=
+pellE>Kepler</span>
+orbit. In order to make such a study, the classical trajectory Monte Carlo
+method has been modified to yield pre-and post-collision information regard=
+ing
+the coherence nature of the electronic states. <o:p></o:p></span></p>
+
+<p class=3DCM12 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>In order to benchmark the theoretical developments, c=
+ross
+sections have been calculated for a series of collision systems. This measu=
+re
+of <span class=3DSpellE>reactability</span> provides a test of a theory&#82=
+17;s
+ability to describe fundamental three-body interactions. <o:p></o:p></span>=
+</p>
+
+<p class=3DCM12 style=3D'text-align:justify;text-indent:.5in'><span
+style=3D'color:black'>The theoretical improvements described in this thesis=
+ have
+allowed for the first time detailed comparisons for complex targets at ener=
+gies
+where the ionization channel and a large number of product states preclude
+conventional methods. It will be shown that the CTMC results of the z-compo=
+nent
+of the dipole moment for H</span><sup><span style=3D'font-size:8.0pt;color:=
+black'>+</span></sup><span
+style=3D'color:black'>+He <span class=3DGramE>provide</span> the only reaso=
+nable
+calculations for comparison with available experimental measurements above =
+50 <span
+class=3DSpellE>keV</span>. By virtue of the versatility of this method, ana=
+lysis
+is made with regard to the dipole moment formation as a result of proton
+interaction with various target atom species. By construction of a predefin=
+ed initial
+state, the conclusion formulated in this work is that alignment of the
+post-collision charge distribution is intimately related to that of the
+pre-collision charge distribution. <o:p></o:p></span></p>
+
+<p class=3DCM18 align=3Dcenter style=3D'text-align:center;line-height:23.65=
+pt'><b><span
+style=3D'color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DCM18 align=3Dcenter style=3D'text-align:center;line-height:23.65=
+pt'><b><span
+style=3D'color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DCM18 align=3Dcenter style=3D'text-align:center;line-height:23.65=
+pt'><b><span
+style=3D'color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DCM18 align=3Dcenter style=3D'text-align:center;line-height:23.65=
+pt'><b><span
+style=3D'color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=3DCM18 align=3Dcenter style=3D'text-align:center;line-height:23.65=
+pt'><b><span
+style=3D'color:black'>ATTACHMENT C. EXAMPLE OF TABLE OF CONTENTS</span></b>=
+<span
+style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DDefault><o:p>&nbsp;</o:p></p>
+
+<p class=3DDefault align=3Dcenter style=3D'margin-top:0in;margin-right:.9in;
+margin-bottom:0in;margin-left:1.0in;margin-bottom:.0001pt;text-align:center;
+mso-outline-level:1'>TABLE OF CONTENTS<br style=3D'mso-special-character:li=
+ne-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]></p>
+
+<p class=3DDefault style=3D'margin-top:0in;margin-right:.9in;margin-bottom:=
+0in;
+margin-left:5.0in;margin-bottom:.0001pt;text-indent:.5in;mso-outline-level:
+1'>Page</p>
+
+<p class=3DDefault style=3D'margin-right:.9in;mso-outline-level:1'><br>
+<span
+style=3D'mso-spacerun:yes'>&nbsp;</span>ABSTRACT...........................=
+...........................................................................=
+.........<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>iii<br>
+<span style=3D'mso-spacerun:yes'>&nbsp;</span>(Table of Contents is not to =
+be
+listed)<br style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]></p>
+
+<p class=3DCM25 style=3D'margin-top:0in;margin-right:.9in;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;line-height:12.0pt'><span
+style=3D'color:black'><span style=3D'mso-spacerun:yes'>&nbsp;</span>ACKNOWL=
+EDGMENT
+...........................................................................=
+..................
+<span class=3DGramE>iv</span><br style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DCM25 style=3D'margin-top:0in;margin-right:65.15pt;margin-bottom:=
+0in;
+margin-left:0in;margin-bottom:.0001pt;line-height:12.0pt'><span
+style=3D'color:black'><span style=3D'mso-spacerun:yes'>&nbsp;</span>LIST OF=
+ <span
+class=3DGramE>ILLUSTRATIONS
+...........................................................................=
+...........</span><span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span class=3DGramE>vi</span><br
+style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DCM22 style=3D'margin-top:0in;margin-right:65.15pt;margin-bottom:=
+0in;
+margin-left:4.5pt;margin-bottom:.0001pt;line-height:12.0pt'><span
+style=3D'color:black'><span style=3D'mso-spacerun:yes'>&nbsp;</span>LIST OF
+TABLES<span style=3D'mso-spacerun:yes'>&nbsp;
+</span>....................................................................=
+................................<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>vii<br style=3D'mso-special-charac=
+ter:
+line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DDefault style=3D'line-height:12.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=3DCM18 style=3D'margin-bottom:0in;margin-bottom:.0001pt;line-heigh=
+t:12.0pt'><span
+style=3D'color:black'><span style=3D'mso-spacerun:yes'>&nbsp;</span>SECTION=
+ <o:p></o:p></span></p>
+
+<p class=3DDefault style=3D'line-height:12.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=3DCM26 style=3D'margin-bottom:0in;margin-bottom:.0001pt;line-heigh=
+t:12.0pt'>1.<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>INTRODUCTION
+...........................................................................=
+.........................
+1<br style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]></p>
+
+<p class=3DCM26 style=3D'margin-bottom:0in;margin-bottom:.0001pt;line-heigh=
+t:12.0pt'>2.<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>REVIEW OF LITERATURE<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>..................................=
+..................................................
+9</p>
+
+<p class=3DCM26 style=3D'margin-bottom:0in;margin-bottom:.0001pt;text-inden=
+t:.5in;
+line-height:12.0pt'><span style=3D'color:black'>2.1<span class=3DGramE>.<sp=
+an
+style=3D'mso-spacerun:yes'>&nbsp; </span>----------</span>&shy;
+...........................................................................=
+.........................
+11<o:p></o:p></span></p>
+
+<p class=3DCM26 style=3D'margin-bottom:0in;margin-bottom:.0001pt;text-inden=
+t:.5in;
+line-height:12.0pt'><span style=3D'color:black'>2.2<span class=3DGramE>.<sp=
+an
+style=3D'mso-spacerun:yes'>&nbsp; </span>----------</span>&shy; ...........=
+...........................................................................=
+..............
+12<br style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DDefault style=3D'line-height:12.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=3DCM26 style=3D'margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-indent:-.5in;line-height:12.0pt=
+'>3.<span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span class=3DGramE>RESULTS<span
+style=3D'mso-spacerun:yes'>&nbsp;
+</span>....................................................................=
+.............................................</span>
+18<br>
+3.1.<span style=3D'mso-spacerun:yes'>&nbsp; </span>----------&shy; ........=
+...........................................................................=
+..................
+20<br>
+<span style=3D'color:black'>3.2.<span style=3D'mso-spacerun:yes'>&nbsp;
+</span>----------&shy;
+...........................................................................=
+..........................
+<span class=3DGramE>24<br>
+<span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>3.2.1.</span><span style=3D'mso-spacerun:yes'>&nbsp; </span><span
+class=3DGramE>----------&shy; .............................................=
+.............................................
+28<br>
+<span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>3.2.2.</span><span style=3D'mso-spacerun:yes'>&nbsp; </span><span
+class=3DGramE>----------&shy;
+...........................................................................=
+...............
+29<br>
+<span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>3.2.2.1.</span><span style=3D'mso-spacerun:yes'>&nbsp; </span><span
+class=3DGramE>---------&shy; ..............................................=
+..........................................
+30<br>
+<span style=3D'mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>3.2.2.2.</span><span style=3D'mso-spacerun:yes'>&nbsp; </span>------=
+---&shy;
+...........................................................................=
+.............
+32<br style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DDefault style=3D'line-height:12.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=3DCM26 style=3D'margin-top:0in;margin-right:0in;margin-bottom:0in;
+margin-left:.5in;margin-bottom:.0001pt;text-indent:-.5in;line-height:12.0pt=
+'>4.<span
+style=3D'mso-spacerun:yes'>&nbsp; </span><span class=3DGramE>DISCUSSION<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>..................................=
+.........................................................................</=
+span>
+34<br>
+4.1.<span style=3D'mso-spacerun:yes'>&nbsp; </span><span class=3DGramE>----=
+------&shy;
+...........................................................................=
+...........................
+35<br>
+4.2.</span><span style=3D'mso-spacerun:yes'>&nbsp; </span>----------&shy;
+...........................................................................=
+...........................
+37<br style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]></p>
+
+<p class=3DCM12 style=3D'line-height:12.0pt'><span style=3D'color:black'>5.=
+<span
+style=3D'mso-spacerun:yes'>&nbsp; </span>CONCLUSION
+...........................................................................=
+..............................
+38<br style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DDefault style=3D'line-height:12.0pt'><o:p>&nbsp;</o:p></p>
+
+<p class=3DCM15 style=3D'margin-left:.5in;text-align:justify;text-indent:-.=
+5in;
+line-height:12.0pt'>APPENDICES<br>
+A.----------&shy;..........................................................=
+....................................................39<br>
+B.----------&shy;..........................................................=
+....................................................42<br
+style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]></p>
+
+<p class=3DCM15 style=3D'text-align:justify;line-height:12.0pt'><span
+style=3D'color:black'><span
+style=3D'mso-spacerun:yes'>&nbsp;</span>BIBLIOGRAPHY.......................=
+...........................................................................=
+............44<br
+style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]><o:p></o:p></span></p>
+
+<p class=3DCM18 style=3D'line-height:21.3pt'><o:p>&nbsp;</o:p></p>
+
+<p class=3DCM18 style=3D'line-height:21.3pt'>PLEASE NOTE<span class=3DGramE=
+>:</span><br>
+Capitalization and wording of headings/subheadings should be the same in the
+Table of<br>
+Contents as in the text.<br>
+<span class=3DGramE>Single space run over lines within headings, double spa=
+ce between
+headings/subheadings.</span><br style=3D'mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style=3D'mso-special-character:line-bre=
+ak'>
+<![endif]></p>
+
+<p class=3DCM18 style=3D'line-height:21.3pt'><b><span style=3D'color:black'=
+>ATTACHMENT
+D. EXAMPLES OF BIBLIOGRAPHIC ENTRIES<br>
+Books: </span></b><span style=3D'color:black'><o:p></o:p></span></p>
+
+<p class=3DCM24 style=3D'text-align:justify;line-height:14.15pt'><span
+style=3D'color:black'>The Chicago Manual of Style: For Authors, Editors, and
+Copywriters. 13th ed. Chicago: University of Chicago Press, 1982. <o:p></o:=
+p></span></p>
+
+<p class=3DCM24 style=3D'text-align:justify;line-height:14.15pt'><span
+class=3DSpellE><span class=3DGramE><span style=3D'color:black'>Gibaldi</spa=
+n></span></span><span
+class=3DGramE><span style=3D'color:black'>, Joseph and Walter S. <span
+class=3DSpellE>Achtert</span>.</span></span><span style=3D'color:black'> <s=
+pan
+class=3DGramE>MLA Handbook for Writers of Research Papers.</span> <span
+class=3DGramE>2nd ed. Modern Language Association of America, 1984.</span> =
+<o:p></o:p></span></p>
+
+<p class=3DCM24 style=3D'text-align:justify;line-height:14.15pt'><st1:City =
+w:st=3D"on"><st1:place
+ w:st=3D"on"><span style=3D'color:black'>Sheridan</span></st1:place></st1:C=
+ity><span
+style=3D'color:black'>, Marion C., <span class=3DGramE>The</span> Motion Pi=
+cture
+and the Teaching of English. New York: Appleton-Century Crofts, 1965. <o:p>=
+</o:p></span></p>
+
+<p class=3DCM24 style=3D'text-align:justify;line-height:14.15pt'><span
+class=3DSpellE><span style=3D'color:black'>Turabian</span></span><span
+style=3D'color:black'>, Kate L. <span class=3DGramE>A Manual for Writers of=
+ Term
+Papers, Theses and Dissertations.</span> 5th ed. Chicago: University of Chi=
+cago
+Press, 1987. <o:p></o:p></span></p>
+
+<p class=3DCM24 style=3D'text-align:justify;line-height:14.15pt'><b><span
+style=3D'color:black'>Articles: </span></b><span style=3D'color:black'><o:p=
+></o:p></span></p>
+
+<p class=3DCM16 style=3D'text-align:justify'><span style=3D'color:black'>Ma=
+rkowitz,
+William. <span class=3DGramE>&#8220;Time, Measurement and Determination
+of,&#8221; Encyclopedia Americana, 1965, XXVI, 631-33f.</span>
+&#8220;Gladstone, William <span class=3DSpellE>Ewart</span>,&#8221; The
+Dictionary of National <o:p></o:p></span></p>
+
+<p class=3DCM24 style=3D'text-align:justify;line-height:14.15pt'><span clas=
+s=3DGramE><span
+style=3D'color:black'>Biography, XXII, 705-54.</span></span><span
+style=3D'color:black'> <o:p></o:p></span></p>
+
+<p class=3DCM24 style=3D'text-align:justify;line-height:14.15pt'><b><span
+style=3D'color:black'>Government Documents: </span></b><span style=3D'color=
+:black'><o:p></o:p></span></p>
+
+<p class=3DCM16 style=3D'text-align:justify'><span class=3DGramE><span
+style=3D'color:black'>AAS-NASA Symposium on the Physics of Solar Flares.</s=
+pan></span><span
+style=3D'color:black'> Proceedings of a Symposium held at the Goddard Space
+Flight Center, Greenbelt, Maryland, October 28-30, 1963, ed. Wilmot <o:p></=
+o:p></span></p>
+
+<p class=3DCM24 style=3D'text-align:justify;line-height:14.15pt'><span
+style=3D'color:black'>N. Hess. Washington: Government Printing Office, 1964=
+. <o:p></o:p></span></p>
+
+<p class=3DCM24 style=3D'text-align:justify;line-height:14.15pt'><st1:count=
+ry-region
+w:st=3D"on"><st1:place w:st=3D"on"><span class=3DGramE><span style=3D'color=
+:black'>U.S.</span></span></st1:place></st1:country-region><span
+class=3DGramE><span style=3D'color:black'> Congressional Record.</span></sp=
+an><span
+style=3D'color:black'> Vol. CXII. <o:p></o:p></span></p>
+
+<p class=3DCM24 style=3D'text-align:justify;line-height:14.15pt'><b><span
+style=3D'color:black'>Periodicals: </span></b><span style=3D'color:black'><=
+o:p></o:p></span></p>
+
+<p class=3DCM24 style=3D'text-align:justify;line-height:14.15pt'><span
+class=3DSpellE><span style=3D'color:black'>Dwork</span></span><span
+style=3D'color:black'>, Bernard M. &#8220;On the Zeta Function of a <span
+class=3DSpellE>Hypersurface</span>: III,&#8221; Annals of Mathematics, 2d s=
+er.,
+LXXXIII (May 1966), 457-519. <o:p></o:p></span></p>
+
+<p class=3DCM24 style=3D'text-align:justify;line-height:14.15pt'><span clas=
+s=3DGramE><span
+style=3D'color:black'>Smith, H.A. &#8220;Tensor Products of Locally Convex
+Algebras,&#8221; Proceedings of the American Mathematical Society, XVII, 1
+(1966), 124-32.</span></span><span style=3D'color:black'> <o:p></o:p></span=
+></p>
+
+<p class=3DCM24 style=3D'text-align:justify;line-height:14.15pt'><b><span
+style=3D'color:black'>Unpublished Works: </span></b><span class=3DSpellE><s=
+pan
+style=3D'color:black'>Amidon</span></span><span style=3D'color:black'>, Edm=
+und.
+&#8220;Interaction Analysis: Recent Developments.&#8221; Paper read at the
+American Educational Research Association convention, February 1966, Chicag=
+o,
+Illinois. <b><o:p></o:p></b></span></p>
+
+<p class=3DCM16 style=3D'text-align:justify'><span style=3D'color:black'>Te=
+ller,
+Edward. <span class=3DGramE>Personal interview.</span> July 12, 1962. <o:p>=
+</o:p></span></p>
+
+<p class=3DDefault><span style=3D'color:windowtext'><o:p>&nbsp;</o:p></span=
+></p>
+
+</div>
+
+</body>
+
+</html>
+
+------=_NextPart_01CBB659.8AFBBF50
+Content-Location: file:///C:/89764A33/BATCapstoneReportSpecifications_files/themedata.thmx
+Content-Transfer-Encoding: base64
+Content-Type: application/vnd.ms-officetheme
+
+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
+AAAA
+
+------=_NextPart_01CBB659.8AFBBF50
+Content-Location: file:///C:/89764A33/BATCapstoneReportSpecifications_files/colorschememapping.xml
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/xml
+
+<?xml version=3D"1.0" encoding=3D"UTF-8" standalone=3D"yes"?>
+<a:clrMap xmlns:a=3D"http://schemas.openxmlformats.org/drawingml/2006/main"=
+ bg1=3D"lt1" tx1=3D"dk1" bg2=3D"lt2" tx2=3D"dk2" accent1=3D"accent1" accent=
+2=3D"accent2" accent3=3D"accent3" accent4=3D"accent4" accent5=3D"accent5" a=
+ccent6=3D"accent6" hlink=3D"hlink" folHlink=3D"folHlink"/>
+------=_NextPart_01CBB659.8AFBBF50
+Content-Location: file:///C:/89764A33/BATCapstoneReportSpecifications_files/filelist.xml
+Content-Transfer-Encoding: quoted-printable
+Content-Type: text/xml; charset="utf-8"
+
+<xml xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+ <o:MainFile HRef=3D"../BATCapstoneReportSpecifications.htm"/>
+ <o:File HRef=3D"themedata.thmx"/>
+ <o:File HRef=3D"colorschememapping.xml"/>
+ <o:File HRef=3D"filelist.xml"/>
+</xml>
+------=_NextPart_01CBB659.8AFBBF50--

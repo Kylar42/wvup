@@ -1,0 +1,186 @@
+#!/usr/bin/env python
+
+import sys
+import argparse
+from urllib import urlopen
+import urllib, urllib2
+import os.path, time
+
+DEBUG=True
+
+
+def enum(*sequential, **named):
+    enums = dict(zip(sequential, range(len(sequential))), **named)
+    reverse = dict((value, key) for key, value in enums.iteritems())
+    enums['reverse_mapping'] = reverse
+    return type('Enum', (), enums)
+    
+def debugp(string):
+    if DEBUG:
+        print string
+
+
+def readLocal(filename):
+    tooOld = time.time()-(60*60*24)#older than a day, let's get rid of it.
+
+    try:
+        creationTime = os.path.getctime(filename)
+        if creationTime < tooOld:
+            os.remove(filename)
+            return None
+    
+        f = open(filename, "r")
+        toReturn = f.read()
+        f.close()
+        return toReturn
+    except IOError as e:
+        return None
+    
+def writeLocal(filename, data):
+    try:
+        f = open(filename, "w")
+        f.write(data)
+        f.flush()
+        f.close()
+    except IOError as e:
+        return None
+    
+    
+fallUrl="http://www.wvup.edu/schedules/fall.htm"
+springUrl="https://harpo.wvnet.edu:9920/pls/prod/bwckschd.p_get_crse_unsec"
+springBody="term_in=201302&sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_insm=dummy&sel_camp=dummy&sel_levl=dummy&sel_sess=dummy&sel_instr=dummy&sel_ptrm=dummy&sel_attr=dummy&sel_subj=ACCT&sel_subj=ART&sel_subj=BIOL&sel_subj=BTEC&sel_subj=CNA&sel_subj=CHEM&sel_subj=CDEV&sel_subj=COMM&sel_subj=CIT&sel_subj=CS&sel_subj=CJ&sel_subj=DRAF&sel_subj=ECON&sel_subj=EDUC&sel_subj=ELEC&sel_subj=ERES&sel_subj=EAMT&sel_subj=ENGL&sel_subj=EMED&sel_subj=ENVR&sel_subj=FIN&sel_subj=FREN&sel_subj=GBUS&sel_subj=GEOG&sel_subj=GEOL&sel_subj=GERM&sel_subj=HPER&sel_subj=HVAR&sel_subj=HIST&sel_subj=IM&sel_subj=INDT&sel_subj=SEC&sel_subj=JAPN&sel_subj=JOUR&sel_subj=LA&sel_subj=LS&sel_subj=MACH&sel_subj=MGMT&sel_subj=MKTG&sel_subj=MATH&sel_subj=MTEC&sel_subj=MUSI&sel_subj=NURS&sel_subj=PTEC&sel_subj=PHIL&sel_subj=PSCI&sel_subj=PHYS&sel_subj=POLS&sel_subj=PSYC&sel_subj=READ&sel_subj=RELI&sel_subj=SCI&sel_subj=SOST&sel_subj=SOC&sel_subj=SET&sel_subj=SPAN&sel_subj=SDEV&sel_subj=ST&sel_subj=THEA&sel_subj=WELD&sel_crse=&sel_title=&sel_from_cred=&sel_to_cred=&sel_camp=%25&sel_ptrm=%25&sel_instr=%25&begin_hh=0&begin_mi=0&begin_ap=a&end_hh=0&end_mi=0&end_ap=a"
+summerUrl="http://www.wvup.edu/schedules/summer.htm"
+def getWebPage(semester):
+    userAgent ="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.17 (KHTML, like Gecko) Version/6.0.2 Safari/536.26.17"
+    pageText = ""
+    req=urllib2.Request(springUrl, springBody)
+    req.add_header("Content-type", "application/x-www-form-urlencoded")
+    req.add_header("User-Agent", userAgent)
+    
+    if "summer" == semester:
+        pageText=readLocal("summer")
+        if pageText== None:
+            pageText= urlopen(summerUrl).read()
+            writeLocal("summer", pageText)
+    elif "spring" == semester:
+        pageText=readLocal("spring")
+        if pageText== None:
+            pageText=urllib2.urlopen(req).read()
+            #pageText=urlopen(springUrl).read()
+            writeLocal("spring", pageText)
+    elif "fall" == semester:
+        pageText=readLocal("fall")
+        if pageText== None:
+            pageText = urlopen(fallUrl).read()
+            writeLocal("fall", pageText)
+    else:
+        pageText = None
+     
+    return pageText
+    
+SubjectConstants=enum(
+    ACCOUNTING="ACCT",
+    ART="ART",
+    BIOLOGY="BIOL",
+    BUSINESS_TECHNOLOGY="BTEC",
+    CHEMISTRY="CHEM",
+    CHILD_DEVELOPMENT="CDEV",
+    COMMUNICATION_STUDIES="COMM",
+    COMPUTER_INFO_TECHNOLOGY="CIT",
+    COMPUTER_SCIENCE="CS",
+    CRIMINAL_JUSTICE="CJ",
+    DRAFTING="DRAF",
+    ECONOMICS="ECON",
+    EDUCATION="EDUC",
+    ELECTRONICS="ELEC",
+    EMERGENCY_RESPONSE="ERES",
+    ENERGY_ASSESSMENT_AND_MANAGEMENT_TECHNOLOGY="EAMT",
+    ENGINEERING="ENGR",
+    ENGLISH="ENGL",
+    ENTREPENEURSHIP="ENT",
+    ENVIRONMENTAL_TECHNOLOGY="ENVR",
+    FINANCE="FIN",
+    FRENCH="FREN",
+    GERMAN="GERM",
+    JAPANESE="JAPN",
+    SPANISH="SPAN",
+    GENERAL_BUSINESS="GBUS",
+    GEOGRAPHY="GEOG",
+    GEOLOGY="GEOL",
+    HEALTH="HPER",
+    HISTORY="HIST",
+    HVAC="HVAR",
+    INDUSTRIAL_MAINTENANCE="IM",
+    INDUSTRIAL_TECHNOLOGY="INDT",
+    JOURNALISM="JOUR",
+    LANGUAGE_ARTS="LA",
+    LEGAL_STUDIES="LS",
+    MACHINING_TECHNOLOGY="MACH"  
+    
+)
+
+
+class wvupClass:
+    #Class Divison, like ENV
+    def __init__(self, subject, classnumber, credithours, crn, grade, requirementsbitset):
+        self.subject = subject
+        self.classnumber = classnumber
+        self.credithours = credithours
+        self.crn = crn
+        self.grade = grade
+        self.requirementsbitset = requirementsbitset
+        
+
+def parseClassList(pageText):
+    listOfClasses=[]
+    startIndex = 0
+    startIndex = pageText.find("<TH CLASS=\"ddtitle\"", startIndex)
+    while startIndex > -1:
+        
+        #from start index, we need the first <A HREF.
+        startIndex = pageText.find("<A HREF=\"", startIndex)
+        endNdx = pageText.find("\">", startIndex)
+        classURL = pageText[startIndex+9:endNdx]
+        startIndex=endNdx
+        endNdx = pageText.find("<", startIndex+1)
+        classInfo=pageText[startIndex+2:endNdx]
+        print classInfo
+        classInfo = classInfo[::-1]
+        listOfInfo = classInfo.split(" - ")
+        integral = listOfInfo[0][::-1]
+        classCode = listOfInfo[1][::-1]
+        classDept, classNumber = classCode.split(" ")
+        crn = listOfInfo[2][::-1]
+        name = listOfInfo[3][::-1]
+        if len(listOfInfo) > 4:
+            name = name + listOfInfo[4][::-1]
+        
+        listOfClasses.append(new wvupClass())
+        
+        
+        startIndex = pageText.find("<TH CLASS=\"ddtitle\"", startIndex)
+
+          
+  
+
+
+def main():
+    # parse command line options
+    parser = argparse.ArgumentParser(description='Class Fetcher')
+    #parser.add_argument("-i", required=True, help="User's DSID, eg: 12345678901 *REQUIRED, NOT OPTIONAL.", dest="dsid")
+    #parser.add_argument("-p", required=True, help="Partition in long form (st11p01) or short form (p01)", dest="partition")#type=executor.parsePartition, dest="partition")
+    #parser.add_argument("-d", help="Date Range, eg: 30d, 6h, 10m default=5h", default="5h", dest="daterange")
+    #parser.add_argument("-a", help="Application to query, (carddav|bookmarkdav|protocal) default=carddav", default="carddav", dest="application")
+    parser.add_argument("-s", help="Semester to fetch. (fall|spring|summer) default=spring", default="spring", dest="semester")
+    parser.add_argument("-v", help="Print Version Information.")
+    args=parser.parse_args()
+    debugp("Args are:")
+    debugp(args)
+    #executor.executeCommand(args.daterange, args.application, args.dsid, args.partition)
+    pageText = getWebPage(args.semester)
+    #print(pageText)
+    classList = parseClassList(pageText)
+    
+if __name__ == "__main__":
+    sys.exit(main())
+
