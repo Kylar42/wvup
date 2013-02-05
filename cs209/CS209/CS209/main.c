@@ -6,10 +6,12 @@
 //  Copyright (c) 2012 Thomas Byrne. All rights reserved.
 //
 
-//This I'll change to 0 and turn debug printing off later.
-#define DEBUGON 1
+//This turns on(1) or off(0) debug printing.
+
+#define DEBUGON 0
 
 #include <stdio.h>
+#include <ctype.h>
 #include <string.h>
 #include <stdlib.h>
 
@@ -224,10 +226,13 @@ int main(int argc, const char * argv[])
     
     //write lists
     writeSuccessfulProjects(&projectList);
+    writeUnsuccessfulProjects(&undoableProjectList);
     
     FreeLinkedList(&undoableProjectList);//Need to free &undoableProjects.      [linkedlist.h]
     FreeLinkedList(&projectList); //free our project list.                      [linkedlist.h]
     FreeLinkedList(&programmerList);//free our programmer list before we exit.  [linkedlist.h]
+    
+    printf("Program Complete.\n");
     return 0;
 }
 
@@ -275,11 +280,11 @@ void writeUnsuccessfulProjects(struct LinkedList* undoableProjects){
         
         struct Project* project = nextProject->Data;
         
-        fprintf(undoableProjectsFile, "%d\r\n%s\r\n", project->Id, project->ProjectName); //write ID, project name
+        fprintf(undoableProjectsFile, "%d %-60s\r\n", project->Id, project->ProjectName); //write ID, project name, 60=PROJECTNAMEMAXSIZE.
         
         //loop through the skills and write them out.
         for(int i = 0; i < project->skillcount; i++){
-            fprintf(undoableProjectsFile, "%s", project->Skills[i]);
+            fprintf(undoableProjectsFile, "%-32s ", project->Skills[i]); //constant size, 32=SKILLNAMESIZE
         }
         
         fprintf(undoableProjectsFile, "\r\n");//line ending after skills

@@ -8,18 +8,37 @@ Ok, a few notes about this assignment.
 
 
 1. INPUT
-It will look for the input files projects.txt and programmers.txt in the working directory.
+
+The program will look for the input files projects.txt and programmers.txt in the working directory.
 
 2. OUTPUT
-It will write two output files to the working directory: doable-projects.txt and undoable-projects.txt.
 
-The undoable project file lists the undoable projects, and ALL their skills. I wrote code to keep just the skills that were unavailable, but didn't think that's what you wanted. If it is, let me know and I'll add the code back in.
+The program will write two output files to the working directory: doable-projects.txt and undoable-projects.txt.
+
+The undoable-projects.txt project file lists the undoable projects, and ALL their skills. I wrote code to keep just the skills that were unavailable, but didn't think that's what you wanted. If it is, let me know and I'll add the code back in.
 
 3. CODE
+
 I added and modified some of your code in myfunctions.h and programmers.h. I removed all the other .c files, and cheated a bit, by putting all my project and programmer related code in their .h files, even when I probably should have declared some of the functions and then implemented them in a .c file. 
 
-4. BUILD
+4. BUILD & RUN.
+
+I didn't include a makefile, but if you'd like one, I'll write one.
+
 I tested this solution on a BSD based system (Darwin) and on RedHat enterprise Linux, and both worked.
+
+I used the GCC compiler, and the C99 flag:
+
+    gcc -std=gnu99 main.c -o CS209Project
+    
+Then, execute. No command-line arguments.
+
+    ./CS209Project
+
+The program will declare when it's done:
+
+    Program Complete.
+
 
 5. CODE COMMENTS
 I have an unorthodox comment method. You will see code that looks like this sometimes:
