@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<scenario xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2" fixed-end="true" id="hIlXFc7MbwD">
+  <end-date>2013-04-26T15:30:00.000Z</end-date>
+  <prototype-task>
+    <task id="t4294967294">
+      <title>Task 1</title>
+      <effort>28800</effort>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967293">
+      <title>Milestone 1</title>
+      <type>milestone</type>
+    </task>
+  </prototype-task>
+  <prototype-task>
+    <task id="t4294967292">
+      <title>Group 1</title>
+      <type>group</type>
+    </task>
+  </prototype-task>
+  <prototype-resource>
+    <resource id="r4294967294">
+      <name>Resource 1</name>
+      <type>Staff</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967293">
+      <name>Equipment 1</name>
+      <type>Equipment</type>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967292">
+      <name>Material 1</name>
+      <type>Material</type>
+      <units-available>0</units-available>
+      <efficiency>0</efficiency>
+    </resource>
+  </prototype-resource>
+  <prototype-resource>
+    <resource id="r4294967291">
+      <name>Group 1</name>
+      <type>Group</type>
+    </resource>
+  </prototype-resource>
+  <top-resource idref="r-1"/>
+  <resource id="r-1">
+    <type>Group</type>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="28800" end-time="43200"/>
+        <time-span start-time="46800" end-time="61200"/>
+      </schedule-day>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+    <child-resource idref="r1"/>
+  </resource>
+  <resource id="r1">
+    <name>Tom</name>
+    <type>Staff</type>
+    <schedule>
+      <schedule-day day-of-week="sunday">
+        <time-span start-time="28800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="monday">
+        <time-span start-time="28800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="tuesday">
+        <time-span start-time="28800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="wednesday">
+        <time-span start-time="28800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="thursday">
+        <time-span start-time="28800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="friday">
+        <time-span start-time="28800" end-time="61200"/>
+      </schedule-day>
+      <schedule-day day-of-week="saturday">
+        <time-span start-time="28800" end-time="61200"/>
+      </schedule-day>
+      <calendar name="Time Off" editable="yes" overtime="no"/>
+      <calendar name="Overtime" editable="yes" overtime="yes"/>
+    </schedule>
+  </resource>
+  <top-task idref="t-1"/>
+  <task id="t-1">
+    <type>group</type>
+    <child-task idref="t1"/>
+    <child-task idref="t5"/>
+    <child-task idref="t2"/>
+    <child-task idref="t20"/>
+    <child-task idref="t6"/>
+    <child-task idref="t4"/>
+    <child-task idref="t7"/>
+    <child-task idref="t8"/>
+    <child-task idref="t9"/>
+    <child-task idref="t10"/>
+    <child-task idref="t12"/>
+    <child-task idref="t13"/>
+    <child-task idref="t15"/>
+    <child-task idref="t16"/>
+    <child-task idref="t17"/>
+    <child-task idref="t18"/>
+    <child-task idref="t21"/>
+    <child-task idref="t22"/>
+    <child-task idref="t23"/>
+    <child-task idref="t24"/>
+    <child-task idref="t25"/>
+    <child-task idref="t26"/>
+    <child-task idref="t27"/>
+    <child-task idref="t29"/>
+    <child-task idref="t30"/>
+    <child-task idref="t31"/>
+    <child-task idref="t32"/>
+    <child-task idref="t33"/>
+    <child-task idref="t35"/>
+    <child-task idref="t36"/>
+    <child-task idref="t37"/>
+    <child-task idref="t38"/>
+    <child-task idref="t39"/>
+    <child-task idref="t40"/>
+    <child-task idref="t41"/>
+    <child-task idref="t42"/>
+    <child-task idref="t43"/>
+    <child-task idref="t45"/>
+    <child-task idref="t46"/>
+    <child-task idref="t47"/>
+    <child-task idref="t49"/>
+    <child-task idref="t48"/>
+    <child-task idref="t54"/>
+    <child-task idref="t52"/>
+    <child-task idref="t53"/>
+    <child-task idref="t56"/>
+    <child-task idref="t57"/>
+    <child-task idref="t58"/>
+    <child-task idref="t59"/>
+    <child-task idref="t60"/>
+    <child-task idref="t61"/>
+  </task>
+  <task id="t1">
+    <title>End User Meeting 1</title>
+    <schedule-type>asap</schedule-type>
+    <leveled-start>2013-02-04T16:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t2">
+    <title>Submit Project Proposal</title>
+    <schedule-type>asap</schedule-type>
+    <leveled-start>2013-02-10T16:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2013-02-09T17:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t5"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t4">
+    <title>Proposal to IS&amp;T</title>
+    <schedule-type>asap</schedule-type>
+    <leveled-start>2013-02-11T20:00:00.000Z</leveled-start>
+    <effort>7200</effort>
+    <start-constraint-date>2013-02-11T16:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t5">
+    <title>Submit Project Concept </title>
+    <schedule-type>asap</schedule-type>
+    <leveled-start>2013-02-05T16:00:00.000Z</leveled-start>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2013-02-05T04:00:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t1"/>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t6">
+    <title>Proposal to Records</title>
+    <schedule-type>asap</schedule-type>
+    <leveled-start>2013-02-11T18:00:00.000Z</leveled-start>
+    <effort>7200</effort>
+    <start-constraint-date>2013-02-11T16:00:00.000Z</start-constraint-date>
+    <assignment idref="r1"/>
+  </task>
+  <task id="t7">
+    <title>Technology Evaluation: Web/App Server</title>
+    <schedule-type>asap</schedule-type>
+    <effort>28800</effort>
+    <start-constraint-date>2013-02-12T16:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t8">
+    <title>Tech Eval: Database</title>
+    <schedule-type>asap</schedule-type>
+    <effort>28800</effort>
+    <start-constraint-date>2013-02-13T16:15:00.000Z</start-constraint-date>
+    <prerequisite-task idref="t7"/>
+  </task>
+  <task id="t9">
+    <title>Set Up Source Control</title>
+    <schedule-type>asap</schedule-type>
+    <effort>28800</effort>
+    <start-constraint-date>2013-02-13T16:15:00.000Z</start-constraint-date>
+  </task>
+  <task id="t10">
+    <title>Set Up Bug Tracking</title>
+    <schedule-type>asap</schedule-type>
+    <effort>28800</effort>
+    <effort-done>28800</effort-done>
+    <start-constraint-date>2013-02-13T16:15:00.000Z</start-constraint-date>
+  </task>
+  <task id="t12">
+    <title>Week 2 Milestone</title>
+    <type>milestone</type>
+    <schedule-type>asap</schedule-type>
+    <end-constraint-date>2013-02-16T07:59:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t4"/>
+    <prerequisite-task idref="t6"/>
+    <prerequisite-task idref="t7"/>
+    <prerequisite-task idref="t8"/>
+    <prerequisite-task idref="t9"/>
+    <prerequisite-task idref="t10"/>
+  </task>
+  <task id="t13">
+    <title>Technology Decisions</title>
+    <schedule-type>asap</schedule-type>
+    <effort>28800</effort>
+    <start-constraint-date>2013-02-17T16:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t15">
+    <title>Data Definitions for DB</title>
+    <schedule-type>asap</schedule-type>
+    <effort>28800</effort>
+    <start-constraint-date>2013-02-19T16:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t16">
+    <title>Write API Definitions</title>
+    <schedule-type>asap</schedule-type>
+    <effort>28800</effort>
+    <start-constraint-date>2013-02-20T16:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t17">
+    <title>Follow up with IS&amp;T</title>
+    <schedule-type>asap</schedule-type>
+    <effort>28800</effort>
+    <start-constraint-date>2013-02-17T16:00:00.000Z</start-constraint-date>
+  </task>
+  <task id="t18">
+    <title>Week 3 Milestone</title>
+    <type>milestone</type>
+    <end-constraint-date>2013-02-23T07:59:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t13"/>
+    <prerequisite-task idref="t15"/>
+    <prerequisite-task idref="t16"/>
+    <prerequisite-task idref="t17"/>
+  </task>
+  <task id="t20">
+    <title>Week 1 Milestone</title>
+    <type>milestone</type>
+    <completion-percentage>1</completion-percentage>
+    <end-constraint-date>2013-02-10T08:00:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t2"/>
+  </task>
+  <task id="t21">
+    <title>Write DAO Tests</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-02-25T16:15:00.000Z</end-constraint-date>
+  </task>
+  <task id="t22">
+    <title>Write DAO Objects</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-02-26T00:45:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t21"/>
+  </task>
+  <task id="t23">
+    <title>Write IO Tests</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-02-27T16:15:00.000Z</end-constraint-date>
+  </task>
+  <task id="t24">
+    <title>Write IO Code</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-02-28T01:00:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t23"/>
+  </task>
+  <task id="t25">
+    <title>External Documentation Outline</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-03-02T16:15:00.000Z</end-constraint-date>
+  </task>
+  <task id="t26">
+    <title>Follow up with IS&amp;T</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-02-26T16:15:00.000Z</end-constraint-date>
+  </task>
+  <task id="t27">
+    <title>Follow up with Records</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-02-26T01:00:00.000Z</end-constraint-date>
+  </task>
+  <task id="t29">
+    <title>Week 4 Milestone</title>
+    <type>milestone</type>
+    <end-constraint-date>2013-03-02T07:59:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t21"/>
+    <prerequisite-task idref="t22"/>
+    <prerequisite-task idref="t23"/>
+    <prerequisite-task idref="t24"/>
+    <prerequisite-task idref="t25"/>
+    <prerequisite-task idref="t26"/>
+    <prerequisite-task idref="t27"/>
+  </task>
+  <task id="t30">
+    <title>Integrate with Records System</title>
+    <effort>57600</effort>
+    <end-constraint-date>2013-03-06T01:00:00.000Z</end-constraint-date>
+  </task>
+  <task id="t31">
+    <title>Code Prototype UI</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-03-07T01:00:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t30"/>
+  </task>
+  <task id="t32">
+    <title>End-To-End Testing</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-03-08T01:00:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t31"/>
+  </task>
+  <task id="t33">
+    <title>UI Prototype 1 Discussion with End Users</title>
+    <effort>7200</effort>
+    <end-constraint-date>2013-03-08T18:00:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t32"/>
+  </task>
+  <task id="t35">
+    <title>Week 5 Milestone</title>
+    <type>milestone</type>
+    <end-constraint-date>2013-03-09T07:59:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t33"/>
+  </task>
+  <task id="t36">
+    <title>End-User Meeting - Prototype 1</title>
+    <effort>7200</effort>
+    <end-constraint-date>2013-03-13T17:00:00.000Z</end-constraint-date>
+  </task>
+  <task id="t37">
+    <title>Evaluate Deployment Platform</title>
+    <effort>57600</effort>
+    <end-constraint-date>2013-03-14T00:00:00.000Z</end-constraint-date>
+  </task>
+  <task id="t38">
+    <title>Week 6 Milestone</title>
+    <type>milestone</type>
+    <end-constraint-date>2013-03-16T06:59:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t36"/>
+    <prerequisite-task idref="t37"/>
+  </task>
+  <task id="t39">
+    <title>Prototype 2 - Send UI to End Users</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-03-19T00:00:00.000Z</end-constraint-date>
+  </task>
+  <task id="t40">
+    <title>UI Refinements</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-03-21T00:00:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t39"/>
+  </task>
+  <task id="t41">
+    <title>Alpha State</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-03-23T06:59:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t40"/>
+  </task>
+  <task id="t42">
+    <title>Week 7 Milestone</title>
+    <type>milestone</type>
+    <end-constraint-date>2013-03-23T06:59:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t41"/>
+  </task>
+  <task id="t43">
+    <title>Finish Feature Work, Feature Complete</title>
+    <effort>144000</effort>
+    <end-constraint-date>2013-03-29T00:00:00.000Z</end-constraint-date>
+  </task>
+  <task id="t45">
+    <title>Week 8 Milestone (Beta!)</title>
+    <type>milestone</type>
+    <end-constraint-date>2013-03-30T06:59:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t43"/>
+  </task>
+  <task id="t46">
+    <title>Deployment Test 1</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-04-03T00:00:00.000Z</end-constraint-date>
+  </task>
+  <task id="t47">
+    <title>User Meeting, Beta Presentation</title>
+    <effort>7200</effort>
+    <end-constraint-date>2013-04-04T18:00:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t46"/>
+  </task>
+  <task id="t48">
+    <title>Week 9 Milestone</title>
+    <type>milestone</type>
+    <end-constraint-date>2013-04-06T06:59:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t47"/>
+    <prerequisite-task idref="t49"/>
+  </task>
+  <task id="t49">
+    <title>Documentation</title>
+    <effort>57600</effort>
+    <end-constraint-date>2013-04-05T00:00:00.000Z</end-constraint-date>
+  </task>
+  <task id="t50">
+    <title>Final Refinements</title>
+    <effort>57600</effort>
+    <end-constraint-date>2013-04-11T00:00:00.000Z</end-constraint-date>
+  </task>
+  <task id="t51">
+    <title>Debugging</title>
+    <effort>86400</effort>
+    <end-constraint-date>2013-04-12T00:00:00.000Z</end-constraint-date>
+  </task>
+  <task id="t52">
+    <title>User Delivery Of Beta</title>
+    <effort>14400</effort>
+    <end-constraint-date>2013-04-12T19:00:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t51"/>
+  </task>
+  <task id="t53">
+    <title>Week 10 Milestone</title>
+    <type>milestone</type>
+    <end-constraint-date>2013-04-13T06:59:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t52"/>
+  </task>
+  <task id="t54">
+    <title>Final Versioning</title>
+    <type>group</type>
+    <child-task idref="t50"/>
+    <child-task idref="t51"/>
+  </task>
+  <task id="t56">
+    <title>Debugging</title>
+    <effort>115200</effort>
+    <end-constraint-date>2013-04-19T00:00:00.000Z</end-constraint-date>
+  </task>
+  <task id="t57">
+    <title>Final Deployment</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-04-20T06:59:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t56"/>
+  </task>
+  <task id="t58">
+    <title>Presentation</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-04-19T00:00:00.000Z</end-constraint-date>
+  </task>
+  <task id="t59">
+    <title>Week 11 Milestone</title>
+    <type>milestone</type>
+    <end-constraint-date>2013-04-20T06:59:00.000Z</end-constraint-date>
+    <prerequisite-task idref="t56"/>
+    <prerequisite-task idref="t57"/>
+  </task>
+  <task id="t60">
+    <title>Project Delivery</title>
+    <effort>28800</effort>
+    <end-constraint-date>2013-04-26T00:00:00.000Z</end-constraint-date>
+  </task>
+  <task id="t61">
+    <title>Week 12 Milestone</title>
+    <type>milestone</type>
+    <prerequisite-task idref="t60"/>
+  </task>
+  <critical-path root="-1" enabled="false" resources="false">
+    <color r="1" g="0.5" b="0.5"/>
+  </critical-path>
+</scenario>
