@@ -254,7 +254,7 @@ void writeSuccessfulProjects(struct LinkedList* projects){
     while(nextProject != NULL){
         
         struct Project* project = nextProject->Data;
-        fprintf(doableProjectsFile, "%d\r\n%s\r\n", project->Id, project->ProjectName); //ID, name of project
+        fprintf(doableProjectsFile, "%d %-60s\r\n", project->Id, project->ProjectName); //ID, name of project 60=PROJECTNAMEMAXSIZE.
         fprintf(doableProjectsFile, "%d %d %d %d\r\n", project->ProgrammerID1, project->ProgrammerID2, project->ProgrammerID3, project->ProgrammerID4); //programmer ID's
         
         nextProject = nextProject->Next;//next project

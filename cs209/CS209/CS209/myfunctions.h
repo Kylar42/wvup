@@ -8,16 +8,6 @@
 // Added some utility functions for my own use. -tbyrne
 
 
-
-
-//  used to initialize pointer to structures ...
-//  function body is found after the main function
-//void InitializeProgram();
-
-//  used to free any allocated menory from data structures
-//  function body is after the program main function
-//void CloseProgram();
-
 //  display messages and exit back to the os with an ErrorCode
 
 void ErrorExit( char *Message1, char *Message2, int ErrorCode  )
@@ -89,7 +79,7 @@ char *TrimWhitespace(char *str)
     // Trim trailing space
     end = str + strlen(str) - 1;
     
-    while(end > str && isspace(*end)){
+    while(end > str && isspace(*end)){ //isspace is from ctypes.h
         end--;
     }
     
