@@ -21,6 +21,9 @@ def debugp(string):
 
 
 def readLocal(filename):
+    if not os.path.exists(filename):
+        return None
+    
     tooOld = time.time()-(60*60*24)#older than a day, let's get rid of it.
 
     try:
@@ -47,14 +50,12 @@ def writeLocal(filename, data):
     
     
 fallUrl="http://www.wvup.edu/schedules/fall.htm"
-springUrl="https://harpo.wvnet.edu:9920/pls/prod/bwckschd.p_get_crse_unsec"
-springBody="term_in=201302&sel_subj=dummy&sel_day=dummy&sel_schd=dummy&sel_insm=dummy&sel_camp=dummy&sel_levl=dummy&sel_sess=dummy&sel_instr=dummy&sel_ptrm=dummy&sel_attr=dummy&sel_subj=ACCT&sel_subj=ART&sel_subj=BIOL&sel_subj=BTEC&sel_subj=CNA&sel_subj=CHEM&sel_subj=CDEV&sel_subj=COMM&sel_subj=CIT&sel_subj=CS&sel_subj=CJ&sel_subj=DRAF&sel_subj=ECON&sel_subj=EDUC&sel_subj=ELEC&sel_subj=ERES&sel_subj=EAMT&sel_subj=ENGL&sel_subj=EMED&sel_subj=ENVR&sel_subj=FIN&sel_subj=FREN&sel_subj=GBUS&sel_subj=GEOG&sel_subj=GEOL&sel_subj=GERM&sel_subj=HPER&sel_subj=HVAR&sel_subj=HIST&sel_subj=IM&sel_subj=INDT&sel_subj=SEC&sel_subj=JAPN&sel_subj=JOUR&sel_subj=LA&sel_subj=LS&sel_subj=MACH&sel_subj=MGMT&sel_subj=MKTG&sel_subj=MATH&sel_subj=MTEC&sel_subj=MUSI&sel_subj=NURS&sel_subj=PTEC&sel_subj=PHIL&sel_subj=PSCI&sel_subj=PHYS&sel_subj=POLS&sel_subj=PSYC&sel_subj=READ&sel_subj=RELI&sel_subj=SCI&sel_subj=SOST&sel_subj=SOC&sel_subj=SET&sel_subj=SPAN&sel_subj=SDEV&sel_subj=ST&sel_subj=THEA&sel_subj=WELD&sel_crse=&sel_title=&sel_from_cred=&sel_to_cred=&sel_camp=%25&sel_ptrm=%25&sel_instr=%25&begin_hh=0&begin_mi=0&begin_ap=a&end_hh=0&end_mi=0&end_ap=a"
+springUrl="http://www.wvup.edu/schedules/spring.htm"
 summerUrl="http://www.wvup.edu/schedules/summer.htm"
 def getWebPage(semester):
     userAgent ="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/536.26.17 (KHTML, like Gecko) Version/6.0.2 Safari/536.26.17"
     pageText = ""
-    req=urllib2.Request(springUrl, springBody)
-    req.add_header("Content-type", "application/x-www-form-urlencoded")
+    req=urllib2.Request(springUrl)
     req.add_header("User-Agent", userAgent)
     
     if "summer" == semester:
@@ -65,7 +66,7 @@ def getWebPage(semester):
     elif "spring" == semester:
         pageText=readLocal("spring")
         if pageText== None:
-            pageText=urllib2.urlopen(req).read()
+            pageText=urllib2.urlopen(springUrl).read()
             #pageText=urlopen(springUrl).read()
             writeLocal("spring", pageText)
     elif "fall" == semester:
@@ -122,7 +123,7 @@ SubjectConstants=enum(
 
 class wvupClass:
     #Class Divison, like ENV
-    def __init__(self, subject, classnumber, credithours, crn, grade, requirementsbitset):
+    def __init__(self, subject, classnumber, credithours, crn):
         self.subject = subject
         self.classnumber = classnumber
         self.credithours = credithours
@@ -131,46 +132,204 @@ class wvupClass:
         self.requirementsbitset = requirementsbitset
         
 
+classTypes = ["E-C", "Lec", "Alt", "Lab", "Stu", "Ble", "&nbsp;"]
+
+def pullApart(classText, outputfile):
+    #print(classText)
+    #start after <tr>
+    startNdx = classText.find("<tr>")+4
+    startNdx = classText.find("<td>", startNdx)+4
+    while startNdx > -1:
+        endNdx = classText.find("</td>")
+        tmp = classText[startNdx:endNdx]
+        #first is <td> <a onmouseover="Tip(' Lecture \
+        #', WIDTH, 0, SHADOW, true, BORDERCOLOR, '#00386B')"
+        #onmouseout="UnTip()"> <p align="center"> Lec </a> </td>
+        #so find "center">, then </a>
+        tmpSI = classText.find("center\">", startNdx)+8
+        tmpEI = classText.find("</a>", tmpSI)
+        classType = classText[tmpSI:tmpEI].strip()
+        print classType #
+        if classType not in classTypes:
+            print("Bad Classtype found: %s\n" % classType)
+
+        #Crosslisted
+        tmpSI = classText.find("<td>", tmpEI)+4
+        tmpSI = classText.find("center\">", tmpSI)+8
+
+        
+        tmpEI = classText.find("</td>", tmpSI)
+        tmp = classText[tmpSI:tmpEI].strip()
+        # looks like either X or &nbsp;
+        crosslisted = False
+        if tmp == "X":
+            crosslisted = True
+        
+        #next up, CRN
+        tmpSI = classText.find("<td>", tmpEI)+4
+        
+        #normally the end for this would be </td> but the html is malformed, and there's just another <td> next.
+        #but sometimes, there's a <span id> next.
+        tmpA = classText.find("<span", tmpSI)
+        tmptd = classText.find("<td>", tmpSI)
+        if tmpA > -1 and tmpA < tmptd:
+            tmpEI = tmpA
+        else:
+            tmpEI = tmptd
+            
+        tmp = classText[tmpSI:tmpEI].strip()
+        
+        crn = tmp
+        #Subject
+        tmpSI = tmptd+4
+        tmpEI = classText.find("</td>", tmpSI)
+        tmp = classText[tmpSI:tmpEI].strip()
+        subject = tmp
+        
+        #course
+        tmpSI = classText.find("<td>", tmpEI)+4
+        tmpEI = classText.find("</td>", tmpSI)
+        tmp = classText[tmpSI:tmpEI].strip()
+        course = tmp
+        
+        #Title. Going to be a bit more interesting here.
+        #<td> <a onmouseover="TagToTip('ACCT201', TITLE, 'ACCT 201', WIDTH, 240, TITLEBGCOLOR, '#00386B', SHADOW, true, BORDERCOLOR, '#00386B')"
+        #onmouseout="UnTip()"> PRIN OF ACCOUNTING 1 </a>
+        tmpSI = classText.find("<td>", tmpEI)+4
+        #now need to find the end of the <a
+        tmpSI = classText.find(">", tmpSI)+1
+        tmpEI = classText.find("<", tmpSI)
+        tmp = classText[tmpSI:tmpEI].strip()
+        title = tmp
+        
+        #credit hours
+        #<td> <p align="center"> 3 </td>
+        tmpSI = classText.find("<td>", tmpEI)+4
+        tmpSI = classText.find("center\">", tmpSI)+8
+        tmpEI = classText.find("</td>", tmpSI)
+        tmp = classText[tmpSI:tmpEI].strip()
+        credithours = tmp
+        
+        #Days
+        #<td> T R </td>
+        tmpSI = classText.find("<td>", tmpEI)+4
+        tmpEI = classText.find("</td>", tmpSI)
+        tmp = classText[tmpSI:tmpEI].strip()
+        coursedays = tmp
+        
+        #Times
+        #<td> 1100 - 1215 pm </td>
+        tmpSI = classText.find("<td>", tmpEI)+4
+        tmpEI = classText.find("</td>", tmpSI)
+        times = classText[tmpSI:tmpEI].strip()
+        #instructor
+        #<td> Morgan S </td>
+        tmpSI = classText.find("<td>", tmpEI)+4
+        tmpEI = classText.find("</td>", tmpSI)
+        tmp = classText[tmpSI:tmpEI].strip()
+        instructor = tmp
+        
+        #classroom
+        #<td> <a onmouseover="Tip(' Classroom (MAIN CAMPUS) ', WIDTH, 0, SHADOW, true, BORDERCOLOR, '#00386B')"
+        #onmouseout="UnTip()"> 1330 (MAIN) </a></td>
+        tmpSI = classText.find("<td>", tmpEI)+4
+        #now need to find the end of the <a
+        tmpSI = classText.find(">", tmpSI)+1
+        tmpEI = classText.find("<", tmpSI)
+        tmp = classText[tmpSI:tmpEI].strip()
+        classroom = tmp
+        
+        #startdate
+        #<td> <p align="center"> 14-JAN-13 </td>
+        tmpSI = classText.find("<td>", tmpEI)+4
+        tmpSI = classText.find("center\">", tmpSI)+8
+        tmpEI = classText.find("</td>", tmpSI)
+        tmp = classText[tmpSI:tmpEI].strip()
+        startdate = tmp
+        
+        #Seats available
+        #<td> <a onmouseover="Tip(' Seats Available: 3 <br/>\
+        #Waitlist: 0 ', WIDTH, 0, SHADOW, true, BORDERCOLOR, '#00386B')"
+        #onmouseout="UnTip()"> <p align="center"> <p align="center">3 </a> </td>
+        tmpSI = classText.find("<td>", tmpEI)+4
+        tmpSI = classText.find("center\">", tmpSI)+8
+        tmpSI = classText.find("center\">", tmpSI)+8 #it's malformed.
+        tmpEI = classText.find("<", tmpSI)
+        tmp = classText[tmpSI:tmpEI].strip()
+        seatsavailable = tmp
+        
+
+        #<td> <p align="center">FULL TERM<br />(14-JAN-13 - 10-MAY-13) </td>
+        tmpSI = classText.find("<td>", tmpEI)+4
+        tmpSI = classText.find("center\">", tmpSI)+8
+        tmpEI = classText.find("</td>", tmpSI)
+        tmp = classText[tmpSI:tmpEI].strip()
+        #need to remove embedded html linebreaks too
+        tmp = tmp.replace("<br />", " ")
+        termlength = tmp
+       
+        #campus 
+        #<td> Main </td>
+        tmpSI = classText.find("<td>", tmpEI)+4
+        tmpEI = classText.find("</td>", tmpSI)
+        tmp = classText[tmpSI:tmpEI].strip()
+        campus = tmp
+        
+        strToWrite = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n" % (classType, crosslisted, crn, subject, course, title, credithours, coursedays, instructor, classroom, startdate, seatsavailable, termlength, campus)
+        
+        print strToWrite
+        
+        outputfile.write(strToWrite)
+        
+        startNdx = classText.find("<tr>", endNdx)
+
 def parseClassList(pageText):
+    outputFile = open("output.csv", "w")
     listOfClasses=[]
     startIndex = 0
-    startIndex = pageText.find("<TH CLASS=\"ddtitle\"", startIndex)
+    startIndex = pageText.find("<a name=\"TOP\">Main Campus", startIndex)
+    startIndex = pageText.find("<span id=\"", startIndex)
+    startIndex = pageText.find("<tr>", startIndex)
     while startIndex > -1:
         
         #from start index, we need the first <A HREF.
-        startIndex = pageText.find("<A HREF=\"", startIndex)
-        endNdx = pageText.find("\">", startIndex)
-        classURL = pageText[startIndex+9:endNdx]
-        startIndex=endNdx
-        endNdx = pageText.find("<", startIndex+1)
-        classInfo=pageText[startIndex+2:endNdx]
-        print classInfo
-        classInfo = classInfo[::-1]
-        listOfInfo = classInfo.split(" - ")
-        integral = listOfInfo[0][::-1]
-        classCode = listOfInfo[1][::-1]
-        classDept, classNumber = classCode.split(" ")
-        crn = listOfInfo[2][::-1]
-        name = listOfInfo[3][::-1]
-        if len(listOfInfo) > 4:
-            name = name + listOfInfo[4][::-1]
+        endNdx = pageText.find("</tr>", startIndex)
+        pullApart(pageText[startIndex:endNdx], outputFile)
+        tableEnd = pageText.find("/table>", endNdx)
+        startIndex = pageText.find("<tr>", endNdx)
+        # check for end of table, if it's less than..
+        if(tableEnd < startIndex):
+            startIndex = pageText.find("<span id=\"", endNdx)
+            startIndex = pageText.find("<tr>", startIndex)        
+        #classURL = pageText[startIndex+9:endNdx]
+        #startIndex=endNdx
+        #endNdx = pageText.find("<", startIndex+1)
+        #classInfo=pageText[startIndex+2:endNdx]
+        #print classInfo
+        #classInfo = classInfo[::-1]
+        #listOfInfo = classInfo.split(" - ")
+        #integral = listOfInfo[0][::-1]
+        #classCode = listOfInfo[1][::-1]
+        #classDept, classNumber = classCode.split(" ")
+        #crn = listOfInfo[2][::-1]
+        #name = listOfInfo[3][::-1]
+        #if len(listOfInfo) > 4:
+        #    name = name + listOfInfo[4][::-1]
+       # 
+        #listOfClasses.append(new wvupClass())
         
-        listOfClasses.append(new wvupClass())
         
-        
-        startIndex = pageText.find("<TH CLASS=\"ddtitle\"", startIndex)
+        #startIndex = pageText.find("<TH CLASS=\"ddtitle\"", startIndex)
 
-          
+    outputFile.flush()
+    outputFile.close()
+    
   
 
 
 def main():
     # parse command line options
     parser = argparse.ArgumentParser(description='Class Fetcher')
-    #parser.add_argument("-i", required=True, help="User's DSID, eg: 12345678901 *REQUIRED, NOT OPTIONAL.", dest="dsid")
-    #parser.add_argument("-p", required=True, help="Partition in long form (st11p01) or short form (p01)", dest="partition")#type=executor.parsePartition, dest="partition")
-    #parser.add_argument("-d", help="Date Range, eg: 30d, 6h, 10m default=5h", default="5h", dest="daterange")
-    #parser.add_argument("-a", help="Application to query, (carddav|bookmarkdav|protocal) default=carddav", default="carddav", dest="application")
     parser.add_argument("-s", help="Semester to fetch. (fall|spring|summer) default=spring", default="spring", dest="semester")
     parser.add_argument("-v", help="Print Version Information.")
     args=parser.parse_args()
