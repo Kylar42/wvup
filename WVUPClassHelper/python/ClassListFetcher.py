@@ -148,10 +148,15 @@ def pullApart(classText, outputfile):
         #so find "center">, then </a>
         tmpSI = classText.find("center\">", startNdx)+8
         tmpEI = classText.find("</a>", tmpSI)
+        if tmpEI == -1:
+            print "Ugh."
+            return
         classType = classText[tmpSI:tmpEI].strip()
-        print classType #
+        #print classType #
         if classType not in classTypes:
             print("Bad Classtype found: %s\n" % classType)
+        if classType == "&nbsp;":
+            classType = ""
 
         #Crosslisted
         tmpSI = classText.find("<td>", tmpEI)+4
@@ -180,6 +185,11 @@ def pullApart(classText, outputfile):
         tmp = classText[tmpSI:tmpEI].strip()
         
         crn = tmp
+        
+        #temp catch block
+        if crn == "5797":
+            print("ugh")
+        
         #Subject
         tmpSI = tmptd+4
         tmpEI = classText.find("</td>", tmpSI)
@@ -216,16 +226,28 @@ def pullApart(classText, outputfile):
         tmpEI = classText.find("</td>", tmpSI)
         tmp = classText[tmpSI:tmpEI].strip()
         coursedays = tmp
+        if coursedays == "&nbsp;":
+            coursedays = ""
         
         #Times
         #<td> 1100 - 1215 pm </td>
         tmpSI = classText.find("<td>", tmpEI)+4
         tmpEI = classText.find("</td>", tmpSI)
         times = classText[tmpSI:tmpEI].strip()
+        if times == "&nbsp;" :
+            times = ""
+            
         #instructor
         #<td> Morgan S </td>
         tmpSI = classText.find("<td>", tmpEI)+4
-        tmpEI = classText.find("</td>", tmpSI)
+        # there may be a <a href= "mailto:first.last@wvup.edu" >
+        tmpA = classText.find("<a ", tmpSI)
+        tmptd = classText.find("</td>", tmpSI)
+        if tmpA > -1 and tmpA < tmptd:
+            tmpEI = tmpA
+        else:
+            tmpEI = tmptd
+        
         tmp = classText[tmpSI:tmpEI].strip()
         instructor = tmp
         
@@ -238,6 +260,8 @@ def pullApart(classText, outputfile):
         tmpEI = classText.find("<", tmpSI)
         tmp = classText[tmpSI:tmpEI].strip()
         classroom = tmp
+        if classroom == "&nbsp;" :
+            classroom =""
         
         #startdate
         #<td> <p align="center"> 14-JAN-13 </td>
@@ -266,6 +290,7 @@ def pullApart(classText, outputfile):
         tmp = classText[tmpSI:tmpEI].strip()
         #need to remove embedded html linebreaks too
         tmp = tmp.replace("<br />", " ")
+        tmp = tmp.replace("<br>", " ")
         termlength = tmp
        
         #campus 
@@ -275,7 +300,7 @@ def pullApart(classText, outputfile):
         tmp = classText[tmpSI:tmpEI].strip()
         campus = tmp
         
-        strToWrite = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n" % (classType, crosslisted, crn, subject, course, title, credithours, coursedays, instructor, classroom, startdate, seatsavailable, termlength, campus)
+        strToWrite = "%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s\n" % (classType, crosslisted, crn, subject, course, title, credithours, coursedays, times, instructor, classroom, startdate, seatsavailable, termlength, campus)
         
         print strToWrite
         
