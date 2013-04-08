@@ -326,26 +326,6 @@ def parseClassList(pageText):
         if(tableEnd < startIndex):
             startIndex = pageText.find("<span id=\"", endNdx)
             startIndex = pageText.find("<tr>", startIndex)        
-        #classURL = pageText[startIndex+9:endNdx]
-        #startIndex=endNdx
-        #endNdx = pageText.find("<", startIndex+1)
-        #classInfo=pageText[startIndex+2:endNdx]
-        #print classInfo
-        #classInfo = classInfo[::-1]
-        #listOfInfo = classInfo.split(" - ")
-        #integral = listOfInfo[0][::-1]
-        #classCode = listOfInfo[1][::-1]
-        #classDept, classNumber = classCode.split(" ")
-        #crn = listOfInfo[2][::-1]
-        #name = listOfInfo[3][::-1]
-        #if len(listOfInfo) > 4:
-        #    name = name + listOfInfo[4][::-1]
-       # 
-        #listOfClasses.append(new wvupClass())
-        
-        
-        #startIndex = pageText.find("<TH CLASS=\"ddtitle\"", startIndex)
-
     outputFile.flush()
     outputFile.close()
     
