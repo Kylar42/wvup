@@ -12,37 +12,39 @@ for line in lines:
 
 curRow = 0
 curCol = 0
-count = 0;
+count = 0
 count = matrix[0][0]
 
+def printMatrix(matrix, height, width):
+	for x in range(0, width):
+		print ""
+		for y in range(0, height):
+			print (" %d" % matrix[x][y]),
+
+
+printMatrix(matrix, 20, 20)	
+
 print "matrix length is: %i" % len(matrix[0])
-while(curRow < 79 and curCol < 79):
-	#Ok look at the number to the left and below.
-	print "looking at row:%i col:%i" % (curRow, curCol)
-	print "matrix size: %i rowSize = %i" % (len(matrix), len(matrix[curRow]))
-	
-	left = matrix[curRow][curCol+1]
-	below = matrix[curRow+1][curCol]
-	if left == below:
-		print "They're trying to trick me at row:%i col:%i" % (curRow, curCol)
-	if(left > below):
-		count += left
-		curCol += 1
-	else:
-		count += below
-		curRow += 1
 
-print "curRow: %i curCol: %i" % (curRow, curCol)
+#start at N, N, work X backwards until 0.
+#For each X, take X, Y, X-1, Y-1 until X = max.
+maxX = 10
+maxY = 9 #1 less
+# include maxX-1, maxY
 
-while curRow < 79:
-	curRow += 1
-	count += matrix[curRow][79]
-	
+for startX in range(maxX,-1, -1):
+	curY = maxY
+	for curX in range(startX, maxX):
+		print "Looking at X,Y: %d,%d" % (curX, curY)
+		curY = curY - 1
 
-while curCol < 79:
-	curCol += 1
-	count += matrix[79, curCol]
-	
+#Half done, now need to do the same, but minusing the Y's.
+for startY in range(maxY, -1, -1):
+	curX = 0;
+	for curY in range(startY, 0, -1):
+		print "Looking at X,Y: %d,%d" % (curX, curY)
+		curX = curX + 1
 
-print count
-	
+
+#include 0,0
+
