@@ -1,0 +1,6 @@
+Scratch notes
+
+Marshall CS305 Software Engineering 1
+
+Marshall CS320 - INternetworking. TCP, UDP, HTTP, routing, subnetting.
+
