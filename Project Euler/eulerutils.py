@@ -399,5 +399,9 @@ def gcd(a, b):
 			b -= a
 	return a
 
+
+def isSquare(n):
+	return math.sqrt(n) % 1 == 0
+
 if __name__ == '__main__':
     print getPrimesBelow(100)
