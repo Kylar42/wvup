@@ -1,0 +1,11 @@
+Big Blue (com.ibm)
+Ordinary Spud (more than 100 lines of comments)
+Wisdom of Cochise (use org.apache)
+Living Dangerously (import com.sun)
+Breaking It Down (hit a breakpoint)
+Reflection
+implementing an interface
+use an enum
+save a file
+the creator lives
+Trogdor the Burninator! (delete 100+ lines from a file)
